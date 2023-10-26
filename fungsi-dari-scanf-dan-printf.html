@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Scanf Dan Printf - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Scanf Dan Printf, , , , , , , 0, , , , , , 0, fungsi-dari-scanf-dan-printf, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Scanf Dan Printf - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Scanf Dan Printf, , , , , , , 0, , , , , , 0, fungsi-dari-scanf-dan-printf, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Scanf Dan Printf - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Scanf Dan Printf, , , , , , , 0, , , , , , 0, fungsi-dari-scanf-dan-printf, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://mengenalfungsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://mengenalfungsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://mengenalfungsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://mengenalfungsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://mengenalfungsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://mengenalfungsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://mengenalfungsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Scanf Dan Printf</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">zaidane180</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Scanf+Dan+Printf" alt="Fungsi Dari Scanf Dan Printf">
+                    </div>
+                    <p></p>
+                    <p>Apakah fungsi scanf selalu harus disertai dengan fungsi printf? jelaskan jawabanmu</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-scanf-selalu-harus-disertai-dengan-fungsi-printf-jelaskan-jawabanmu">1.
+                                            Apakah fungsi scanf selalu harus disertai dengan fungsi printf? jelaskan jawabanmu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-scanf-selalu-harus-disertai-dengan-fungsi-printfjelaskan-jawabnmu">2.
+                                            Apakah fungsi scanf selalu harus disertai dengan fungsi printf?jelaskan jawabnmu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-scanf-selalu-harus-disertai-dengan-fungsi-printfjelaskan-jawabnmu">3.
+                                            Apakah fungsi scanf selalu harus disertai dengan fungsi printf?jelaskan jawabnmu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-kode-program-berikut-ini-include-%c2%a0-void-main-int-a-b-c-printf%e2%80%9cinputkan-nilai-a-%e2%80%9d-scanf%e2%80%9c-a-printf%e2%80%9cinputkan-nilai-b-%e2%80%9d-s">4.
+                                            Perhatikan kode program berikut ini : #include   Void main (){ int a, b, c; printf(“inputkan nilai a: ”); scanf(“%, &amp;a); printf(“inputkan nilai b: ”); scanf(“%, &amp;b);      c = a * b; printf(“Nilai c: %i”, c);   Berdasarkan program tersebut diatas, jika diinputkan nilai a=12 dan nilai b=25, maka carilah berapa nilai c tersebut ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-int-main-scanfc-c-a-b-printfbilangan-pertama-cd-a-printfbilangan-kedua-cd-b-return-0-temukan-kesalah-program-tersebut-jelaskan-penulisan-scrip-yang-benar-jawaban">5.
+                                            #include int main(){ scanf("%c %c", a, b); printf("Bilangan pertama: %c\d", a); printf("Bilangan kedua: %c\d", b); return 0; } Temukan kesalah program tersebut. Jelaskan penulisan scrip yang benar Jawaban Anda *​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-penggunaan-fungsi-puts-dan-printf">6.
+                                            apa perbedaan penggunaan fungsi puts dan printf</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-adalah-pasangan-fungsi-inputoutput-yang-benar-kecuali-a-scanf-dan-printf-b-cin-dan-coutc-getche-dan-printf-d-getch-dan-printf-e-scanf-dan-cout-%e2%80%8b">7.
+                                            Berikut ini adalah pasangan fungsi input/output yang benar, kecuali..a.scanf () dan printf ()b.cin () dan cout()c.getche () dan printf ()d.getch () dan printf ()e.scanf () dan cout().​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#analisis-dan-berilah-penjelasan-terkait-program-di-bawah-iniinclude-stdio-hint-fungsimaxint-x-int-y-if-x-yreturn-xelsereturn-yint-main-int-a-b-maxprintfmasukkan-bila">8.
+                                            Analisis dan berilah
+ penjelasan
+ terkait
+ program 
+di bawah ini#include &lt;stdio.h&gt;int fungsiMax(int x, int y) {if (x &gt; y)return x;elsereturn y;}int main() {int a, b, max;printf("Masukkan Bilangan 1: ", a);scanf("%d", &amp;a);printf("Masukkan Bilangan 2: ", b);scanf("%d", &amp;b);max = fungsiMax(a, b);printf("Bilangan terbesar adalah %d", max);return 0;}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perintah-untuk-menginputkan-data-berupa-integer-di-cc-tanpa-perintah-printfscanf-maupun-coutcin">9.
+                                            Apa perintah untuk menginputkan data berupa integer di c/c++ tanpa perintah printf/scanf maupun cout/cin ? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#17-perhatikan-program-berikutincludedefine-phi-3-141593main%e2%80%a6-1-radius-kelilingprintfmasukan-jari-jari-lingkaran-scanff%e2%80%a6-2%e2%80%a6">10.
+                                            17. 	Perhatikan program berikut!
+		#include
+		#define phi 3.141593
+		main(){
+			…. (1)  radius, keliling
+			Printf("masukan jari-jari lingkaran: ");
+			scanf("%f",…..(2));
+			….(3)=2*phi*r;
+			printf("jari-jari=%f\n",r);
+			printf("keliling=%d\n",keliling);
+			return 0;}
+Bagian (sintaks) yang tepat untuk digunakan pada no (1) adalah… </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#analisis-dan-berilah-penjelasan-terkait-program-di-bawah-iniinclude-stdio-hint-fungsimaxint-x-int-y-if-x-yreturn-xelsereturn-yint-main-int-a-b-maxprintfmasukkan-bila">11.
+                                            Analisis dan
+ berilah
+ penjelasan
+ terkait
+ program di bawah ini#include &lt;stdio.h&gt;int fungsiMax(int x, int y) {if (x &gt; y)return x;elsereturn y;}int main() {int a, b, max;printf("Masukkan Bilangan 1: ", a);scanf("%d", &amp;a);printf("Masukkan Bilangan 2: ", b);scanf("%d", &amp;b);max = fungsiMax(a, b);printf("Bilangan terbesar adalah %d", max);return 0;}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-int-main-int-n-scanfd-n-if-n-0-printfnoln-else-printftidak-noln-return-0-tentukan-keluaran-jika-masukan-0-tentukan-keluaran-jika-masukan-9-apa">12.
+                                            #include 
+int main() { 
+int n; 
+scanf("%d", &amp;n);
+ if (n = 0) printf("NOL\n"); 
+else 
+printf("TIDAK NOL\n");
+ return 0;
+ }  
+Tentukan keluaran jika masukan = 0 Tentukan keluaran jika masukan= 9 
+Apa kesimpulannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#silahkan-cari-kesalahan-dan-perbaiki-program-include-stdio-hint-mainvoidfloat-noprintfmenu-nprintf1-ayam-goreng-nasi-nprintf2-ayam-bakar-nasi-n-nprintfmasukkan">13.
+                                            SILAHKAN CARI KESALAHAN DAN PERBAIKI PROGRAM #include &lt;stdio.h&gt;int main(void){float no;printf("MENU: \n");printf("1. Ayam Goreng + Nasi \n");printf("2. Ayam Bakar + Nasi \n \n");printf("Masukkan Nomor Pesanan (1 atau 2) : );scanf(“&amp;d", &amp;no);printf("\n");if(no = 1){printf("Anda Memesan Ayam Goreng + Nasi \n");if elseprintf("Anda Memesan Ayam Bakar + Nasi \n");}return 0;}​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#progam-quincy-kaktolong-bantu-pecahkan-programnyamencari-luas-persegi-panjangmencari-luas-segitigamencari-luas-trapesiummencari-luas-lingkarandalam-satu-progam-y-kakhasil-runnyarumus-yang-akan">14.
+                                            progam Quincy  kaktolong bantu pecahkan programnya
+mencari luas persegi panjang
+mencari luas segitiga
+mencari luas trapesium
+mencari luas lingkaran
+dalam satu progam y kak
+hasil runnya
+rumus yang akan dihitung ? 1
+luas persegi panjang ? 4cm
+masukan lebar 2
+luas adalah 8 cm persegi
+apakah akan menghitung lagi?contoh#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;int main(){float alas,tinggi,luas;printf("Masukkan Nilai Alas=");scanf("%f",&amp;alas);printf("Masukkan nilai tinggi=");scanf("%f",&amp;tinggi);luas=alas*tinggi/2;printf("Luas segitiga=%0.2f",luas);return 0;/n{int main()float r,L,phi;phi=3.14;printf("Progam Menghitung Luas Lingkaran\n");printf("Masukkan nilai jari jari=");scanf("%f",&amp;r);L=phi*r*r;printf("Luas lingkaran=%0.2f",L);return 0;}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-perintah-scanf-dan-berikan-contohnya">15.
+                                            Apa fungsi dari perintah scanf() dan berikan contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-sebuah-program-yang-dapat-menyimpan-dan-memunculkan-nama-nim-dan-nama-orang-tua-kalian-buat-programnya-menggunakan-printf-dan-scanf">16.
+                                            Buatlah sebuah program yang dapat menyimpan dan memunculkan : nama , nim ,dan nama orang tua kalian ! Buat programnya menggunakan printf dan scanf</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dapet-tugas-kayak-gini-di-suruh-koreksi-code-yang-ada-mohon-bantuannyainclude-include-int-mainchar-cprintfnenter-a-character-scanfcc-memeriksa-apakah-karakter-yang">17.
+                                            Dapet tugas kayak gini. di suruh koreksi code yang ada. mohon bantuannya
+#include 
+#include 
+int main()
+{
+char c;
+printf("\nEnter a character: ");
+scanf("%c",&amp;c);
+/* memeriksa apakah karakter yang dimasukkan lowercase atau bukan*/
+if (islower(c)!=0)
+printf("%c adalah huruf kecil.",c);
+else {
+printf("%c bukan huruf kecil.\n",c);
+printf("%c adalah huruf kecil %c.",tolower(c),c);
+}
+return 0;
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jurusan-rpl-caranya-membetulkan-tulisan-gimana-tolong-bantu-jawab-menentukan-nilai-ke-hurufinclude-stdio-hmain-printf-program-menentukan-nilai-ke-hurufnprintf-nint-nilaiprint">18.
+                                            jurusan rpl caranya membetulkan tulisan  gimana??..tolong bantu jawab MENENTUKAN NILAI KE HURUF#include &lt;stdio.h&gt;main ()printf ("PROGRAM MENENTUKAN NILAI KE HURUF\n):printf ("\n):int nilai:printf ("Masukkan nilai anda:"):scanf (%d, &amp;nilai):if(nilai &gt;= 80 &amp;&amp; nilai &lt;= 100){printf ("Predikat Anda = A \n):Jelse if (nilai &gt;= 70 &amp;&amp; nilai &lt;= 79){printf ("Predikat Anda = B \n):Jelse if (nilai &gt;=55 &amp;&amp; nilai = 69){printf ("Predikat Anda = C \n):Jelse if (nilai &gt;= 45 &amp;&amp; nilai &lt;= 54){printf ("Predikat Anda = D \n"):Jelse{printf ("Predikat Anda = E \n"):if (nilai &gt;= 56)}{printf ("Anda dinyatakan LULUS"):Jelselprintf ('Anda mengulang materi"):PROGRAM MENGHITUNG VOLUME TABUNG ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-sebuah-program-yang-dapat-menyimpan-dan-memunculkan-nama-dan-tahunlahir-kalian-munculkan-nama-tahun-beserta-usia-data-usia-secara-otomatis-gunakanprintf-dan-scanf-%e2%80%8b">19.
+                                            Buatlah sebuah program yang dapat menyimpan dan memunculkan: nama dan tahunlahir kalian! Munculkan nama, tahun beserta usia (data usia secara otomatis). Gunakanprintf dan scanf ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-perintah-printf-dan-scanf-bisa-digantikan-dengan-perintah-yang-lainnya-jelaskan">20.
+                                            Apakah Perintah printf dan scanf bisa digantikan dengan perintah yang lainnya? jelaskan....!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-program-c-yg-outputinputnya-menggunakan-printfscanf-kalo-bisa-sama-penjelasannyasoalnya-baru-belajar">21.
+                                            contoh program c++ yg output/inputnya menggunakan printf/scanf , kalo bisa sama penjelasannya,soalnya baru belajar :)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-bukan-berguna-untuk-menampilkan-data-ke-layar-monitor-%e2%80%a6a-printfb-putsc-putchard-scanfe-bukan-salah-satu-diatas">22.
+                                             Fungsi yang bukan berguna untuk menampilkan data ke layar monitor …
+a. printf()
+b. puts()
+c. putchar()
+d. scanf()
+e. bukan salah satu diatas</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-diketahui-pemograman-c-di-bawah-ini%e2%80%a2include-%e2%80%a2main-%e2%80%a2float-abcd%e2%80%a2printf-%e2%80%9cnilai-a-%e2%80%9c-scanf%e2%80%9cfn%e2%80%9da">23.
+                                            3.	Diketahui pemograman c di bawah ini!
+•	#include 
+•	Main (){
+•	float a,b,c,d;
+•	printf (“Nilai a       = “ );scanf(“%f\n”,&amp;a);
+•	printf (“Nilai b        = “ );scanf(“%f\n”,&amp;b);
+•	c = a+b; d= (a+b) /( a*b);printf (“nilai c   =  f\n”, c);printf(“nilai d        =  f”,d);
+•	} 
+Pada program C di atas terdapat kesalahan perintah, pada baris ke berapa terjadi kesalahan dan jelaskan!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-kode-penentu-format-di-dalam-fungsi-scanf">24.
+                                            sebutkan kode penentu format di dalam fungsi scanf</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-tepat-untuk-menampilkan-output-kepada-user-adalah-a-printfb-scanfc-scannerd-printer">25.
+                                            Fungsi yang tepat untuk menampilkan output kepada user adalah...
+A. Printf
+B. Scanf
+C. Scanner
+D. Printer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jurusanrpl-caranya-membetulkan-gimana-program-menghitung-volume-tabunginclude-stdio-hht-main-xprintf-program-untuk-menghitung-volumeabung-nprintfnconst-float-phi-3-14-float-h">26.
+                                            jurusan:rpl caranya membetulkan gimana???..PROGRAM MENGHITUNG VOLUME TABUNG#include &lt;stdio.h&gt;ht main ()Xprintf ("Program untuk menghitung Volumeabung \n:printf\n):const float phi = 3.14 ;float hasil.r,t :printf ("Masukkan jari jari Tabung::scanf(%f, &amp;rl:brintf ("Masukkan tinggi Tabung:1:scanf("%, &amp;t):hasil = (phi()): //rumus menghitung tabung //Printf('Hasil perhitungan volume Tabung adalahhasil):Printt (\n\n\n):return 0:OPPT​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ini-masih-salah-tolong-perbaiki-include-stdio-hint-main0-int-nilaiprintfinput-nilai-scanfd-nilaiif-nilai-80-nilai-100printfgrade-n">27.
+                                            ini masih salah tolong perbaiki??..............#include &lt;stdio.h&gt;int main0 {int nilai;printf("Input Nilai: "):scanf("%d", &amp;nilai);if (nilai &gt;= 80 &amp;&amp; nilai &lt;= 100)printf("Grade nilai: Sangat Baik");else if (nilai &gt;=7O &amp;&amp; nilai &lt;= 79)printf("Grade nilai: Baik");else if (nilai &gt;= 60 &amp;&amp; nilai &lt;= 69)printf("Grade nilai: Cukup");else if (nilai &gt;= 50 &amp;&amp; nilai &lt;= 59)printf("Grade nilai: Kurang");elseprintf("Grade nilai: Gagal");return O;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-periksalah-kesalahan-kesalahan-algoritma-logika-dan-sintaks-yang-terdapat-pada-program-berikut-jelaskan-mengapa-dan-benarkan-include-main-int-x-x-data-yang-dibaca-dari-keyboard-int">28.
+                                            5.	Periksalah kesalahan-kesalahan algoritma, logika dan sintaks yang terdapat pada program berikut, jelaskan mengapa, dan benarkan. include main() { 	int x /* x data yang dibaca dari keyboard */ 	int jumlah 	printf("************************************************************\n"); 	printf("** Menghitung Jumlah Bilangan Bulat **\n"); 	printf("************************************************************\n\n"); 	jumlah = 0 ; /* inisialisasi jumlah */ 	do { 		printf("Ketikan sembarang bilangan bulat (-99 mengakhiri) "); 		scanf("%d", &amp;x) 		jumlah = jumlah + x 	} while ( x = -99 ) 	printf("Jumlah seluruh nilai yang dimasukan = %d \n", &amp;jumlah); 	printf("TERIMA KASIH ---- PROGRAM BERAKHIR"); }​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-struktur-dasar-fungsi-printf">29.
+                                            Jelaskan struktur dasar fungsi printf():</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-di-dalam-printf">30.
+                                            Fungsi " di dalam printf</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-main-int-harga15000-jumlah-bayar-bayar2-diskon-char-lagi-printf-tt-perpustakaan-sman-1-mertoyudan-kab-magelang-n-printftt-program-pembelian-kripik-kentangn-print">31.
+                                            #include  main () int harga=15000, jumlah, bayar, bayar2, diskon; char lagi; printf ("\t\t- PERPUSTAKAAN SMAN 1 MERTOYUDAN KAB MAGELANG --\n"); printf("\t\t Program Pembelian Kripik Kentang\n"); printf ("\t\t printf ("\t\t-- do diskon = 0; printf("\nJumlah Beli? "); scanf("%d", &amp;jumlah); bayar harga jumlah; printf ("Bayar = %d x %d\n\t= %d", harga, jumlah, bayar); if (jumlah &gt;=10) printf ("\n\nSELAMAT!! ANDA MENDAPATKAN DISKON"); printf ("\n\tJUMLAH PEMBELIAN MINIMAL 10"); diskon harga; printf("\n \tsebesar = %d\n", diskon); else printf ("\n\nMAAF!! ANDA TIDAK MENDAPATKAN POTONGAN HARGA\n"); printf ("JUMLAH PEMBELIAN KURANG DARI 10\n"); bayar2 = bayar - diskon; printf ("\nBayar = %d %d\n\t= %d", bayar, diskon, bayar2); printf ("\n\nada pembeli lain? (y/t) "); scanf("%s", &amp;lagi); printf ("\n"); printf ("-- while (lagi=='y' || lagi =='Y'); -\n"); Harga 15.000/bungkus\n"); \n")</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-include-void-main-int-a-b-c-printfinputkan-nilai-a-scanf-a-printfinputkan-nilai-b-scanf1-b-cab-printnilai-c-tipe-data-yang-digunakan">32.
+                                            Perhatikan ! #include Void main(){ int a, b, c printf("Inputkan nilai a: "); scanf("%", &amp;a): printf("Inputkan nilai b: "); scanf("%1", &amp;b); c=a+b; print("Nilai : ", c); Tipe data yang digunakan untuk program a, b, dan c pada program tersebut adalah a. void b. int c. char d. float e. printifplisss bantuin dong tapi jangan asal asalan ya terimakasih :)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-int-mainint-aprintfmasukan-sebuah-bilangan-scanfdaprintfsepertiga-dari-bilangan-yang-kamu-masukan-adalah-f-a3return-0salahnya-dmn">33.
+                                            #include 
+int main{
+int a
+printf("masukan sebuah bilangan : ");
+scanf("%d",a);
+printf("sepertiga dari bilangan yang kamu masukan adalah %f", a/3);
+return 0;
+}
+Salahnya dmn?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-tepat-untuk-membaca-inputan-user-adalah-a-printfb-scanfc-scannerd-printer">34.
+                                            Fungsi yang tepat untuk membaca inputan user adalah...
+A. Printf
+B. Scanf
+C. Scanner
+D. Printer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#includemain%e2%80%a6%e2%80%a6buatlah-2-buah-variabel-bertipe-data-float-dengan-nama-%e2%80%98a%e2%80%99-dan-%e2%80%98b%e2%80%99-printfmasukkan-nilai-a-scanffabuatlah">35.
+                                            #include
+main()
+{
+……//buatlah 2 buah variabel bertipe data float dengan nama ‘a’ dan ‘b’; 
+ printf("masukkan nilai a : ");
+ scanf("%f",&amp;a);
+/*buatlah perintah printf yang akan mencetak text "masukkan nilai b : "
+dan perintah scanf untuk menginput nilai variabel b*/ 
+……
+……
+/*buatlah kondisi if
+-&gt; Jika b sama dengan 0 maka goto tak_berhingga; */
+……
+ printf("%f dibagi dengan %f adalah %f\n",a,b,a/b);
+ ……//tulislah statement goto selesai
+……//buatlah label untuk statement goto dengan nama tak_berhingga
+ printf("%f dibagi dengan 0 adalah TAK BERHINGGA\n",a);
+ selesai:
+ ;
+}
+Lengkapilah potongan program berikut !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-kode-kode-format-untuk-fungsi-scanf">36.
+                                            Sebutkan dan jelaskan kode-kode format untuk fungsi scanf()!?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hal-%e2%80%93-hal-yang-harus-diperhatikan-dalam-pemakaian-fungsi-scanf">37.
+                                            Hal – Hal yang harus diperhatikan dalam pemakaian fungsi scanf()</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-bantuannya-koreksi-atau-tambahan-untuk-coding-di-bawah-iniinclude-int-main-int-n-10scanfd10switchn-5case-2-printfa-breakcase-5-printfb-breakcase-4-prin">38.
+                                            Mohon Bantuannya, Koreksi atau tambahan untuk coding di bawah ini
+#include 
+int main ()
+{
+int n = 10;
+scanf("%d",10);
+switch(n--%5)
+{
+case 2: printf("A"); break;
+case 5: printf("B"); break;
+case 4: printf("C"); break;
+default:printf("D"); break;
+}
+return 0;
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-kerjaincludeprintfscanfint-main">39.
+                                            jelaskan cara kerja
+#includeprintfscanfint main()</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-paling-umum-digunakan-dalam-menampilkan-d-d-scanf-a-printf-b-puts-e-c-putchar-getche-%e2%80%8b">40.
+                                            Fungsi yang paling umum digunakan dalam menampilkan d D. SCANF ( ) A. PRINTF () B. PUTS () E. C. PUTCHAR () GETCHE ()​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-scanf-selalu-harus-disertai-dengan-fungsi-printf-jelaskan-jawabanmu">
+                            1. Apakah fungsi scanf selalu harus disertai dengan fungsi printf? jelaskan jawabanmu</h2><br />
+                        scanf adalah input data<br />printf adalah output menampilkan data<br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-scanf-selalu-harus-disertai-dengan-fungsi-printfjelaskan-jawabnmu">
+                            2. Apakah fungsi scanf selalu harus disertai dengan fungsi printf?jelaskan jawabnmu</h2><br />
+                        scanf adalah fungsi untuk membaca inputan pada suatu program, sedangkan<br /><br />printf adalah fungsi untuk menampilkan character atau nilai dari suatu variable<br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-scanf-selalu-harus-disertai-dengan-fungsi-printfjelaskan-jawabnmu">
+                            3. Apakah fungsi scanf selalu harus disertai dengan fungsi printf?jelaskan jawabnmu</h2><br />
+                        harus, karena printer berguna untuk melihat/menghasilkan hasil scan.<br />semoga membantu ya,,.! :)<br />
+                                            <h2 class="ez-toc-section" id="perhatikan-kode-program-berikut-ini-include-%c2%a0-void-main-int-a-b-c-printf%e2%80%9cinputkan-nilai-a-%e2%80%9d-scanf%e2%80%9c-a-printf%e2%80%9cinputkan-nilai-b-%e2%80%9d-s">
+                            4. Perhatikan kode program berikut ini : #include   Void main (){ int a, b, c; printf(“inputkan nilai a: ”); scanf(“%, &amp;a); printf(“inputkan nilai b: ”); scanf(“%, &amp;b);      c = a * b; printf(“Nilai c: %i”, c);   Berdasarkan program tersebut diatas, jika diinputkan nilai a=12 dan nilai b=25, maka carilah berapa nilai c tersebut ?​</h2><br />
+                        <p>Ada beberapa kesalahan sintaksis pada kode program tersebut, saia akan memperbaikinya terlebih dahulu. Berikut adalah kode program yang sudah diperbaiki:</p><p>#include &lt;stdio.h&gt;</p><p></p><p>int main() {</p><p>    int a, b, c;</p><p>    printf("Inputkan nilai a: ");</p><p>    scanf("%d", &amp;a);</p><p>    printf("Inputkan nilai b: ");</p><p>    scanf("%d", &amp;b);</p><p>    c = a * b;</p><p>    printf("Nilai c: %d", c);</p><p>    return 0;</p><p>}</p><p>Jika kita menginputkan nilai a=12 dan nilai b=25, maka nilai c dapat dihitung sebagai berikut:</p><p>Inputkan nilai a: 12</p><p>Inputkan nilai b: 25</p><p>Nilai c: 300</p><p>Jadi, nilai c yang dihasilkan adalah 300.</p><br />
+                                            <h2 class="ez-toc-section" id="include-int-main-scanfc-c-a-b-printfbilangan-pertama-cd-a-printfbilangan-kedua-cd-b-return-0-temukan-kesalah-program-tersebut-jelaskan-penulisan-scrip-yang-benar-jawaban">
+                            5. #include int main(){ scanf("%c %c", a, b); printf("Bilangan pertama: %c\d", a); printf("Bilangan kedua: %c\d", b); return 0; } Temukan kesalah program tersebut. Jelaskan penulisan scrip yang benar Jawaban Anda *​</h2><br />
+                        <p>hasil tersebut adalah 78 cm tersebut</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-penggunaan-fungsi-puts-dan-printf">
+                            6. apa perbedaan penggunaan fungsi puts dan printf</h2><br />
+                        ini kakak pembina di sekolahku katanya(salam hormat)<br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-adalah-pasangan-fungsi-inputoutput-yang-benar-kecuali-a-scanf-dan-printf-b-cin-dan-coutc-getche-dan-printf-d-getch-dan-printf-e-scanf-dan-cout-%e2%80%8b">
+                            7. Berikut ini adalah pasangan fungsi input/output yang benar, kecuali..a.scanf () dan printf ()b.cin () dan cout()c.getche () dan printf ()d.getch () dan printf ()e.scanf () dan cout().​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>e. scanf() dan cout()</p><p><strong>Penjelasan:</strong></p><p>karena scanf() hanya bisa berpasangan dengan printf(), dan cout() harusnya dengan cin()</p><br />
+                                            <h2 class="ez-toc-section" id="analisis-dan-berilah-penjelasan-terkait-program-di-bawah-iniinclude-stdio-hint-fungsimaxint-x-int-y-if-x-yreturn-xelsereturn-yint-main-int-a-b-maxprintfmasukkan-bila">
+                            8. Analisis dan berilah
+ penjelasan
+ terkait
+ program 
+di bawah ini#include &lt;stdio.h&gt;int fungsiMax(int x, int y) {if (x &gt; y)return x;elsereturn y;}int main() {int a, b, max;printf("Masukkan Bilangan 1: ", a);scanf("%d", &amp;a);printf("Masukkan Bilangan 2: ", b);scanf("%d", &amp;b);max = fungsiMax(a, b);printf("Bilangan terbesar adalah %d", max);return 0;}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ㅓ어어너너너누누눈룦ㄴㅍㅇ  남ㄷ ㅍㅇ 남ㄴ 늊팢ㅈ 듁나ㅁ  정쥰팾 정보쥭중</p><p><strong>Penjelasan:</strong></p>ㅑㅇ아아아아아어ㅓ챠처어둫ㄷ워쥭뒷계뒷뒷쥭뒷쥭뮤모쥰중앙준 이거눈ㄴ ㄴ 나랑해유류우줃뉴ㅠ쥭쥰ㅈ즇ㅎㅎ우ㅑㅓㅜㅠㅊ ㅠ류유ㅗㅍㅊㄱㄹ오잇링크로이는거같아ㅗㅏ아라라라ㅏㄹ랴루거거거루구거걱더더거거더댜갹ㅎㅎㅎㅎㅎㅎㅎㄱ거ㅑㄱ럴더거럴ㅜㅓㅜㅓㅓㅓㅓ팔화한휴우니까ㅓㅗ팔ㅠ<p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-perintah-untuk-menginputkan-data-berupa-integer-di-cc-tanpa-perintah-printfscanf-maupun-coutcin">
+                            9. Apa perintah untuk menginputkan data berupa integer di c/c++ tanpa perintah printf/scanf maupun cout/cin ? </h2><br />
+                        menggunakan gets();<br />syntax:<br />gets(nama-variabel-array);<br />
+                                            <h2 class="ez-toc-section" id="17-perhatikan-program-berikutincludedefine-phi-3-141593main%e2%80%a6-1-radius-kelilingprintfmasukan-jari-jari-lingkaran-scanff%e2%80%a6-2%e2%80%a6">
+                            10. 17. 	Perhatikan program berikut!
+		#include
+		#define phi 3.141593
+		main(){
+			…. (1)  radius, keliling
+			Printf("masukan jari-jari lingkaran: ");
+			scanf("%f",…..(2));
+			….(3)=2*phi*r;
+			printf("jari-jari=%f\n",r);
+			printf("keliling=%d\n",keliling);
+			return 0;}
+Bagian (sintaks) yang tepat untuk digunakan pada no (1) adalah… </h2><br />
+                        <p>jawabanya adalah </p>int<p>pembahasan</p><p><strong>dalam bahasa pemrograman terdiri dari perintah Int, Float, dan printf</strong></p><p><strong>int </strong>adalah masukan yang menyatakan nilai variabel atau nama yang memiliki nilai bilangan bulat</p><p><strong>Float</strong>adalah masukan yang menyatakan nilai variabel atau nama yang memiliki nilai bilangan pecahan</p><p><strong>printf </strong>adalah intruksi yang digunakan untuk menampilkan tulisan perintah masukan nilai dari variabel yang bersangkutan</p><p><strong></strong></p><p><strong>semoga membantu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="analisis-dan-berilah-penjelasan-terkait-program-di-bawah-iniinclude-stdio-hint-fungsimaxint-x-int-y-if-x-yreturn-xelsereturn-yint-main-int-a-b-maxprintfmasukkan-bila">
+                            11. Analisis dan
+ berilah
+ penjelasan
+ terkait
+ program di bawah ini#include &lt;stdio.h&gt;int fungsiMax(int x, int y) {if (x &gt; y)return x;elsereturn y;}int main() {int a, b, max;printf("Masukkan Bilangan 1: ", a);scanf("%d", &amp;a);printf("Masukkan Bilangan 2: ", b);scanf("%d", &amp;b);max = fungsiMax(a, b);printf("Bilangan terbesar adalah %d", max);return 0;}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Dilihat dari kode yang ada, kegunaan dari kode tersebut adalah untuk memberikan hasil dari input terbesar yang dimasukan user.</p><p></p><p>Didalamnya memiliki kode if dan else yang dibuat untuk membandingkan variable x dan y</p><p></p><p>dan dari kedua variable tersebut, hasil yang terbesarlah yang akan ditampilkan.</p><p></p><p>Walaupun masih ada kekurangan.</p><p></p><p>- Apa yang akan terjadi jika kedua bilangan tersebut memiliki value atau nilai yang sama?</p><p></p><p>Tidak terlihat bahwa pesan seperti "Kedua variable memiliki dua value yang sama, coba lagi."</p><p><strong>Penjelasan:</strong></p><p></p>Semoga Membantu!<p></p><br />
+                                            <h2 class="ez-toc-section" id="include-int-main-int-n-scanfd-n-if-n-0-printfnoln-else-printftidak-noln-return-0-tentukan-keluaran-jika-masukan-0-tentukan-keluaran-jika-masukan-9-apa">
+                            12. #include 
+int main() { 
+int n; 
+scanf("%d", &amp;n);
+ if (n = 0) printf("NOL\n"); 
+else 
+printf("TIDAK NOL\n");
+ return 0;
+ }  
+Tentukan keluaran jika masukan = 0 Tentukan keluaran jika masukan= 9 
+Apa kesimpulannya</h2><br />
+                        <p>Koreksi Code :</p><p></p><p> #include </p><p>int main() { </p><p>int n; </p><p>scanf("%d", &amp;n);</p><p>if (n <strong>==</strong> 0) printf("NOL\n"); </p><p>else </p><p>printf("TIDAK NOL\n");</p><p>return 0;</p><p>}</p><p></p><p></p><p>Apabila inputan pertama berupa bilangan 0, maka output yang akan dicetak berupa NOL</p><p></p><p>Apabila inputan pertama berupa bilangan selain 0, maka output yang dicetak berupa TIDAK NOL</p><p></p><p>Kesimpulan : Program ini mengecek apabila inputan berupa angka 0 atau lainnya, dan akan mencetak sesuai dengan kondisi</p><p></p><p>Semoga jawaban ini membantu</p><br />
+                                            <h2 class="ez-toc-section" id="silahkan-cari-kesalahan-dan-perbaiki-program-include-stdio-hint-mainvoidfloat-noprintfmenu-nprintf1-ayam-goreng-nasi-nprintf2-ayam-bakar-nasi-n-nprintfmasukkan">
+                            13. SILAHKAN CARI KESALAHAN DAN PERBAIKI PROGRAM #include &lt;stdio.h&gt;int main(void){float no;printf("MENU: \n");printf("1. Ayam Goreng + Nasi \n");printf("2. Ayam Bakar + Nasi \n \n");printf("Masukkan Nomor Pesanan (1 atau 2) : );scanf(“&amp;d", &amp;no);printf("\n");if(no = 1){printf("Anda Memesan Ayam Goreng + Nasi \n");if elseprintf("Anda Memesan Ayam Bakar + Nasi \n");}return 0;}​​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>#include &lt;stdio.h&gt;</strong></p><p><strong></strong></p><p><strong>int main(){</strong></p><p><strong>  int no;</strong></p><p><strong>  printf("MENU: \n");</strong></p><p><strong>  printf("1. Ayam Goreng + Nasi \n");</strong></p><p><strong>  printf("2. Ayam Bakar + Nasi \n \n");</strong></p><p><strong>  printf("Masukkan Nomor Pesanan (1 atau 2) : ");</strong></p><p><strong></strong></p><p><strong>  scanf("%d", &amp;no);</strong></p><p><strong>  printf("\n");</strong></p><p><strong></strong></p><p><strong>  if(no == 1){</strong></p><p><strong>    printf("Anda Memesan Ayam Goreng + Nasi \n");</strong></p><p><strong>  } else if (no == 2) {</strong></p><p><strong>    printf("Anda Memesan Ayam Bakar + Nasi \n");</strong></p><p><strong>  }</strong></p><p><strong></strong></p><p><strong>  return 0;</strong></p><p><strong>}</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="progam-quincy-kaktolong-bantu-pecahkan-programnyamencari-luas-persegi-panjangmencari-luas-segitigamencari-luas-trapesiummencari-luas-lingkarandalam-satu-progam-y-kakhasil-runnyarumus-yang-akan">
+                            14. progam Quincy  kaktolong bantu pecahkan programnya
+mencari luas persegi panjang
+mencari luas segitiga
+mencari luas trapesium
+mencari luas lingkaran
+dalam satu progam y kak
+hasil runnya
+rumus yang akan dihitung ? 1
+luas persegi panjang ? 4cm
+masukan lebar 2
+luas adalah 8 cm persegi
+apakah akan menghitung lagi?contoh#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;int main(){float alas,tinggi,luas;printf("Masukkan Nilai Alas=");scanf("%f",&amp;alas);printf("Masukkan nilai tinggi=");scanf("%f",&amp;tinggi);luas=alas*tinggi/2;printf("Luas segitiga=%0.2f",luas);return 0;/n{int main()float r,L,phi;phi=3.14;printf("Progam Menghitung Luas Lingkaran\n");printf("Masukkan nilai jari jari=");scanf("%f",&amp;r);L=phi*r*r;printf("Luas lingkaran=%0.2f",L);return 0;}</h2><br />
+                        #include &lt;iostream&gt;<br />#include &lt;stdio.h&gt;<br />#include &lt;conio.h&gt;            //-----file header-----<br />#include &lt;stdlib.h&gt;<br />#include &lt;windows.h&gt;<br /><br />using namespace std;<br /><br />void bangun1 ()<br />{<br /> system ("cls");<br /> float p, l, luas;<br /> cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /> cout&lt;&lt;"|                  Program Bangun Datar                   |"&lt;&lt;endl;<br /> cout&lt;&lt;"|                    Persegi Panjang                      |"&lt;&lt;endl;<br /> cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br />        <br /> cout&lt;&lt;" Masukkan Panjang    : ";cin&gt;&gt;p;<br /> cout&lt;&lt;" Masukkan Lebar      : ";cin&gt;&gt;l;<br /> luas=p*l;<br /> cout&lt;&lt;" Luas Persegi adalah : "&lt;&lt;luas;<br /> cout&lt;&lt;endl;<br />}<br /> void bangun2 ()<br />{<br /> system ("cls");<br /> float a, t, luas;<br /> cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /> cout&lt;&lt;"|                  Program Bangun Datar                   |"&lt;&lt;endl;<br /> cout&lt;&lt;"|                       Segitiga                          |"&lt;&lt;endl;<br /> cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /><br /> cout&lt;&lt;" Masukkan Alas    : ";cin&gt;&gt;a;<br /> cout&lt;&lt;" Masukkan Tinggi  : ";cin&gt;&gt;t;<br /> luas=a*t/2;<br /> cout&lt;&lt;" Luas Segitiga adalah : "&lt;&lt;luas;<br /> cout&lt;&lt;endl;<br /> }<br /> void bangun3 ()<br />{<br /> system ("cls");<br /> float r, luas;<br />  cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /> cout&lt;&lt;"|                  Program Bangun Datar                   |"&lt;&lt;endl;<br /> cout&lt;&lt;"|                       Lingkaran                         |"&lt;&lt;endl;<br /> cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /><br /> cout&lt;&lt;" Masukkan Jari-Jari    : ";cin&gt;&gt;r;<br />  luas=3.14*(r*r);<br /> cout&lt;&lt;" Luas Lingkaran adalah : "&lt;&lt;luas;<br /> cout&lt;&lt;endl;<br /> }<br /> void bangun4 ()<br />{<br /> system ("cls");<br /> float a, b, t, luas;<br />  cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /> cout&lt;&lt;"|                  Program Bangun Datar                   |"&lt;&lt;endl;<br /> cout&lt;&lt;"|                      Trapesium                          |"&lt;&lt;endl;<br /> cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br /><br /> cout&lt;&lt;" Masukkan Sisi Sejajar 1 : ";cin&gt;&gt;a;<br /> cout&lt;&lt;" Masukkan Sisi Sejajar 2 : ";cin&gt;&gt;b;<br /> cout&lt;&lt;" Masukkan Tinggi         : ";cin&gt;&gt;t;<br /> luas=0.5*a+b*t;<br /> cout&lt;&lt;" Luas Trapesium adalah : "&lt;&lt;luas;<br /> cout&lt;&lt;endl;<br /> }<br /><br />int main ()<br />{<br />            <br />    char coba, pilihan;<br />    float a, r, t, p, l, luas;<br />    <br />    do {<br />    awal:<br />    system ("cls");<br />    system ("color 3b");<br />    system("title Program Bangun Datar By Rizqi");    <br />    cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br />    cout&lt;&lt;"|                  Program Bangun Datar                   |"&lt;&lt;endl;<br />    cout&lt;&lt;" ========================================================="&lt;&lt;endl;<br />    cout&lt;&lt;endl;<br />    cout&lt;&lt;endl;<br />    <br />    cout&lt;&lt;"PILIHAN MENU : "&lt;&lt;endl;<br />    cout&lt;&lt;"1. Persegi Panjang"&lt;&lt;endl;<br />    cout&lt;&lt;"2. Segitiga"&lt;&lt;endl;<br />    cout&lt;&lt;"3. Lingkaran"&lt;&lt;endl;<br />    cout&lt;&lt;"4. Trapesium"&lt;&lt;endl;<br />    cout&lt;&lt;"5. Keluar"&lt;&lt;endl;<br />    cout&lt;&lt;"Masukkan Pilihan : "; cin&gt;&gt;pilihan;<br /><br />    switch (pilihan)<br />    {<br />      case '1':<br />        system ("cls");<br />        system ("color 9b");<br />        bangun1 ();<br />           getche();<br />        break;<br />        <br />      case '2':<br />          system ("color 5b");<br />        bangun2 ();<br />           getche();<br />        break;<br /><br />      case '3':<br />          system ("color 4b");<br />        bangun3 ();<br />        getche();<br />        break;<br /><br />      case '4':<br />          system ("color 8b");<br />        bangun4 ();<br />        getche();<br />        break;<br /><br />       case '5':<br />          system ("color 1b");<br />        goto akhir;<br /><br />      default:<br />        cout&lt;&lt;"pilihan yang anda masukkan salah\n";<br />        getche ();<br />        goto awal;<br />        break;<br />    }<br />            cout&lt;&lt;endl&lt;&lt;"Coba Lagi?";cin&gt;&gt;coba;<br />        if(coba=='y'||coba=='Y')<br />        {<br />            goto awal;<br />        }<br />        else if(coba=='n'||coba=='N')<br />        {<br />            goto akhir;<br />        }<br />  } while (pilihan=='2' || pilihan=='1' || pilihan=='3' || pilihan=='4');<br />  akhir:<br />      cout&lt;&lt;"selesai"&lt;&lt;endl;<br />  getche ();<br />    system ("pause");<br />    return 0;<br />}<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-perintah-scanf-dan-berikan-contohnya">
+                            15. Apa fungsi dari perintah scanf() dan berikan contohnya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perintah scanf, atau lebih tepatnya function scanf() adalah perintah bahasa C untuk menerima masukan ke dalam program, yakni sebagai sarana input dari pengguna. Kode format ini sama seperti yang dipakai untuk fungsi printf, misalnya kode “%d” untuk tipe data integer, atau “%c” untuk tipe data char</p><p><strong>Penjelasan:</strong></p><p>Semoga Membantu:)</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-sebuah-program-yang-dapat-menyimpan-dan-memunculkan-nama-nim-dan-nama-orang-tua-kalian-buat-programnya-menggunakan-printf-dan-scanf">
+                            16. Buatlah sebuah program yang dapat menyimpan dan memunculkan : nama , nim ,dan nama orang tua kalian ! Buat programnya menggunakan printf dan scanf</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include &lt;iostream&gt;
+</p><p>using namespace std;
+</p><p>
+</p><p>int main(){
+</p><p>    printf("Hello\n");
+</p><p>    printf("Nama saya %s\n", "Dian");</p><p>    printf("Nim saya %s\n", "352436");
+</p><p>    printf("Orang tua saya %d\n", "Paijo");
+</p><p>    return 0;
+</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="dapet-tugas-kayak-gini-di-suruh-koreksi-code-yang-ada-mohon-bantuannyainclude-include-int-mainchar-cprintfnenter-a-character-scanfcc-memeriksa-apakah-karakter-yang">
+                            17. Dapet tugas kayak gini. di suruh koreksi code yang ada. mohon bantuannya
+#include 
+#include 
+int main()
+{
+char c;
+printf("\nEnter a character: ");
+scanf("%c",&amp;c);
+/* memeriksa apakah karakter yang dimasukkan lowercase atau bukan*/
+if (islower(c)!=0)
+printf("%c adalah huruf kecil.",c);
+else {
+printf("%c bukan huruf kecil.\n",c);
+printf("%c adalah huruf kecil %c.",tolower(c),c);
+}
+return 0;
+}</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p><p>Tidak ada kesalahan signifikan pada kode program tersebut. Mungkin hanya bagian #include saja yang perlu dilengkapi.</p><p>Perlu diperhatikan, bahwa kode program ini akan memeriksa apakah karakter yang dimasukkan merupakan karakter huruf kecil (lowercase character) atau bukan. Namun tidak ada penanganan kasus untuk karakter input yang bukan berupa huruf alfabet, padahal jelas dari tujuan program ini bahwa yang diperiksa adalah huruf alfabet.</p><p></p><p>_______________________________</p><p></p><p>Berikut ini adalah <strong>kode program</strong> yang sudah dilengkapi, dalam versi dasar (karakter apapun tetap diterima).</p><p></p><p><strong>#include&lt;stdio.h&gt;</strong></p><p><strong>#include&lt;ctype.h&gt;</strong></p><p><strong></strong></p><p><strong>int main() {</strong></p><p><strong>    char c;</strong></p><p><strong></strong></p><p><strong>    printf("\nEnter a character: ");</strong></p><p><strong>    scanf(" %c", &amp;c);</strong></p><p><strong></strong></p><p><strong>    /* memeriksa apakah karakter yang dimasukkan lowercase atau bukan*/</strong></p><p><strong>    if (islower(c) != 0)</strong></p><p><strong>        printf("%c adalah huruf kecil.", c);</strong></p><p><strong>    else {</strong></p><p><strong>        printf("%c bukan huruf kecil.\n", c);</strong></p><p><strong>        printf("%c adalah huruf kecil %c.", tolower(c), c);</strong></p><p><strong>    }</strong></p><p><strong></strong></p><p><strong>    return 0;</strong></p><p><strong>}</strong></p><p>_______________________________</p><p></p><p>Pada kode program tersebut, ada analisis kasus <strong>islower(c) != 0</strong>. Menurut saya, akan lebih "elegan" apabila kode tersebut diganti dengan <strong>!islower(c)</strong>.</p><p>Namun karena hal itu bukan kesalahan, maka tidak perlu dikoreksi.</p><p></p><p>_______________________________</p><p></p><p>Saya tambahkan juga sedikit modifikasi agar program hanya akan memeriksa karakter jika karakternya adalah karakter alfabet (a-z atau A-Z). Mungkin bisa berguna sebagai referensi.</p><p></p><p><strong>#include&lt;stdio.h&gt;</strong></p><p><strong>#include&lt;ctype.h&gt;</strong></p><p><strong></strong></p><p><strong>int main() {</strong></p><p><strong>    char c;</strong></p><p><strong>    </strong></p><p><strong>    do {</strong></p><p><strong>        printf("\nEnter a character: ");</strong></p><p><strong>        scanf(" %c", &amp;c);</strong></p><p><strong>    } while (!isalpha(c));</strong></p><p><strong></strong></p><p><strong>    /* memeriksa apakah karakter yang dimasukkan lowercase atau bukan*/</strong></p><p><strong>    if (islower(c) != 0)</strong></p><p><strong>        printf("%c adalah huruf kecil.", c);</strong></p><p><strong>    else {</strong></p><p><strong>        printf("%c bukan huruf kecil.\n", c);</strong></p><p><strong>        printf("%c adalah huruf kecil %c.", tolower(c), c);</strong></p><p><strong>    }</strong></p><p><strong></strong></p><p><strong>    return 0;</strong></p><p><strong>}</strong></p><p></p><p>_______________________________</p><p></p><p>Saya lampirkan juga beberapa screenshot agar lebih jelas hasil eksekusi/running programnya.</p><p></p><p>Keterangan:</p><p>Program dikode dengan menggunakan Visual Studio Code pada sistem operasi Arch Linux. Namun, hasilnya akan sama saja apabila Anda menggunakan IDE/editor lain di sistem operasi lain (Windows, MacOS, Android, dsb).</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jurusan-rpl-caranya-membetulkan-tulisan-gimana-tolong-bantu-jawab-menentukan-nilai-ke-hurufinclude-stdio-hmain-printf-program-menentukan-nilai-ke-hurufnprintf-nint-nilaiprint">
+                            18. jurusan rpl caranya membetulkan tulisan  gimana??..tolong bantu jawab MENENTUKAN NILAI KE HURUF#include &lt;stdio.h&gt;main ()printf ("PROGRAM MENENTUKAN NILAI KE HURUF\n):printf ("\n):int nilai:printf ("Masukkan nilai anda:"):scanf (%d, &amp;nilai):if(nilai &gt;= 80 &amp;&amp; nilai &lt;= 100){printf ("Predikat Anda = A \n):Jelse if (nilai &gt;= 70 &amp;&amp; nilai &lt;= 79){printf ("Predikat Anda = B \n):Jelse if (nilai &gt;=55 &amp;&amp; nilai = 69){printf ("Predikat Anda = C \n):Jelse if (nilai &gt;= 45 &amp;&amp; nilai &lt;= 54){printf ("Predikat Anda = D \n"):Jelse{printf ("Predikat Anda = E \n"):if (nilai &gt;= 56)}{printf ("Anda dinyatakan LULUS"):Jelselprintf ('Anda mengulang materi"):PROGRAM MENGHITUNG VOLUME TABUNG ​</h2><br />
+                        <p>jawab</p><p><strong>koding yg bnr gni bg:</strong></p><p>#include &lt;stdio.h&gt;</p><p>int main() {</p><p>    printf("<strong>PROGRAM MENENTUKAN NILAI KE HURUF</strong>\n\n");</p><p>    int nilai;</p><p>    printf("Masukkan nilai anda: ");</p><p>    scanf("%d", &amp;nilai);</p><p>    if (nilai &gt;= 80 &amp;&amp; nilai &lt;= 100) {</p><p>        printf("Predikat Anda = A\n");</p><p>    } else if (nilai &gt;= 70 &amp;&amp; nilai &lt;= 79) {</p><p>        printf("Predikat Anda = B\n");</p><p>    } else if (nilai &gt;= 55 &amp;&amp; nilai &lt;= 69) {</p><p>        printf("Predikat Anda = C\n");</p><p>    } else if (nilai &gt;= 45 &amp;&amp; nilai &lt;= 54) {</p><p>        printf("Predikat Anda = D\n");</p><p>    } else {</p><p>        printf("Predikat Anda = E\n");</p><p>        if (nilai &gt;= 56) {</p><p>            printf("Anda dinyatakan LULUS\n");</p><p>        } else {</p><p>            printf("Anda mengulang materi\n");</p><p>        }</p><p>    }</p><p>    return 0;</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-sebuah-program-yang-dapat-menyimpan-dan-memunculkan-nama-dan-tahunlahir-kalian-munculkan-nama-tahun-beserta-usia-data-usia-secara-otomatis-gunakanprintf-dan-scanf-%e2%80%8b">
+                            19. Buatlah sebuah program yang dapat menyimpan dan memunculkan: nama dan tahunlahir kalian! Munculkan nama, tahun beserta usia (data usia secara otomatis). Gunakanprintf dan scanf ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>...........kkgx  kpux5</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-perintah-printf-dan-scanf-bisa-digantikan-dengan-perintah-yang-lainnya-jelaskan">
+                            20. Apakah Perintah printf dan scanf bisa digantikan dengan perintah yang lainnya? jelaskan....!</h2><br />
+                        bisa, digantikan dengan perintah cout dan cin tetapi pada headingnya tambahkan perintah #include&lt;iostream&gt;<br />
+                                            <h2 class="ez-toc-section" id="contoh-program-c-yg-outputinputnya-menggunakan-printfscanf-kalo-bisa-sama-penjelasannyasoalnya-baru-belajar">
+                            21. contoh program c++ yg output/inputnya menggunakan printf/scanf , kalo bisa sama penjelasannya,soalnya baru belajar :)</h2><br />
+                        include&lt;iostream&gt; // untuk pemanggilan dari c++<br />include&lt;cstdio&gt; // untuk  pemanggilan dari c<br /><br />namespace std();<br /><br />int main (){<br /><br />int a; // untuk mendekarasikan variable<br /><br />scanf("%d",&amp;a); // &amp; berfungsi untuk penyimpanan data ke dalam memori<br />printf("%d",a); // %d digunakan untuk deklarasi integer<br /><br />return 0; // karena main dalam bentuk int maka harus mengembalikan nilai<br />}<br />ni contoh kode perhitungan pake printf/scanf. tinggal copy dan coba. include ini buat pemanggilan header file, main () { menunjukkan badan program. perintah printf untuk menampilkan pesan/tulisan, sedangkan scanf untuk masukkan. char dan int adalah variabel <br />getchar dan return untuk mengakhiri program<br /><br />#include &lt;stdio.h&gt;<br />#include &lt;conio.h&gt;<br />main()<br />{      char nama_komponen[15]; int jumlah, harga, bayar;     <br /> printf("nama komponen= "); scanf("%s",nama_komponen);     <br /> printf("harga komponen= "); scanf("%d", &amp;harga);      <br /> printf("jumlah beli= "); scanf("%d",&amp;jumlah);      <br />bayar = jumlah * harga;     <br /> printf("Yang harus dibayar sejumlah = %d", bayar);      <br />scanf("%d",bayar);      <br />getchar();      <br />return(0);      }<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-bukan-berguna-untuk-menampilkan-data-ke-layar-monitor-%e2%80%a6a-printfb-putsc-putchard-scanfe-bukan-salah-satu-diatas">
+                            22.  Fungsi yang bukan berguna untuk menampilkan data ke layar monitor …
+a. printf()
+b. puts()
+c. putchar()
+d. scanf()
+e. bukan salah satu diatas</h2><br />
+                        Insyaalloh jawabanya<br />a. print<br /><br />karena print untuk output ke kertas bukan ke monitor<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="3-diketahui-pemograman-c-di-bawah-ini%e2%80%a2include-%e2%80%a2main-%e2%80%a2float-abcd%e2%80%a2printf-%e2%80%9cnilai-a-%e2%80%9c-scanf%e2%80%9cfn%e2%80%9da">
+                            23. 3.	Diketahui pemograman c di bawah ini!
+•	#include 
+•	Main (){
+•	float a,b,c,d;
+•	printf (“Nilai a       = “ );scanf(“%f\n”,&amp;a);
+•	printf (“Nilai b        = “ );scanf(“%f\n”,&amp;b);
+•	c = a+b; d= (a+b) /( a*b);printf (“nilai c   =  f\n”, c);printf(“nilai d        =  f”,d);
+•	} 
+Pada program C di atas terdapat kesalahan perintah, pada baris ke berapa terjadi kesalahan dan jelaskan!</h2><br />
+                        Kesalahan pada baris pertama dimana:<br />preprocessor directive #include belum lengkap.<br />Yang sehsrusnya diisi dengan format: #include &lt;nama-library.h&gt; <br />Seharusnya diisi dengan &lt;stdio.h&gt; dimana library itu berfungsi untuk input / output suatu data.<br /><br />Jadi koreksi pada baris pertama:<br />#include &lt;stdio.h&gt;<br /><br />Terimakasih. Maaf jika salah. Selamat belajar!<strong>[jawaban]<br /></strong><strong><br />Mata Pelajaran: Teknologi Informatika<br /></strong><strong>Kata kunci: Program C<br /></strong><strong><br />• Jawaban pendek:<br /><br /></strong>3.	Diketahui pemograman c di bawah ini!<br />•	#include <br />•	Main (){<br />•	float a,b,c,d;<br />•	printf (“Nilai a = “ );scanf(“%f\n”,&amp;a);<br />•	printf (“Nilai b = “ );scanf(“%f\n”,&amp;b);<br />•	c = a+b; d= (a+b) /( a*b);printf (“nilai c = f\n”, c);printf(“nilai d = f”,d);<br />•	} <br />Pada program C di atas terdapat kesalahan perintah, pada baris ke berapa terjadi kesalahan dan jelaskan!<br /><strong><br />Kesalahan pada baris pertama (#include)<br /><br />• Penjelasan: <br /></strong><br /><strong>Preprocessor Directive (#include) pada potongan kode tersebut tidak lengkap. </strong><strong>Seharusnya diisi #include &lt;library.h&gt;</strong><br /><strong>Pada kode diatas menggunakan fungsi input output data, maka library yang dibutuhkan untuk Preprocessor Directive adalah stdio.h (library yang berfungsi untuk input / output data).</strong><br /><strong>Pembetulan untuk baris pertama: #include &lt;stdio.h&gt;</strong><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-kode-penentu-format-di-dalam-fungsi-scanf">
+                            24. sebutkan kode penentu format di dalam fungsi scanf</h2><br />
+                        kalo bener pake kode c++ <br />formatnya kaya gini <br />int scanf(const char *format, ...)<br />kalo penentunya<br />char,int,float<br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-tepat-untuk-menampilkan-output-kepada-user-adalah-a-printfb-scanfc-scannerd-printer">
+                            25. Fungsi yang tepat untuk menampilkan output kepada user adalah...
+A. Printf
+B. Scanf
+C. Scanner
+D. Printer</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi <strong>printf</strong> merupakan fungsi untuk menampilkan output ke layar komputer.</p><br />
+                                            <h2 class="ez-toc-section" id="jurusanrpl-caranya-membetulkan-gimana-program-menghitung-volume-tabunginclude-stdio-hht-main-xprintf-program-untuk-menghitung-volumeabung-nprintfnconst-float-phi-3-14-float-h">
+                            26. jurusan:rpl caranya membetulkan gimana???..PROGRAM MENGHITUNG VOLUME TABUNG#include &lt;stdio.h&gt;ht main ()Xprintf ("Program untuk menghitung Volumeabung \n:printf\n):const float phi = 3.14 ;float hasil.r,t :printf ("Masukkan jari jari Tabung::scanf(%f, &amp;rl:brintf ("Masukkan tinggi Tabung:1:scanf("%, &amp;t):hasil = (phi()): //rumus menghitung tabung //Printf('Hasil perhitungan volume Tabung adalahhasil):Printt (\n\n\n):return 0:OPPT​</h2><br />
+                        <p>jawab</p><p><strong>tudepoin aj koding yg bner:</strong></p><p>#include &lt;stdio.h&gt;</p><p>int main() { // ganti 'ht' menjadi 'int' dan tambahkan kurung kurawal</p><p>    printf("Program untuk menghitung Volume tabung\n");</p><p>    const float phi = 3.14;</p><p>    float hasil, r, t;</p><p>    printf("Masukkan jari-jari Tabung: ");</p><p>    scanf("%f", &amp;r);</p><p>    printf("Masukkan tinggi Tabung: ");</p><p>    scanf("%f", &amp;t);</p><p>    hasil = phi * r * r * t; //rumus menghitung volume tabung</p><p>    printf("Hasil perhitungan volume Tabung adalah %f\n", hasil);</p><p>    return 0;</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="ini-masih-salah-tolong-perbaiki-include-stdio-hint-main0-int-nilaiprintfinput-nilai-scanfd-nilaiif-nilai-80-nilai-100printfgrade-n">
+                            27. ini masih salah tolong perbaiki??..............#include &lt;stdio.h&gt;int main0 {int nilai;printf("Input Nilai: "):scanf("%d", &amp;nilai);if (nilai &gt;= 80 &amp;&amp; nilai &lt;= 100)printf("Grade nilai: Sangat Baik");else if (nilai &gt;=7O &amp;&amp; nilai &lt;= 79)printf("Grade nilai: Baik");else if (nilai &gt;= 60 &amp;&amp; nilai &lt;= 69)printf("Grade nilai: Cukup");else if (nilai &gt;= 50 &amp;&amp; nilai &lt;= 59)printf("Grade nilai: Kurang");elseprintf("Grade nilai: Gagal");return O;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Terdapat beberapa kesalahan dalam kode tersebut. Berikut adalah kode yang telah diperbaiki:</p><p><strong>Penjelasan:</strong></p><p>#include &lt;stdio.h&gt; // header file yang digunakan untuk fungsi input-output pada C</p><p></p><p>int main() { // fungsi utama</p><p></p><p>    int nilai; // deklarasi variabel nilai sebagai integer</p><p></p><p>    printf("Input Nilai: "); // menampilkan pesan untuk input nilai</p><p>    scanf("%d", &amp;nilai); // membaca inputan dari pengguna dan menyimpannya di variabel nilai</p><p></p><p>    // kondisional untuk menentukan kategori nilai berdasarkan rentang nilai tertentu</p><p>    if (nilai &gt;= 80 &amp;&amp; nilai &lt;= 100)</p><p>        printf("Grade nilai: Sangat Baik");</p><p>    else if (nilai &gt;=70 &amp;&amp; nilai &lt;= 79)</p><p>        printf("Grade nilai: Baik");</p><p>    else if (nilai &gt;= 60 &amp;&amp; nilai &lt;= 69)</p><p>        printf("Grade nilai: Cukup");</p><p>    else if (nilai &gt;= 50 &amp;&amp; nilai &lt;= 59)</p><p>        printf("Grade nilai: Kurang");</p><p>    else</p><p>        printf("Grade nilai: Gagal");</p><p></p><p>    return 0; // mengakhiri program dengan nilai kembali 0</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="5-periksalah-kesalahan-kesalahan-algoritma-logika-dan-sintaks-yang-terdapat-pada-program-berikut-jelaskan-mengapa-dan-benarkan-include-main-int-x-x-data-yang-dibaca-dari-keyboard-int">
+                            28. 5.	Periksalah kesalahan-kesalahan algoritma, logika dan sintaks yang terdapat pada program berikut, jelaskan mengapa, dan benarkan. include main() { 	int x /* x data yang dibaca dari keyboard */ 	int jumlah 	printf("************************************************************\n"); 	printf("** Menghitung Jumlah Bilangan Bulat **\n"); 	printf("************************************************************\n\n"); 	jumlah = 0 ; /* inisialisasi jumlah */ 	do { 		printf("Ketikan sembarang bilangan bulat (-99 mengakhiri) "); 		scanf("%d", &amp;x) 		jumlah = jumlah + x 	} while ( x = -99 ) 	printf("Jumlah seluruh nilai yang dimasukan = %d \n", &amp;jumlah); 	printf("TERIMA KASIH ---- PROGRAM BERAKHIR"); }​</h2><br />
+                        <p>1. inisialisasi variabel int x, int jumlah tidak memiliki simbol terminator atau simbol titik koma, yang menandakan suatu ekspresi telah dideklarasikan</p><p>2. pada ekspresi scanf("%d", &amp;x) juga tidak memiliki titik koma pada akhir ekspresi</p><p>3. pada ekspresi assignment/penugasan variabel jumlah = jumlah + x juga tidak memiliki titik koma pada akhir ekspresi</p><p>4. pada ekspresi while( x = -99) juga tidak terdapat titik koma pada akhir ekspresi</p><p>5. pada ekspresi while(x = -99) tidak menunjukkan adanya komparasi boolean, melainkan hanya ekspresi assignment. Seharusnya ekspresi ini menjadi while(x != -99) untuk mengakhiri program</p><p></p><p>Semoga jawaban ini membantu</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-struktur-dasar-fungsi-printf">
+                            29. Jelaskan struktur dasar fungsi printf():</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>yaitu merupakan fungsi untuk menampilkan output ke layar komputer.</p><p><strong>Penjelasan:</strong></p><p>Fungsi ini terdapat pada library{stdio.h} dan juga {iostream}.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-di-dalam-printf">
+                            30. Fungsi " di dalam printf</h2><br />
+                        Fungsi printf() berfungsi untuk menampilkan keluaran data dan fungsi scanf() berguna untuk membaca masukkan data. Kedua ffungsi ini terdapat pada header <br />
+                                            <h2 class="ez-toc-section" id="include-main-int-harga15000-jumlah-bayar-bayar2-diskon-char-lagi-printf-tt-perpustakaan-sman-1-mertoyudan-kab-magelang-n-printftt-program-pembelian-kripik-kentangn-print">
+                            31. #include  main () int harga=15000, jumlah, bayar, bayar2, diskon; char lagi; printf ("\t\t- PERPUSTAKAAN SMAN 1 MERTOYUDAN KAB MAGELANG --\n"); printf("\t\t Program Pembelian Kripik Kentang\n"); printf ("\t\t printf ("\t\t-- do diskon = 0; printf("\nJumlah Beli? "); scanf("%d", &amp;jumlah); bayar harga jumlah; printf ("Bayar = %d x %d\n\t= %d", harga, jumlah, bayar); if (jumlah &gt;=10) printf ("\n\nSELAMAT!! ANDA MENDAPATKAN DISKON"); printf ("\n\tJUMLAH PEMBELIAN MINIMAL 10"); diskon harga; printf("\n \tsebesar = %d\n", diskon); else printf ("\n\nMAAF!! ANDA TIDAK MENDAPATKAN POTONGAN HARGA\n"); printf ("JUMLAH PEMBELIAN KURANG DARI 10\n"); bayar2 = bayar - diskon; printf ("\nBayar = %d %d\n\t= %d", bayar, diskon, bayar2); printf ("\n\nada pembeli lain? (y/t) "); scanf("%s", &amp;lagi); printf ("\n"); printf ("-- while (lagi=='y' || lagi =='Y'); -\n"); Harga 15.000/bungkus\n"); \n")</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Code syntx yang benar</p><p></p><p>#include &lt;stdio.h&gt;</p><p></p><p>int main() {</p><p>    int harga = 15000, jumlah, bayar, bayar2, diskon;</p><p>    char lagi;</p><p></p><p>    printf("\t\t--PERPUSTAKAAN SMAN 1 MERTOYUDAN KAB MAGELANG --\n");</p><p>    printf("\t\t      Program Pembelian Kripik Kentang\n");</p><p></p><p>    do {</p><p>        printf("\t\t            Harga 15.000/bungkus\n");</p><p>        diskon = 0;</p><p>        printf("\nJumlah Beli? ");</p><p>        scanf("%d", &amp;jumlah);</p><p>        bayar = harga * jumlah;</p><p>        printf("Bayar = %d x %d\n\t= %d\n", harga, jumlah, bayar);</p><p></p><p>        if (jumlah &gt;= 10) {</p><p>            printf("\n\nSELAMAT!! ANDA MENDAPATKAN DISKON\n");</p><p>            printf("\tJUMLAH PEMBELIAN MINIMAL 10\n");</p><p>            diskon = harga;</p><p>            printf("\tsebesar = %d\n", diskon);</p><p>        } else {</p><p>            printf("\n\nMAAF!! ANDA TIDAK MENDAPATKAN POTONGAN HARGA\n");</p><p>            printf("\tJUMLAH PEMBELIAN KURANG DARI 10\n");</p><p>        }</p><p></p><p>        bayar2 = bayar - diskon;</p><p>        printf("\nBayar = %d - %d\n\t= %d\n", bayar, diskon, bayar2);</p><p></p><p>        printf("\nada pembeli lain? (y/t) ");</p><p>        scanf(" %c", &amp;lagi); // Menggunakan %c untuk membaca satu karakter.</p><p>        printf("\n");</p><p></p><p>    } while (lagi == 'y' || lagi == 'Y');</p><p></p><p>    return 0;</p><p></p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-include-void-main-int-a-b-c-printfinputkan-nilai-a-scanf-a-printfinputkan-nilai-b-scanf1-b-cab-printnilai-c-tipe-data-yang-digunakan">
+                            32. Perhatikan ! #include Void main(){ int a, b, c printf("Inputkan nilai a: "); scanf("%", &amp;a): printf("Inputkan nilai b: "); scanf("%1", &amp;b); c=a+b; print("Nilai : ", c); Tipe data yang digunakan untuk program a, b, dan c pada program tersebut adalah a. void b. int c. char d. float e. printifplisss bantuin dong tapi jangan asal asalan ya terimakasih :)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawaban yang tepat adalah b. int.</p><p><strong>Alasan:</strong></p><p>Dalam program tersebut, variabel a, b, dan c digunakan untuk menyimpan nilai bilangan bulat, yaitu hasil input dan hasil penjumlahan. Oleh karena itu, tipe data yang digunakan untuk variabel tersebut adalah tipe data bilangan bulat (integer), yang dalam bahasa pemrograman C dapat didefinisikan dengan tipe data int.</p><br />
+                                            <h2 class="ez-toc-section" id="include-int-mainint-aprintfmasukan-sebuah-bilangan-scanfdaprintfsepertiga-dari-bilangan-yang-kamu-masukan-adalah-f-a3return-0salahnya-dmn">
+                            33. #include 
+int main{
+int a
+printf("masukan sebuah bilangan : ");
+scanf("%d",a);
+printf("sepertiga dari bilangan yang kamu masukan adalah %f", a/3);
+return 0;
+}
+Salahnya dmn?</h2><br />
+                        coba buat seperti ini<br />#include&lt;iostream.h&gt;<br />void int ()<br />{<br />int a;<br />lalu lanjutin yang dibawahnya..<br />semoga membantu :)<br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-tepat-untuk-membaca-inputan-user-adalah-a-printfb-scanfc-scannerd-printer">
+                            34. Fungsi yang tepat untuk membaca inputan user adalah...
+A. Printf
+B. Scanf
+C. Scanner
+D. Printer</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Scanf</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="includemain%e2%80%a6%e2%80%a6buatlah-2-buah-variabel-bertipe-data-float-dengan-nama-%e2%80%98a%e2%80%99-dan-%e2%80%98b%e2%80%99-printfmasukkan-nilai-a-scanffabuatlah">
+                            35. #include
+main()
+{
+……//buatlah 2 buah variabel bertipe data float dengan nama ‘a’ dan ‘b’; 
+ printf("masukkan nilai a : ");
+ scanf("%f",&amp;a);
+/*buatlah perintah printf yang akan mencetak text "masukkan nilai b : "
+dan perintah scanf untuk menginput nilai variabel b*/ 
+……
+……
+/*buatlah kondisi if
+-&gt; Jika b sama dengan 0 maka goto tak_berhingga; */
+……
+ printf("%f dibagi dengan %f adalah %f\n",a,b,a/b);
+ ……//tulislah statement goto selesai
+……//buatlah label untuk statement goto dengan nama tak_berhingga
+ printf("%f dibagi dengan 0 adalah TAK BERHINGGA\n",a);
+ selesai:
+ ;
+}
+Lengkapilah potongan program berikut !</h2><br />
+                        <p><strong>JAWABAN : </strong></p><p><strong>Compiler : Dev C++</strong></p><p><strong>Bahasa : C </strong></p><p>#include&lt;stdio.h&gt;</p><p></p><p></p><p>int main()</p><p>{</p><p>	float a,b;</p><p>	</p><p>	printf("masukkan nilai a :\n");</p><p>	scanf("%f",&amp;a);</p><p>	</p><p>	printf("masukkan nilai b :\n");</p><p>	scanf("%f",&amp;b);</p><p>	</p><p>	if (b==0)</p><p>	{</p><p>  goto tak_terhingga;</p><p>	}</p><p>	else</p><p>	{</p><p>	goto selesai;</p><p>	}</p><p>	</p><p>	selesai:</p><p>	printf("\n %f dibagi dengan %f adalah %f \n",a,b,a/b);	</p><p>	return 0;</p><p>	</p><p>	tak_terhingga: </p><p>	printf("\n %f, dibagi dengan 0 adalah TAK BERHINGGA\n",a);</p><p>	return 0;</p><p>  </p><p>}</p><p>	</p><p>	selesai:</p><p>	printf("\n %f dibagi dengan %f adalah %f \n",a,b,a/b);	</p><p>	return 0;</p><p>	</p><p>	tak_terhingga: </p><p>	printf("\n %f, dibagi dengan 0 adalah TAK BERHINGGA\n",a);</p><p>	return 0;</p><p>  </p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-kode-kode-format-untuk-fungsi-scanf">
+                            36. Sebutkan dan jelaskan kode-kode format untuk fungsi scanf()!?</h2><br />
+                        <p>%d kenali input sebagai angka desimal</p><p>%i kenali input sebagai bilangan bulat (integer)</p><p>%f kenali input sebagai bilangan pecahan (f = float)</p><p>%o kenali input sebagai bilangan basis 8 (o = oktal)</p><p>%s kenali input sebagai teks biasa (s = string)</p><br />
+                                            <h2 class="ez-toc-section" id="hal-%e2%80%93-hal-yang-harus-diperhatikan-dalam-pemakaian-fungsi-scanf">
+                            37. Hal – Hal yang harus diperhatikan dalam pemakaian fungsi scanf()</h2><br />
+                        kertas tak boleh kusut dan terlipat dalam scan kertas,letak kertas baik baik,diatas scanner yang harus kabelnya di colok pada komputer pastinya,lalu tutup dengan hati hati <br />
+                                            <h2 class="ez-toc-section" id="mohon-bantuannya-koreksi-atau-tambahan-untuk-coding-di-bawah-iniinclude-int-main-int-n-10scanfd10switchn-5case-2-printfa-breakcase-5-printfb-breakcase-4-prin">
+                            38. Mohon Bantuannya, Koreksi atau tambahan untuk coding di bawah ini
+#include 
+int main ()
+{
+int n = 10;
+scanf("%d",10);
+switch(n--%5)
+{
+case 2: printf("A"); break;
+case 5: printf("B"); break;
+case 4: printf("C"); break;
+default:printf("D"); break;
+}
+return 0;
+}</h2><br />
+                        <p>                                                    <strong>Penjelasan</strong></p><p><strong></strong></p><p><strong>         Error Log</strong></p><p>/tmp/lGBazezj2w.cpp:1:9: error: #include expects "FILENAME" or &lt;FILENAME&gt;
+</p><p>    1 | #include
+</p><p>      |         ^
+</p><p>/tmp/lGBazezj2w.cpp: In function 'int main()':
+</p><p>/tmp/lGBazezj2w.cpp:5:1: error: 'scanf' was not declared in this scope
+</p><p>    5 | scanf("%d",10);
+</p><p>      | ^~~~~
+</p><p>/tmp/lGBazezj2w.cpp:8:9: error: 'printf' was not declared in this scope
+</p><p>    8 | case 2: printf("A"); break;
+</p><p>      |         ^~~~~~
+</p><p>/tmp/lGBazezj2w.cpp:1:1: note: 'printf' is defined in header '&lt;cstdio&gt;'; did you forget to '#include &lt;cstdio&gt;'?
+</p><p>  +++ |+#include &lt;cstdio&gt;
+</p><p>    1 | #include
+</p><p></p><p></p><p>       <strong>Metode Penyelesaian</strong></p><p>&gt; Menambahkan iostream (#include &lt;iostream&gt;)</p><p>&gt; Menggunakan Standard Libary (using namespace std)</p><p>&gt; Menambahkan kalimat dengan menggunakan printf agar terlihat lebih manusiawi saat dijalankan</p><p>&gt; Menghubungkan n dengan switch, sehingga n tidak terbuang sia sia karena tidak digunakan</p><p>&gt; Memperbaiki kode</p><p></p><p></p><p>      <strong>Hasil Perbaikan</strong></p><p>#include &lt;iostream&gt;
+</p><p>using namespace std;
+</p><p>
+</p><p>int main ()
+</p><p>{
+</p><p>int n; printf("2 || 5 || 4"); cout &lt;&lt; endl;
+</p><p>printf("Angka dipilih: "); scanf("%i", &amp;n);
+</p><p>switch(n)
+</p><p>{
+</p><p>case 2: printf("Hasilnya : A"); break;
+</p><p>case 5: printf("Hasilnya: B"); break;
+</p><p>case 4: printf("Hasilnya : C"); break;
+</p><p>
+</p><p>default:printf("Hasilnya : D"); break;
+</p><p>}
+</p><p>return 0;
+</p><p>}</p><p></p><p></p><p><strong>       Output Akhir</strong></p><p>2 || 5 || 4
+</p><p>Angka dipilih: 5
+</p><p>Hasilnya: B</p><p></p><p></p><p></p><p>Jangan Lupa Jadikan Jawaban Tercerdas Yaa! ^_^</p><p></p><p></p><p></p><p>Salam Hormat,</p><p></p><p>Davis App,</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-kerjaincludeprintfscanfint-main">
+                            39. jelaskan cara kerja
+#includeprintfscanfint main()</h2><br />
+                        #Include digunakan untuk mengimport library, baik internal maupun eksternal.<br />sehingga bisa digunakan method, class, variable dari library tersebut.<br /><br />printf cara kerjanya adalah untuk melakukan output ke layar console.<br /><br />scanf digunakan untuk melakukan input, namun pada scanf sepertinya tidak bisa direct, harus melalui alamat memory, oleh karena itu diperlukan tanda &amp; sebagai referensi.<br /><br />int main() adalah fungsi yang pertama kali dijalankan ketika code dijalankan<br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-paling-umum-digunakan-dalam-menampilkan-d-d-scanf-a-printf-b-puts-e-c-putchar-getche-%e2%80%8b">
+                            40. Fungsi yang paling umum digunakan dalam menampilkan d D. SCANF ( ) A. PRINTF () B. PUTS () E. C. PUTCHAR () GETCHE ()​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi yang paling umum digunakan dalam menampilkan data adalah A. PRINTF(). </p><p></p><p>Fungsi PRINTF() merupakan fungsi standar dalam bahasa pemrograman C yang digunakan untuk mencetak (menampilkan) data ke layar atau output. Fungsi ini memungkinkan kita untuk mencetak teks, angka, atau nilai variabel dengan format yang diinginkan.</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/xOIVXR35aI4?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-hukum-newton-2-katrol.html">Contoh Soal Hukum Newton 2 Katrol</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/materi-matriks-kelas-11-dan-contoh-soal.html">Materi Matriks Kelas 11 Dan Contoh Soal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/kepanjangan-dsn.html">Kepanjangan Dsn</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-tugas-akhir-tentang-design.html">Contoh Tugas Akhir Tentang Design</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-asli-dan-turunan-dari-uang.html">Fungsi Asli Dan Turunan Dari Uang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/persamaan-kontinuitas-contoh-soal.html">Persamaan Kontinuitas Contoh Soal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-daftar-rekening-dalam-laporan-adalah.html">Fungsi Dari Daftar Rekening Dalam Laporan Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-perintah-cls-pada-microsoft-visual-basic.html">Fungsi Dari Perintah Cls Pada Microsoft Visual Basic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-cerita-matematika-dalam-bahasa-inggris.html">Contoh Soal Cerita Matematika Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-ipa-kelas-5-semester-1.html">Contoh Soal Ipa Kelas 5 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/uraikan-kedudukan-pancasila-sebagai-dasar-negara.html">Uraikan Kedudukan Pancasila Sebagai Dasar Negara</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/soal-soal-simulasi-biologi.html">Soal Soal Simulasi Biologi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-com.html">Fungsi Com</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-penyajian-data-dalam-bentuk-diagram-garis.html">Contoh Soal Penyajian Data Dalam Bentuk Diagram Garis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-motto-dan-persembahan-tugas-akhir.html">Contoh Motto Dan Persembahan Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/lps-singkatan-dari.html">Lps Singkatan Dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-ulangan-sd.html">Contoh Soal Ulangan Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-akuntansi-jurnal-umum-sampai-jurnal-penutup.html">Contoh Soal Akuntansi Jurnal Umum Sampai Jurnal Penutup</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-crimping-tools-pada-pemasangan-kabel-utp-kecuali.html">Fungsi Dari Crimping Tools Pada Pemasangan Kabel Utp Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apakah-fungsi-dari-monosit.html">Apakah Fungsi Dari Monosit</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://mengenalfungsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://mengenalfungsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

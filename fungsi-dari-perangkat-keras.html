@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Perangkat Keras - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Perangkat Keras, , , , , , , 0, , , , , , 0, fungsi-dari-perangkat-keras, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Perangkat Keras - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Perangkat Keras, , , , , , , 0, , , , , , 0, fungsi-dari-perangkat-keras, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Perangkat Keras - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Perangkat Keras, , , , , , , 0, , , , , , 0, fungsi-dari-perangkat-keras, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://mengenalfungsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://mengenalfungsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://mengenalfungsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://mengenalfungsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://mengenalfungsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://mengenalfungsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://mengenalfungsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Perangkat Keras</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">nami8384</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Perangkat+Keras" alt="Fungsi Dari Perangkat Keras">
+                    </div>
+                    <p></p>
+                    <p>perangkat lunak yang berfungsi menjembatani antara pengguna dan perangkat keras, serta berfungsi mengelola perangkat lunak dan perangkat keras komputer adalah</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perangkat-lunak-yang-berfungsi-menjembatani-antara-pengguna-dan-perangkat-keras-serta-berfungsi-mengelola-perangkat-lunak-dan-perangkat-keras-komputer-adalah">1.
+                                            perangkat lunak yang berfungsi menjembatani antara pengguna dan perangkat keras, serta berfungsi mengelola perangkat lunak dan perangkat keras komputer adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebut-perangkat-perangkat-keras-yang-termasuk-perangkat-keras-inputperangkat-keras-outputperangkat-keras-penyimpanan-dan-perangkat-keras-kelistrikan-dan-jelaskan-fungsi-masing-masingnya%e2%80%8b">2.
+                                            sebut perangkat-perangkat keras yang termasuk perangkat keras input,perangkat keras output,perangkat keras penyimpanan dan perangkat keras kelistrikan dan jelaskan fungsi masing-masingnya!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#setiap-perangkat-keras-komputer-memiliki-fungsi-berdasarkan-fungsinya-tersebut-maka-perangkat-keras-dikelompokan-menjadi">3.
+                                            setiap perangkat keras komputer memiliki fungsi berdasarkan fungsinya tersebut maka perangkat keras dikelompokan menjadi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-perangkat-keras-keyboard-adalah%e2%80%8b">4.
+                                            Fungsi perangkat keras keyboard adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi-dari-perangkat-keras">5.
+                                            tuliskan fungsi dari perangkat keras </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tanpa-adanya-driver-perangkat-keras-tidak-akan-bisa-digunakan-apakah-fungsi-driber-pada-perangkat-keras-komputer-tersebut%e2%80%8b">6.
+                                            tanpa adanya driver, perangkat keras tidak akan bisa digunakan apakah fungsi driber pada perangkat keras komputer tersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-sebutkan-minimum-5-perangkat-keras-input-dan-jelaskan-fungsinyab-sebuatkan-minimum-5-perangkat-keras-proses-dan-jelaskan-fungsinyac-sebutkan-minimum-5-perangkat-keras-output-dan-jelaskan-fungsinya">7.
+                                            a.sebutkan minimum 5 perangkat keras input dan jelaskan fungsinya
+b.sebuatkan minimum 5 perangkat keras proses dan jelaskan fungsinya
+c.sebutkan minimum 5 perangkat keras output dan jelaskan fungsinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#supaya-perangkat-keras-dapat-berfungsi-maka-diperlukan-perangkat">8.
+                                            Supaya perangkat keras dapat berfungsi maka diperlukan perangkat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-perangkat-keras-dalam-internet%e2%80%8b">9.
+                                            Apa fungsi perangkat keras dalam internet​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-perangkat-keras%e2%80%8b">10.
+                                            Jelaskan fungsi perangkat keras​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-perangkat-keras-dan-fungsinya">11.
+                                            Macam-macam perangkat keras, dan fungsinya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sebuah-perangkat-keras-komputer">12.
+                                            Fungsi sebuah perangkat keras komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selain-perangkat-keras-yang-telah-kamu-pelajariperangkat-keras-apalagi-yang-kamu-ketahuibagaimana-cara-kerja-dan-fungsi-dari-perangkat-tersebut%e2%80%8b">13.
+                                            selain perangkat keras yang telah kamu pelajari,perangkat keras apalagi yang kamu ketahui,bagaimana cara kerja dan fungsi dari perangkat tersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-perangkat-keras%e2%80%8b">14.
+                                            fungsi perangkat keras?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-perangkat-keras%e2%80%8b">15.
+                                            Jelaskan fungsi perangkat keras​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-fungsi-dari-perangkat-lunak-dan-perangkat-keras%e2%80%8b">16.
+                                            perbedaan fungsi dari perangkat lunak dan perangkat keras​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-perangkat-keras-dapat-berfungsi-maka-di-perlukan">17.
+                                            agar perangkat keras dapat berfungsi maka di perlukan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-kegunaan-perangkat-keras-dan-perangkat-lunak-di-handphone2-contoh-dan-fungsi-perangkat-keras-dan-perangkat-yang-di-handphone%e2%80%8b">18.
+                                            1. apa kegunaan perangkat keras dan perangkat lunak di handphone?2. contoh dan fungsi perangkat keras dan perangkat yang di handphone?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perangkat-keras-yg-berfungsi-untuk-mengolah-data-yg-dimasukkan-adalah-a-perangkat-keras-masukanb-perangkat-keras-keluaranc-perangkat-keras-pemrosesd-perangkat-keras-penyimpanan">19.
+                                            Perangkat keras yg berfungsi untuk mengolah data yg dimasukkan adalah...
+A. Perangkat keras masukan
+B. Perangkat keras keluaran
+C. Perangkat keras pemroses
+D. Perangkat keras penyimpanan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-dapat-menjalankan-fungsinyakomputer-dilengkapi-denganperangkat-keras-dan-perangkat-lunak-contoh-perangkat-keras-komputeradalah-%e2%80%8b">20.
+                                            Agar dapat menjalankan fungsinyakomputer dilengkapi denganperangkat keras dan perangkat lunak.Contoh perangkat keras komputeradalah ...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan3-perangkat-keras-serta-fungsinya%e2%80%8b">21.
+                                            sebutkan3 perangkat keras serta fungsinya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-perangkat-keras-dapat-berfungsi-maka-dierlukan%e2%80%8b">22.
+                                            agar perangkat keras dapat berfungsi maka dierlukan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-perangkat-keras-dan-fungsinya">23.
+                                            macam-macam perangkat keras, dan fungsinya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perangkat-keras-yang-berfungsi-sebagai-pointer-adalah-%e2%80%a6-%c2%a0%e2%80%8b">24.
+                                            Perangkat keras yang berfungsi sebagai pointer adalah …. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-perangkat-keras-dan-perangkat-lunak-dan-macam-macam-fungsinya-di-handphone%e2%80%8b">25.
+                                            macam-macam perangkat keras dan perangkat lunak dan macam-macam fungsinya di handphone​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perangkat-keras-yang-berfungsi-untuk-menyimpan-data-pengguna-disebut-a-perangkat-keras-inputb-perangkat-keras-prosesc-perangkat-keras-outputd-perangkat-keras-penyimpanan%e2%80%8b">26.
+                                            Perangkat keras yang berfungsi untuk menyimpan data pengguna disebut...A. Perangkat keras inputB. Perangkat keras prosesC. Perangkat keras outputD. Perangkat keras penyimpanan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-perangkat-keras-dan-fungsinya%e2%80%8b">27.
+                                            contoh perangkat keras dan fungsinya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-perangkat-keras-dari-mohter">28.
+                                            apa fungsi.......perangkat keras dari mohter </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-perangkat-keras-dapat-berfungsi-maka-di-perlukan%c2%a0%e2%80%8b">29.
+                                            Agar perangkat keras dapat berfungsi maka di perlukan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-perangkat-lunak-dan-perangkat-keras%e2%80%8b">30.
+                                            Jelaskan fungsi perangkat lunak dan perangkat keras​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-perangkat-keras-dapat-berfungsi-maka-diperlukan">31.
+                                            Agar perangkat keras dapat berfungsi maka diperlukan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-dari-perangkat-keras">32.
+                                            apakah fungsi dari perangkat keras</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menyebutkan-fungsi-perangkat-keras">33.
+                                            menyebutkan fungsi perangkat keras</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selain-perangkat-keras-yang-telah-kamu-pelajari-perangkat-keras-apa-lagi-yang-kamu-ketahui-bagaimana-cara-kerja-dan-fungsi-dari-perangkat-tersebut">34.
+                                            Selain perangkat keras yang telah kamu pelajari, perangkat keras apa lagi yang kamu ketahui? Bagaimana cara kerja dan fungsi dari perangkat tersebut?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#modem-merupakan-perangkat-keras-yang-berfungsi-sebagai">35.
+                                            modem merupakan perangkat keras yang berfungsi sebagai?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-perangkat-keras">36.
+                                            sebutkan fungsi perangkat keras</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jika-berdasarkan-fungsinya-perangkat-keras-ini-tersebut%e2%80%8b">37.
+                                            jika berdasarkan fungsinya perangkat keras ini tersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-fungsi-perangkat-keras-komputer%e2%80%8b">38.
+                                            fungsi fungsi perangkat keras komputer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-perangkat-keras-dalam-komputer%e2%80%8b">39.
+                                            fungsi perangkat keras dalam komputer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-perangkat-keras-pada-komputer-beserta-fungsi-masing-masing-perangkat-tersebut%e2%80%8b">40.
+                                            macam macam perangkat keras pada komputer beserta fungsi masing masing perangkat tersebut​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="perangkat-lunak-yang-berfungsi-menjembatani-antara-pengguna-dan-perangkat-keras-serta-berfungsi-mengelola-perangkat-lunak-dan-perangkat-keras-komputer-adalah">
+                            1. perangkat lunak yang berfungsi menjembatani antara pengguna dan perangkat keras, serta berfungsi mengelola perangkat lunak dan perangkat keras komputer adalah</h2><br />
+                        <p>Sofware dan handpone android</p><br />
+                                            <h2 class="ez-toc-section" id="sebut-perangkat-perangkat-keras-yang-termasuk-perangkat-keras-inputperangkat-keras-outputperangkat-keras-penyimpanan-dan-perangkat-keras-kelistrikan-dan-jelaskan-fungsi-masing-masingnya%e2%80%8b">
+                            2. sebut perangkat-perangkat keras yang termasuk perangkat keras input,perangkat keras output,perangkat keras penyimpanan dan perangkat keras kelistrikan dan jelaskan fungsi masing-masingnya!​</h2><br />
+                        <p>Jawaban:Perangkat keras Input adalah perangkat yang digunakan untuk memasukkan data melalui alat input ke komputer. Contoh alat input : keyboard, microphine, mouse, kamera, scanner, joystik. Perangkat keras output adalah perangkat keras yang digunakan untuk menampilkan  data yang sudah dikerjakan dikomputer.Contoh alat output monitor, proyektor, speaker dan printer. perangkat keras penyimpanan adalah perangkat yang digunakan untuk menyimpan data atau file. Contoh alat penyimpanan data seperti CPU komputer. Di CPU bisa kita sambungkan harddisk eksternal, USB eksternal dan CD.</p><p>Penjelasan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="setiap-perangkat-keras-komputer-memiliki-fungsi-berdasarkan-fungsinya-tersebut-maka-perangkat-keras-dikelompokan-menjadi">
+                            3. setiap perangkat keras komputer memiliki fungsi berdasarkan fungsinya tersebut maka perangkat keras dikelompokan menjadi</h2><br />
+                        Dikelompokkan menjadi 5, yaitu:<br />1. CPU (Central Processing Unit)<br />2. Casing Unit<br />3. Storage Device<br />4. I/O Device (Input Output Device)<br />5. Visual display Unit <br /><br />Semoga Membantu!<br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-perangkat-keras-keyboard-adalah%e2%80%8b">
+                            4. Fungsi perangkat keras keyboard adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sebagai alat untuk input data berupa huruf, angka, dan simbol.</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi-dari-perangkat-keras">
+                            5. tuliskan fungsi dari perangkat keras </h2><br />
+                        HomeComputer<br /><br />￼<br /><br />BLOG<br /><br />Fungsi Dan Pengertian Perangkat Keras (Hardware)<br /><br />￼By U.K Last updated Oct 19, 2017<br /><br /> 8,310<br /><br /> Share<br /><br />You're subscribed to notifications<br /><br />Unsubscribe<br /><br />Perangkat pada komputer sendiri juga dibedakan menjadi 2 bagian, yaitu perangkat keras(Hardware) dan perangkat Lunak(Software). Disini kita akan mengupas secara detail sampai ke akar-akarnya tentang perangkat keras (Hardware). Hardware sendiri akan berfungsi dengan baik dikarenakan adanya software yang menjadi sistem penggeraknya.<br /><br />Pengertian dari hardware atau dalam bahasa indonesia-nya disebut juga dengan “perangkat keras” adalah salah satu atau bagian komponen dari sebuah komputer yang sifat alat nya bisa dilihat dan diraba secara langsung atau yang berbentuk nyata, yang berfungsi untuk mendukung proses kerja komputer atau komputerisasi.<br /><br />Disisini kami akan berbagi informasi tentang pengelompokan Hardware agar kalian dapat dengan lebih mudah untuk menggunakan sesuai fungsinya pada komputer. Berikut ini adalaha pengelompokan perangkat keras (Hardware) pada komputer:<br /><br />1.Input Device : Perangkat input atau masukan.<br /><br />2.Process Device: perangkat yang menjalankan proses sistem pada komputer.<br /><br />3.Output Device: perangkat output atau keluaran yang menghubungkan sistem pada komputer.<br /><br />4.Storage Device: Perangkat untuk menyimpan.<br /><br />￼<br /><br />1.Input Device<br /><br />Input device merupakan perangkat komputer yang memiliki fungsi sebagai input atau masukan, baik itu perintah dalam menjalankan sistem pada komputer. Ada beberapa perangkat yang masuk kedalam kategori input device, diantaranya adalah sebagai berikut:<br /><br />Keyboard : berfungsi untuk mengetik huruf an angka serta perintah pada komputerMouse : berfungsi untuk menjalankan perintah klik kiri dan klik kanan, menggerakkan pointer, serta menjalankan perintah dengan klikTouchpad : berfungsi layaknya mouse, touchpad ini biasanya sebagai pengganti mouse dan biasa di jumpai pada laptop.<br /><br />Tidak hanya itu, masih banyak lagi perangkat input seperti scanner, joystik, voice record, dan lainnya.<br /><br />BACA JUGA:<br /><br />Ransomware Wanna Cry, Virus Apa Itu ?<br /><br />Review IDWebhost : Hosting Murah<br /><br />2.Process Device<br /><br />Unit ini fungsinya untuk mengolah data yang sudah di masukkan melalui perangkat keras masukan. Berikut akan dijelaskan satu persatu yang termasuk dalam perangkat-perangkat pemrosesan.<br /><br />Motherboard : fungsinya adalah menghubungkan seluruh komponen penyusun sebuah computer , artinya mobo di sini mengemban tugas untk menghubungkan bahasa kode antar perangkat keras agar dapat disinergikan menjadi sebuah aktivitas kerja perangkat komputer.Processor : fungsinya adalah mengeksekusi perhitungan kompleks yang memungkinkan computer untk bisa digunakan menjalankan program-program komputer, menjelajah internet, memutar lagu, dan menjalankan sistem operasi.RAM (Random Access Memory) : fungsinya adalah sebagai tempat penyimpanan data sementara. Memory bekerja dengan menyimpan dan menyuplai data-data penting yg dibutuhkan Processor dengan cepat untuk diolah menjadi informasi.VGA Card (kartu grafis) : fungsinya adalah untuk mengubah atau menerjemahkan sinyal digital dari komputer ke monitor untk menampilkan grafis atau menciptakan tampilan-tampilan pada layar monitor.Power Supply (PSU) : berfungsi untuk menyalurkan arus listrik ke seluruh perangkat keras komputer.<br /><br />3.Output Device<br /><br />Output device adalah perangkat-perangkat komputer untuk menampilkan hasil akhir dari pengolahan yang dilakukan oleh CPU. Perangkat ini merupakan alat yg sangat penting peranannya bagi pengguna komputer karena akan memberikan hasil yg di inginkan dan dapat berbentuk pada sebuah media contohnya kertas. Berikut ini beberapa perangkat yg termasuk dalam output device.<br /><br />Monitor : fungsinya adalah menampilkan dua data atau informasi dalam bentuk teks atau grafik.Printer : fungsinya adalah untuk mencetak informasi yg dihasilkan oleh komputer pada media kertas.Speaker : fungsinya adalah unit keluaran yg menghasilkan suara.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="tanpa-adanya-driver-perangkat-keras-tidak-akan-bisa-digunakan-apakah-fungsi-driber-pada-perangkat-keras-komputer-tersebut%e2%80%8b">
+                            6. tanpa adanya driver, perangkat keras tidak akan bisa digunakan apakah fungsi driber pada perangkat keras komputer tersebut​</h2><br />
+                        <p>driver adalah penghubung antara software dan hardware</p><br />
+                                            <h2 class="ez-toc-section" id="a-sebutkan-minimum-5-perangkat-keras-input-dan-jelaskan-fungsinyab-sebuatkan-minimum-5-perangkat-keras-proses-dan-jelaskan-fungsinyac-sebutkan-minimum-5-perangkat-keras-output-dan-jelaskan-fungsinya">
+                            7. a.sebutkan minimum 5 perangkat keras input dan jelaskan fungsinya
+b.sebuatkan minimum 5 perangkat keras proses dan jelaskan fungsinya
+c.sebutkan minimum 5 perangkat keras output dan jelaskan fungsinya</h2><br />
+                        A. keyboard , mouse , Scanner , optical Driver , Joystick.<br />B. Processor , Motherboard , RAM , VGA , Power Supply<br />C. Monitor , Printer , Proyektor , Audio Output , Plotter<br />fungsinya buanyak e... maaf yaa. mouse= menggerakkan kursor<br />      keyboard= memasukkan data berupa    huruf, angka, simbol<br />      mikrofon= memasukkan data berupa suara<br />      kamera= memasukkan data berupa video/foto<br />b.motherboard= meletakkan beberapa perangkat keras<br />   vga= memproses video<br />    cd room= memproses data yg ada di cd<br />    souncard=mengolah data berupa suara<br />   prosesor=sebagai otak komputer/ pusat pengendali<br />c. monitor= menampilkan data berupa gambar/tulisan<br />   speaker= menampilkan data berupa suara<br />    printer=mencetak data<br />  proyektor= menampilkan data dr komputer ke layar yg besar<br />ploter=mencetak data/desain yg ukuran nya besar<br /><br />
+                                            <h2 class="ez-toc-section" id="supaya-perangkat-keras-dapat-berfungsi-maka-diperlukan-perangkat">
+                            8. Supaya perangkat keras dapat berfungsi maka diperlukan perangkat</h2><br />
+                        diperlukan perangkat lunak atau softwareDiperlukan Software or Perangkat Halus, agar dapat Memproses Data dengan Mudah. <br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-perangkat-keras-dalam-internet%e2%80%8b">
+                            9. Apa fungsi perangkat keras dalam internet​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sebagai hal pendukung agar dapat mengakses internet</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-perangkat-keras%e2%80%8b">
+                            10. Jelaskan fungsi perangkat keras​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Setidaknya terdapat lima macam perangkat keras pada sebuah perangkat komputer. Jenis hardware tersebut berfungsi sebagai pendukung kelistrikan, penyimpanan, output, proses dan input.</p><p></p><p>Seluruh jenis perangkat keras itu nantinya terhubung dalam sistem yang terintegrasi. Sehingga bisa difungsikan untuk input, pemrosesan dan output data.</p><p></p><p>Performa perangkat keras sangat ditentukan oleh spesifikasinya. Semakin tinggi maka kinerjanya akan semakin bagus. Untuk itu, anda bisa menyesuaikan spek komputernya sesuai dengan kebutuhan dalam penggunaannya.</p><p>Kalau komputer hanya difungsikan untuk mengetik, menyimpan foto dan menonton video tidak harus menggunakan spek tinggi. Namun, kalau komputer digunakan untuk kebutuhan desain grafis, bermain video berat, maka harus menggunakan komputer dengan spek tinggi.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="macam-macam-perangkat-keras-dan-fungsinya">
+                            11. Macam-macam perangkat keras, dan fungsinya!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Beberapa Contoh Hardware dan Fungsinya</p><p>Casing, untuk melindungi bagian dalam komputer (motherboard).</p><p>Motherboard :Sebagai papan sirkuit utama yang sebagai penghubung komponen harware lainnya.</p><p>Power Supply, sebagai penyedia daya untuk digunakan motherboard.</p><p>Processor sebagai pemroses data/otak dari komputer.</p><p></p><p><strong>Penjelasan:</strong></p><p>Jadikan jwbn tercerdas yhಠ︵ಠ</p><p></p><p><strong>Jawaban:</strong></p><p>Jawaban:Perangkat keras Input adalah perangkat yang digunakan untuk memasukkan data melalui alat input ke komputer. Contoh alat input : keyboard, microphine, mouse, kamera, scanner, joystik. Perangkat keras output adalah perangkat keras yang digunakan untuk menampilkan  data yang sudah dikerjakan dikomputer.Contoh alat output monitor, proyektor, speaker dan printer. perangkat keras penyimpanan adalah perangkat yang digunakan untuk menyimpan data atau file. Contoh alat penyimpanan data seperti CPU komputer. Di CPU bisa kita sambungkan harddisk eksternal, USB eksternal dan CD.</p><p>Penjelasan.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-sebuah-perangkat-keras-komputer">
+                            12. Fungsi sebuah perangkat keras komputer</h2><br />
+                        Precessor merupakan perangkat keras komputer dan fungsinya untuk mengontrol seluruh proses dari sebuah sistem komputer. Perangkat ini merupakan otaknya dari sebuah komputer sehingga disebut sebagai CPU (Central Processing Unit).<br /><br />Maaf kalau salah<br />Semoga membantu^^<br />
+                                            <h2 class="ez-toc-section" id="selain-perangkat-keras-yang-telah-kamu-pelajariperangkat-keras-apalagi-yang-kamu-ketahuibagaimana-cara-kerja-dan-fungsi-dari-perangkat-tersebut%e2%80%8b">
+                            13. selain perangkat keras yang telah kamu pelajari,perangkat keras apalagi yang kamu ketahui,bagaimana cara kerja dan fungsi dari perangkat tersebut​</h2><br />
+                        <p>Mouse, cara kerjanya dengan digerakan menggunakan tangan, fungsinya untuk menggerakan tanda panah pada monitor/kursor maaf kalau salah</p><p>ngkat keras komputer yang satu ini :</p><p></p><p>1. Processor</p><p></p><p>Processor merupakan sebuah chip yang berfungsi untuk memproses data yang di inputkan pada komputer, komponen CPU ini sangat penting dan utama, jadi apabila processor mengalami masalah maka CPU tidak akan bisa digunakan. Untuk mengetahui lebih lengkapnya sobat dapat membaca ulasan pengertian processor, fungsi dan jenis – jenisnya.</p><p></p><p>2. Memori RAM</p><p></p><p>Memori merupakan komponen CPU yang berfungsi untuk penyimpanan sementara data - data yang akan diproses. Apabila komputer dimatikan data - data yang disimpan dalam memori RAM akan hilang. Apabila sobat ingin mengetahui lebih lengkapnya mengenai fungsi RAM lebih lengkapnya dapat membaca pengertian fungsi dan macam – macam jenis memori RAM komputer.</p><p></p><p>3. Motherboard</p><p></p><p>Komponen CPU yang satu ini berfungsi sebagai papan sirkuit untuk menghubungkan komponen - komponen yang lainnya. Motherboard sendiri memiliki memori ROM yang berfungsi untuk menyimpan program - program utamanya. Apabila sobat komputer ingin mengetahui lebih lengkap fungsi komponen CPU yang satu ini sobat dapat membaca ulasan pengertian dan bagian motherboard serta produsen merek mainboard terbaik</p><p></p><p>4. Power Supply</p><p></p><p>Komponen CPU ini berfungsi mendistribusikan arus listrik ke beberapa komponent yang ada dalam CPU, jadi Power Supply sangat penting keberadaannya. Ada beberapa jenis Power Supply yang beredar di pasaran yaitu AT, ATX dan BTX.</p><p></p><p>5. Heatsink / Kipas Pendingin</p><p></p><p>Komponen CPU yang satu ini berfungsi untuk mendinginkan suhu processor dan juga komponen CPU yang lainnya, Biasanya Heatsink pada processor dipasang melakat pada processor itu sendiri, sementara untuk mendinginkan komponen CPU yang lain menggunakan Heatsink yang terpasang pada Casing CPU.</p><p></p><p>6. Video Graphic Adapter</p><p></p><p>Video Graphic Adapter atau disebut juga dengan VGA Card berfungsi untuk mengelola data grafis komputer yang nantinya ditampilkan pada perangkat komputer Monitor. Komponen yang satu ini memiliki sebuah chip processor tersendiri yang disebut dengan Graphic Processing Unit. Apabila sobat ingin mengetahui lebih lengkap mengenai VGA Card sobat dapat membaca ulasan pengertian dan macam – macam tipe atau jenis VGA Komputer.</p><p></p><p>7. Sound Card</p><p></p><p>Sound Card berfungsi untuk mengelola data audio yang nantinya akan di keluarkan lewat perangkat keras komputer speaker. Sama seperti VGA Card, Sound Card juga memiliki Chip khusus di dalamnya. Komponen ini sebenarnya adalah pelengkap dari komponen - komponen yang ada pada CPU.</p><p></p><p>8. LAN Card</p><p></p><p>LAN Card merupakan perangkat yang berfungsi untuk menghubungkan sebuah komputer ke dalam sebuah jaringan, komponen ini memiliki jenis yang beragam, hal ini tergantung dari media transmisi yang digunakan. Ada yang menggunakan kabel atau media gelombang.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-perangkat-keras%e2%80%8b">
+                            14. fungsi perangkat keras?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Fungsi Perangkat Keras (Hardware) Komputer. Monitor ini mmpunyai fungsi sbagai alat output yaitu tempat untuk mengeluarkan hasil proses yang dilakukan oleh komputer berupa informasi yang dibutuhkan oleh pemakai komputer. ... Mouse berfungsi untuk menunjuk posisi kursor / pointer pada layar komputer secara cepat.</p><p>sebagai alat output yaitu tempat meneluarkan hasil proses yang dilakukan oleh komputer berupa informasi yang dibutuhkan oleh pemakai komputer</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-perangkat-keras%e2%80%8b">
+                            15. Jelaskan fungsi perangkat keras​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>berfungsi sebagai pendukung kelistrikan, penyimpanan, output, proses dan input. seluruh jenis perangkat keras itu nantinya terhubung dalam sistem yang terintegrasi. sehingga bisa untuk input dan output data.</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-fungsi-dari-perangkat-lunak-dan-perangkat-keras%e2%80%8b">
+                            16. perbedaan fungsi dari perangkat lunak dan perangkat keras​</h2><br />
+                        <p>Hardware adalah Perangkat fisik atau perangkat keras yang digunakan dalam  komputer, sedangkan software adalah kumpulan kode yang diinstal ke hard drive komputer</p><br />
+                                            <h2 class="ez-toc-section" id="agar-perangkat-keras-dapat-berfungsi-maka-di-perlukan">
+                            17. agar perangkat keras dapat berfungsi maka di perlukan?</h2><br />
+                        penghubung untuk menghubungkan perangkat keras dengan perangkat komputer lainnya<br /><br />semoga membantu<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="1-apa-kegunaan-perangkat-keras-dan-perangkat-lunak-di-handphone2-contoh-dan-fungsi-perangkat-keras-dan-perangkat-yang-di-handphone%e2%80%8b">
+                            18. 1. apa kegunaan perangkat keras dan perangkat lunak di handphone?2. contoh dan fungsi perangkat keras dan perangkat yang di handphone?​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>1. Perangkat keras dan perangkat lunak adalah dua komponen yang sangat penting dalam handphone, dan keduanya bekerja secara harmonis untuk menyediakan berbagai fungsi dan fitur yang ada di dalamnya.</p><p></p><p>- Perangkat Keras: Merupakan komponen fisik yang terpasang di dalam handphone. Beberapa contoh perangkat keras di handphone antara lain adalah:</p><p>  - Prosesor: Komponen utama yang bertanggung jawab untuk menjalankan instruksi dan mengendalikan operasi handphone.</p><p>  - Layar: Meiliki peran penting dalam menyediakan tampilan visual untuk pengguna. Biasanya menggunakan panel LCD atau OLED.</p><p>  - Baterai: Digunakan untuk menyuplai daya ke handphone agar dapat beroperasi.</p><p>  - Kamera: Menyediakan fungsionalitas fotografi dan merekam video.</p><p>  - Sensor sidik jari dan pemindai wajah: Digunakan untuk mengamankan dan mengunci handphone.</p><p>  - Memori: Digunakan untuk menyimpan data, aplikasi, dan sistem operasi.</p><p>  </p><p>- Perangkat Lunak: Merupakan program atau sistem operasi yang dijalankan di handphone. Beberapa contoh perangkat lunak di handphone antara lain adalah:</p><p>  - Sistem Operasi: Seperti Android atau iOS, yang mengatur operasi dasar handphone dan menyediakan antarmuka pengguna.</p><p>  - Aplikasi: Seperti browser web, pesan teks, game, atau aplikasi khusus lainnya yang dapat diunduh dan diinstal.</p><p>  - Driver Perangkat Keras: Menghubungkan perangkat keras dengan sistem operasi dan memungkinkan mereka bekerja bersama-sama.</p><p>  - Firmware: Perangkat lunak yang tertanam pada perangkat keras dan mengendalikan operasi mereka.</p><p></p><p>2. Contoh dan fungsi perangkat keras dan perangkat lunak yang ada di handphone adalah:</p><p></p><p>- Contoh Perangkat Keras:</p><p>  - Prosesor Qualcomm Snapdragon: Bertanggung jawab untuk memproses tugas dan menjalankan aplikasi dengan cepat.</p><p>  - Layar AMOLED: Memberikan tampilan yang tajam, kontras tinggi, dan warna yang kaya.</p><p>  - Baterai Li-ion: Menyediakan daya listrik untuk handphone.</p><p>  - Kamera 12 MP: Digunakan untuk mengambil foto dan merekam video berkualitas tinggi.</p><p>  - Sensor Sidik Jari: Digunakan untuk mengamankan handphone dengan sidik jari.</p><p></p><p>- Contoh Perangkat Lunak:</p><p>  - Android: Sistem operasi yang digunakan oleh banyak handphone, memberikan antarmuka pengguna yang intuitif dan akses ke berbagai aplikasi.</p><p>  - Aplikasi Pesan Teks: Digunakan untuk mengirim dan menerima pesan teks kepada orang lain.</p><p>  - Aplikasi Navigasi: Menggunakan GPS untuk memberikan petunjuk arah saat bepergian.</p><p>  - Aplikasi Kamera: Memiliki berbagai fitur dan pengaturan untuk memotret dan merekam video dengan efek yang berbeda.</p><p>  - Firmware Kamera: Memastikan kamera berfungsi dengan baik dan mengoptimalkan hasil jepretan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perangkat-keras-yg-berfungsi-untuk-mengolah-data-yg-dimasukkan-adalah-a-perangkat-keras-masukanb-perangkat-keras-keluaranc-perangkat-keras-pemrosesd-perangkat-keras-penyimpanan">
+                            19. Perangkat keras yg berfungsi untuk mengolah data yg dimasukkan adalah...
+A. Perangkat keras masukan
+B. Perangkat keras keluaran
+C. Perangkat keras pemroses
+D. Perangkat keras penyimpanan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perangkat keras yang berfungsi untuk mengolah data yang dimasukkan adalah <strong>p</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>k</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>k</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>s</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>m</strong><strong>r</strong><strong>o</strong><strong>s</strong><strong>e</strong><strong>s</strong><strong> </strong><strong>(</strong><strong>C</strong><strong>)</strong><strong>.</strong></p><p></p>Pembahasan<p>Perangkat keras atau biasa disebut dengan hardware adalah bagian dari komponen-komponen komputer yang dapat dilihat dan dapat disentuh secara fisik. Contoh perangkat keras adalah Harddisk (penyimpanan data dan sistem operasi), Keyboard (input data), Monitor (melihat layar), RAM (Penyimpanan sementara aplikasi), dan lain sebagainya.</p><p></p><p><strong>Fungsi perangkat keras :</strong></p>Sebagai alat input.Sebagai alat output.Sebagai perangkat pemroses data.Sebagai alat tambahan/asesoris dengan beragam fungsi tambahan.Dll.<p></p>Pelajari lebih lanjutPengertian perangkat keras : brainly.co.id/tugas/2505816Fungsi perangkat keras : brainly.co.id/tugas/17553752Macam-macam perangkat keras : brainly.co.id/tugas/11031812<p></p>Detail jawaban<p>Mapel : TI</p><p>Kelas : VII SMP</p><p>Materi : Perangkat Keras Komputer</p><p>Kode : 7.11.7</p><br />
+                                            <h2 class="ez-toc-section" id="agar-dapat-menjalankan-fungsinyakomputer-dilengkapi-denganperangkat-keras-dan-perangkat-lunak-contoh-perangkat-keras-komputeradalah-%e2%80%8b">
+                            20. Agar dapat menjalankan fungsinyakomputer dilengkapi denganperangkat keras dan perangkat lunak.Contoh perangkat keras komputeradalah ...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>cpu</p><p><strong>Penjelasan:</strong></p><p>karena tanpa cpu komputer tidak bisa hidup/nyala</p><p><strong>Jawaban:</strong></p><p>cpu, keyboard, mouse, speaker, monitor, dan lain-lain</p><p><strong>Penjelasan:</strong></p><p>semua perangkat keras maupun lunak ada kegunaannya masing-masing contoh keyboard untuk mengetik, mouse untuk menggerakan kursor dan masih banyak lagi kegunaan perangkat keras maupun lunak</p><p></p><p><strong>semoga</strong><strong> </strong><strong>membantu</strong><strong> </strong><strong>maaf</strong><strong> </strong><strong>kalo</strong><strong> </strong><strong>salah</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan3-perangkat-keras-serta-fungsinya%e2%80%8b">
+                            21. sebutkan3 perangkat keras serta fungsinya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>palu =untuk mengetik palu</p><p>pisau=untuk memotong sesuatu</p><p></p><p><strong>Jawaban:</strong></p><p>1. Monitor = Sebagai layar dari sebuah komputer.</p><p>2. speaker = Sebagai tempat keluar suara.</p><p>3. Keyboard = Sebagai alat pengetik.</p><p><strong>Penjelasan: maaf jika salah:)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="agar-perangkat-keras-dapat-berfungsi-maka-dierlukan%e2%80%8b">
+                            22. agar perangkat keras dapat berfungsi maka dierlukan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>cpu pada kompute</p><p></p><p>MAAF KALO SALAH!!!!!</p><br />
+                                            <h2 class="ez-toc-section" id="macam-macam-perangkat-keras-dan-fungsinya">
+                            23. macam-macam perangkat keras, dan fungsinya!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawaban:Perangkat keras Input adalah perangkat yang digunakan untuk memasukkan data melalui alat input ke komputer. Contoh alat input : keyboard, microphine, mouse, kamera, scanner, joystik. Perangkat keras output adalah perangkat keras yang digunakan untuk menampilkan  data yang sudah dikerjakan dikomputer.Contoh alat output monitor, proyektor, speaker dan printer. perangkat keras penyimpanan adalah perangkat yang digunakan untuk menyimpan data atau file. Contoh alat penyimpanan data seperti CPU komputer. Di CPU bisa kita sambungkan harddisk eksternal, USB eksternal dan CD.</p><p></p><p>#NO COPAS</p><p></p><p><strong>Penjelasan:</strong></p><p>dijawab oleh</p><p></p>♪M K Z T E R♪<p><strong>Penjelasan:</strong></p><p>1. mobo (motherboard) tempat untuk merakit komponen</p><p>2. cpu (central processing unit) memproses perintah yg          dibuat</p><p>3. ram (read access memory) menyimpan data sementara</p><p>4 cpu fan mendinginkan cpu</p><p>5. vga (videocard) mengeluarkan output ke layar monitor</p><p>6. hardisk/ssd tempat untuk menyimpan data atau melakukan transfer data besar</p><p>7 psu (power supply) memasok daya listrik ke komponen komputer</p><p>8 monitor memunculkan layar yg dikeluarkan output dari vga (videocard</p><p></p><p></p><p>#semogamembantu</p><p></p><p>   :)</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perangkat-keras-yang-berfungsi-sebagai-pointer-adalah-%e2%80%a6-%c2%a0%e2%80%8b">
+                            24. Perangkat keras yang berfungsi sebagai pointer adalah …. ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Mouse And Touchpad</p><p><strong>Penjelasan:</strong></p><p>Gunanya untuk menggerakkan pointer di dekstop</p><p></p><p>Mohon. maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="macam-macam-perangkat-keras-dan-perangkat-lunak-dan-macam-macam-fungsinya-di-handphone%e2%80%8b">
+                            25. macam-macam perangkat keras dan perangkat lunak dan macam-macam fungsinya di handphone​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perangkat keras (hardware) dan perangkat lunak (software) dalam handphone memiliki beragam fungsi. Berikut beberapa contoh dan fungsinya:</p><p></p><p>**Perangkat Keras (Hardware):**</p><p>1. **Prosesor (CPU)**: Berfungsi untuk menjalankan berbagai perintah dan mengendalikan kinerja handphone.</p><p>2. **RAM (Random Access Memory)**: Digunakan untuk menyimpan data sementara yang diperlukan oleh aplikasi yang sedang berjalan.</p><p>3. **ROM (Read-Only Memory)**: Menyimpan sistem operasi dan aplikasi yang telah diinstal secara permanen.</p><p>4. **Layar**: Menampilkan tampilan grafis dan antarmuka pengguna.</p><p>5. **Baterai**: Menyediakan daya untuk mengoperasikan handphone.</p><p>6. **Kamera**: Digunakan untuk mengambil foto dan merekam video.</p><p>7. **Speaker dan Mikrofon**: Untuk pemutaran suara dan pengambilan suara.</p><p>8. **Sistem GPS**: Digunakan untuk navigasi dan pemetaan lokasi.</p><p>9. **Sensor**: Seperti sensor cahaya, sensor proximity, akselerometer, dan lainnya yang mendukung berbagai fungsi dan aplikasi.</p><p></p><p>**Perangkat Lunak (Software):**</p><p>1. **Sistem Operasi**: Mengelola perangkat keras dan menyediakan antarmuka pengguna.</p><p>2. **Aplikasi**: Program yang menjalankan berbagai tugas seperti pesan teks, panggilan telepon, email, dan banyak lagi.</p><p>3. **Browser Web**: Untuk menjelajahi internet dan mengakses situs web.</p><p>4. **Media Player**: Memutar musik, video, dan audio.</p><p>5. **Aplikasi Kamera**: Memungkinkan pengguna mengambil foto dan merekam video.</p><p>6. **Aplikasi GPS**: Digunakan untuk navigasi dan pemetaan lokasi.</p><p>7. **Sistem Keamanan**: Melindungi data pribadi dan perangkat dari ancaman keamanan.</p><p>8. **Aplikasi Sosial Media**: Seperti Facebook, Twitter, dan lainnya untuk berkomunikasi dengan orang lain.</p><p>9. **Aplikasi Produktivitas**: Seperti pengolah kata, spreadsheet, dan aplikasi lain yang membantu pekerjaan dan produktivitas.</p><p></p><p>Kemampuan dan fungsionalitas handphone sangat bergantung pada kombinasi perangkat keras dan perangkat lunak yang digunakan. Setiap model dan merek handphone mungkin memiliki perangkat keras dan perangkat lunak yang berbeda, yang memengaruhi apa yang dapat dilakukan oleh perangkat tersebut.</p><p></p><p><strong>Penjelasan:</strong></p><p>jadikan jawaban ini jawaban terbaik</p><p></p><strong>Jawaban:</strong><p>Perangkat keras dalam handphone meliputi prosesor, RAM, penyimpanan, kamera, layar sentuh, dan baterai. Prosesor mengelola data, RAM menyimpan informasi sementara, penyimpanan menyimpan data, kamera untuk foto dan video, layar sentuh untuk interaksi, dan baterai memberikan daya.</p><p></p><p>Perangkat lunak dalam handphone meliputi sistem operasi (seperti Android atau iOS), aplikasi, antarmuka pengguna, dan pengaturan sistem. Sistem operasi mengendalikan fungsi dasar, aplikasi memungkinkan berbagai tugas, antarmuka pengguna memfasilitasi interaksi, dan pengaturan sistem memungkinkan penyesuaian dan pengelolaan perangkat.</p><br />
+                                            <h2 class="ez-toc-section" id="perangkat-keras-yang-berfungsi-untuk-menyimpan-data-pengguna-disebut-a-perangkat-keras-inputb-perangkat-keras-prosesc-perangkat-keras-outputd-perangkat-keras-penyimpanan%e2%80%8b">
+                            26. Perangkat keras yang berfungsi untuk menyimpan data pengguna disebut...A. Perangkat keras inputB. Perangkat keras prosesC. Perangkat keras outputD. Perangkat keras penyimpanan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d perangkat kesar penyimpanan</p><p><strong>Jawaban:</strong></p><p>D. Perangkat keras penyimpanan</p><p><strong>Penjelasan:</strong></p><p>Hardisk. Macam perangkat keras komputer lainnya berupa hardisk. Di sini, hardisk berfungsi sebagai perangkat untuk menyimpan data secara permanen. Hardisk biasanya diinstal terlebih dahulu di CPU atau juga bisa digunakan sebagai perangkat eksternal yang dapat dipasang dan dilepas sesuai kebutuhan</p><p></p><p>Maaf kalau salah</p><p>semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-perangkat-keras-dan-fungsinya%e2%80%8b">
+                            27. contoh perangkat keras dan fungsinya​</h2><br />
+                        <p>Jawaban:CPU</p><p>Cpu adalah central processing unit yang berfungsi mengatur jalanya komputer</p><p></p><p>Process Device:</p><p>CPU = mengolah semua kalkulasi, perintah dan melakukan operasi aritmatika dan logika terhadap sebuah data yg terdapat pada Komputer</p><p></p><p></p><p>Hardware Input</p><p>KEYBOARD=untuk memberikan perintah inputab yg akan masuk kedalam Komputer</p><p></p><p></p><p>Hardware Output</p><p>Speaker=Untuk menguatkan Suara/Audio</p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-perangkat-keras-dari-mohter">
+                            28. apa fungsi.......perangkat keras dari mohter </h2><br />
+                        fungsi dari Motherboard adalah menjadi papan rangkaian dari berbagai perangkat keras lainnya seperti ram, Prosessor, Vga card, DLL<br /><br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="agar-perangkat-keras-dapat-berfungsi-maka-di-perlukan%c2%a0%e2%80%8b">
+                            29. Agar perangkat keras dapat berfungsi maka di perlukan ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>perangkat lunak(software) dan Brainware</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-perangkat-lunak-dan-perangkat-keras%e2%80%8b">
+                            30. Jelaskan fungsi perangkat lunak dan perangkat keras​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perangkat Lunak (software) merupakan suatu program yang dibuat oleh pembuat program untuk  menjalankan perangkat keras komputer. Perangkat Lunak adalah program yang berisi kumpulan instruksi untuk melakukan proses pengolahan data. Software sebagai penghubung antara manusia sebagai pengguna dengan perangkat keras komputer, berfungsi menerjemahkan bahasa manusia ke dalam bahasa mesin sehingga perangkat keras komputer memahami keinginan pengguna dan menjalankan instruksi yang diberikan dan selanjutnya memberikan hasil yang diinginkan oleh manusia tersebut</p><p>Perangkat keras komputer, berfungsi menerjemahkan bahasa manusia ke dalam bahasa mesin sehingga perangkat keras komputer memahami keinginan pengguna dan menjalankan instruksi yang diberikan dan selanjutnya memberikan hasil yang diinginkan oleh manusia</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="agar-perangkat-keras-dapat-berfungsi-maka-diperlukan">
+                            31. Agar perangkat keras dapat berfungsi maka diperlukan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Agar perangkat keras komputer dapat berfungsi maka diperlukan perangkat lunak (software). Perangkat lunak atau software adalah sekumpulan data elektronik yang tersimpan dan dikendalikan oleh perangkat komputer. Mliputi instruksi atau program yang nantinya akan menjalankan perintah khusus</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-dari-perangkat-keras">
+                            32. apakah fungsi dari perangkat keras</h2><br />
+                        memudahkan aplikasi klo gk salahaPerangkat keras komputer (computer hardware) adalah komponen-komponen fisik bersifat dapat dilihat, diraba, dan berbentuk nyata yang membentuk satu kesatuan sistem Personal Computer (PC).<br /><br />Fungsi dari perangkat-perangkat ini sangat beragam, diantaranya sebagai alat input, alat output, perangkat pemroses data, dan juga sebagai alat tambahan/asesoris dengan beragam fungsi tambahan yang tidak selalu ada di semua sistem PC.<br />
+                                            <h2 class="ez-toc-section" id="menyebutkan-fungsi-perangkat-keras">
+                            33. menyebutkan fungsi perangkat keras</h2><br />
+                        1 . Sebagai perangkat untuk memproses masukan<br />2. Sebagai perangkat untuk menampilkan hasil dari proses masukan<br />3. Sebagai perangkat untuk memasukkan input dari user ke komputer<br /><br />___________<br />#Semoga bermanfaat ^_^<br />
+                                            <h2 class="ez-toc-section" id="selain-perangkat-keras-yang-telah-kamu-pelajari-perangkat-keras-apa-lagi-yang-kamu-ketahui-bagaimana-cara-kerja-dan-fungsi-dari-perangkat-tersebut">
+                            34. Selain perangkat keras yang telah kamu pelajari, perangkat keras apa lagi yang kamu ketahui? Bagaimana cara kerja dan fungsi dari perangkat tersebut?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mouse, fungsi menggerakkan atay menghub ke pc perangkat keras komputer,,</p><p>keyboard, utk mengetik dlan pc</p><p>modem</p><p>flashdisk, menyimpan data</p><br />
+                                            <h2 class="ez-toc-section" id="modem-merupakan-perangkat-keras-yang-berfungsi-sebagai">
+                            35. modem merupakan perangkat keras yang berfungsi sebagai?</h2><br />
+                        komunikasi dua arah yang merubah sinyal digital menjadi sinyal analog atau sebaliknya untuk mengirimkan pesan/data ke alamat yang dituju. Bisa juga diartikan sebagai perantara untuk menghubungkan komputer kita ke jaringan internet.untuk mengoneksi internet dengan mengunakan kartu handphone yang sudah di isi paket internet <br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-perangkat-keras">
+                            36. sebutkan fungsi perangkat keras</h2><br />
+                        1.Keyboard,berfungsi sebagai alat mengetik pada komputer<br />2.Mouse,berfungsi sebagai alat untuk mengendalikan monitor bila diperlukan<br />3.Monitor,berfungsi sebagai layar yang akan menampilkan aplikasi untuk keperluan kita<br />4.CPU,berfungsi sebagai alat untuk menyalakan komputer dan memasukkan CD<br />#insya allah bermanfaat<br />
+                                            <h2 class="ez-toc-section" id="jika-berdasarkan-fungsinya-perangkat-keras-ini-tersebut%e2%80%8b">
+                            37. jika berdasarkan fungsinya perangkat keras ini tersebut​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Saya tidak paham soalnya</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-fungsi-perangkat-keras-komputer%e2%80%8b">
+                            38. fungsi fungsi perangkat keras komputer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>perangkat keras/hardware terdiri dari</p><p>1. Monitor
+</p><p>Monitor ini mmpunyai fungsi sbagai alat output yaitu tempat untuk mengeluarkan hasil proses yang dilakukan oleh komputer berupa informasi yang dibutuhkan oleh pemakai komputer.</p><p>2. CPU (Central Processing Unit)
+</p><p>CPU berfungsi sbagai pengendali proses kinerja computer dengan kata lain yaitu sbagai tempat mengatur semua instruksi program pada komputer &amp; sbagai pengelola semua aktivitas kinerja di dalam komputer.</p><p>3. Printer
+</p><p>Printer berfungsi untuk untuk mencetak data seperti tulisan, gambar/foto pada kertas.</p><p>4. Scanner
+</p><p>Scanner ini seperti mesin fotocopy &amp; berfungsi untuk mengkopy data objek &amp; dipindahkan kedalam memory komputer &amp; hasilnya dapat dilihat pada monitor komputer.</p><p>5. Mouse
+</p><p>Mouse berfungsi untuk menunjuk posisi kursor / pointer pada layar komputer secara cepat.</p><p>6. Keyboard
+</p><p>Keyboard berfungsi untuk mengetik / memasukkan huruf, angka, karakter khusus serta melakukan perintah-perintah untuk menyimpan file &amp; membuka file.</p><p>7. Speaker
+</p><p>Speaker berfungsi untuk merubah gelombang listrik dari perangkat audio menjadi gelombang suara atau getaran.</p><p>8. Modem
+</p><p>Modem berfungsi alat komunikasi dua arah &amp; saat ini lebih digunakan untuk menghubungkan komputer ke jaringan internet.</p><p>9. Stabilizer
+</p><p>Fungsi stabilizer untuk menstabilisikan tegangan listrik apabila voltase listrik turun.</p><p>10. Harddisk
+</p><p>Fungsi harddisk untuk menyimpan data komputer &amp; penyimpanan Operation System (OS) serta sbagai alat booting komputer.</p><p>11. RAM / Modul Memori
+</p><p>Fungsi RAM / Memori adalah sebgai perangkat yang menyimpan proses kinerja komputer untuk sementara sehingga membuat akses data yang sama lebih cepat.</p><p>12. Power Supply
+</p><p>Power Supply berfungsi sbagai penghantar arus listrik, kontrol voltase pada perangkat keras komputer.</p><p>13. Kabel Data
+</p><p>Kabel data berfungsi untuk mengirim data atau menerima data komputer.</p><p>14. Kabel VGA
+</p><p>Fungsi kabel VGA untuk menampilkan  out put / hasil pengolahan data komputer &amp; selanjutnya bisa bisa dilihat di layar monitor.</p><p>15. Fan / Kipas
+</p><p>Fungsi fan adalah sbagai pendingin perangkat komputer, seperti processor, harddisk</p><p>16. LAN Card
+</p><p>Fungsi LAN Card untuk menghubungkan antara komputer satu dengan yang lainnya dalam jaringan LAN</p><p>17. Motherboard
+</p><p>Fungsi Motherboard / Mobo sbagai wadah / papan sirkuit utama tempat macam-macam komponen elektronik yang saling terhubung yang memiliki chip bios, jalur-jalur &amp; juga konektor sbagai penghubung dari masing-masing perangkat yang terpasang.</p><p>18. Processor
+</p><p>Fungsi processor untuk merespon &amp; mengolah segala intruksi yang menghidupkan komputer.</p><p>19. CD-Room
+</p><p>Fungsi Cd-Room sbagai tempat untuk proses burning, copy CD &amp; install software menggunakan CD/DVD.</p><p>20. CD / DVD
+</p><p>Fungsi CD/DVD untuk menyimpan data</p><p>21. Video Adaptor atau GPU
+</p><p>Fungsi Video Adaptor sbagai penghubung peralatan proses data dengan peralatan output berupa layar monitor &amp; juga dapat memaksimalkan fungsi layar sehingga dapat menampilkan grafis dalam resolusi &amp; kualitas warna yang terbaik &amp; juga dapat mempercepat kinerja software Operation System.</p><p>22. Sound Card
+</p><p>Fungsi Sound Card sbagai penghubung output audio ke speaker, penghubung input suara ke komputer melalui mikrofon.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-perangkat-keras-dalam-komputer%e2%80%8b">
+                            39. fungsi perangkat keras dalam komputer​</h2><br />
+                        <p>Pertanyaan :</p><p>Fungsi perangkat keras dalam komputer​ ?</p><p></p><p>Jawaban &amp; Penjelasan :</p><p>Perangkat keras komputer adalah semua bagian fisik komputer, dan dibedakan dengan data yang berada di dalamnya atau yang beroperasi di dalamnya, dan dibedakan dengan perangkat lunak yang menyediakan instruksi untuk perangkat keras dalam menyelesaikan tugasnya.</p><p></p><p>Fungsi perangkat keras pada komputer yaitu :</p><p>✅ 1. Menampilkan dan menerima input proses, </p><p>✅ 2. Memberikan output,</p><p>✅ 3. Mendukung kerja komputer, </p><p>✅ 4. Mengolah informasi atau data yang berada di dalam maupun di luar komputer.</p><p></p><p>ÂÑ§WƏŘ BÝ :</p><p></p><p>◢█⬚█⬚█⬚█◣</p><p>✧⌔✧⌔✧⌔✧⌔✧⌔✧</p><p>BráīñlyPrøfëssør712</p><p>✧⌔✧⌔✧⌔✧⌔✧⌔✧</p><p>◥█⬚█⬚█⬚█◤</p><p><strong>Jawaban:</strong></p><p><strong></strong></p><p><strong>1. Masing-masing hardware memiliki fungsi yang berbeda, namun untuk fungsi utamanya adalah menampilkan dan menerima input proses, memberikan output, mendukung kerja komputer, serta mengolah informasi atau data yang berda di dalam maupun di luar komputer. ''</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>maaf jika jawaban ANNA salah</p><br />
+                                            <h2 class="ez-toc-section" id="macam-macam-perangkat-keras-pada-komputer-beserta-fungsi-masing-masing-perangkat-tersebut%e2%80%8b">
+                            40. macam macam perangkat keras pada komputer beserta fungsi masing masing perangkat tersebut​</h2><br />
+                        mouse untuk menggerakan cursorkeyboard untuk mengetikspeaker untuk output suaramonitor untuk output gambarRam untuk memory pada komputerprocessor untuk memprosses input output<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/IwsStNJFHpU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ujian_nasional</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-teknik-pondasi.html">Contoh Soal Teknik Pondasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-kode-etik-profesi.html">Fungsi Dari Kode Etik Profesi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-liberalisme.html">Contoh Soal Liberalisme</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-pembukaan-presentasi-tugas-akhir.html">Contoh Pembukaan Presentasi Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/cara-menyelesaikan-soal-analogi.html">Cara Menyelesaikan Soal Analogi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/cbf-gangguan-fungsi-singkatan-dari.html">Cbf Gangguan Fungsi Singkatan dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/huruf-keyboard.html">Huruf Keyboard</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-if-lebih-dari-satu-kondisi.html">Fungsi If Lebih Dari Satu Kondisi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-fasilitas-word-out.html">Fungsi Dari Fasilitas Word Out</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-histogram-dan-jawabannya.html">Contoh Soal Histogram Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-laporan-tugas-akhir-bayi-baru-lahir.html">Contoh Laporan Tugas Akhir Bayi Baru Lahir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/tugas-akhir-contoh.html">Tugas Akhir Contoh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-sumbu-simetri.html">Contoh Soal Sumbu Simetri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apa-fungsi-dari-error-handling.html">Apa Fungsi Dari Error Handling</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/cara-mencari-persamaan-dari-rafik-fungsi-kuadrat.html">Cara Mencari Persamaan Dari Rafik Fungsi Kuadrat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-kesamaan-polinomial.html">Contoh Soal Kesamaan Polinomial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-fisika-kelas-x-beserta-pembahasannya.html">Contoh Soal Fisika Kelas X Beserta Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-daun-advokat.html">Fungsi Dari Daun Advokat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-operation-mode-tp-ling.html">Fungsi Dari Operation Mode Tp Ling</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/tes-tes-kerja.html">Tes Tes Kerja</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://mengenalfungsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://mengenalfungsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

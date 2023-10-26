@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Face Detection - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Face Detection, , , , , , , 0, , , , , , 0, fungsi-dari-face-detection, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Face Detection - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Face Detection, , , , , , , 0, , , , , , 0, fungsi-dari-face-detection, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Face Detection - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Face Detection, , , , , , , 0, , , , , , 0, fungsi-dari-face-detection, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://mengenalfungsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://mengenalfungsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://mengenalfungsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://mengenalfungsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://mengenalfungsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://mengenalfungsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://mengenalfungsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Face Detection</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">purbasarles20</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Face+Detection" alt="Fungsi Dari Face Detection">
+                    </div>
+                    <p></p>
+                    <p>Apa keuntungan collision detection</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-keuntungan-collision-detection">1.
+                                            Apa keuntungan collision detection</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-flow-detection-simbol%e2%80%8b">2.
+                                            apa yang dimaksud dengan flow detection simbol​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pendeteksian-dengan-melihat-cara-bagaimana-virus-bekerja-merupakan-pendekatan-yang-baru-yang-dipinjam-dari-teknologi-yang-diterapkan-dalam-a-intrucsion-detection-systemb-degrade">3.
+                                            pendeteksian dengan melihat cara bagaimana virus  bekerja merupakan pendekatan yang baru yang dipinjam dari teknologi yang diterapkan dalam a. intrucsion detection systemb.  ------------- degrade ---------c. intruder detection systemd.  include detection system </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-face-dari-vitamin-6b-yang-larut-didalam-lemak-dan-didalam-air%e2%80%8b">4.
+                                            sebutkan fungsi face Dari vitamin 6B yang larut didalam lemak Dan didalam air?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-boleh-menggunakan-face-wash-dan-face-scrub-yang-berbeda-merk%e2%80%8b">5.
+                                            apakah boleh menggunakan face wash dan face scrub yang berbeda merk?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kan-kalo-make-face-wash-dan-face-scrub-itu-kan-scrub-nya-kan-2kali-seminggujadi-kalo-jdawal-make-face-scrub-apakah-face-wash-gausah-dipale">6.
+                                            Kan Kalo make face wash dan face scrub  itu kan scrub nya kan 2kali seminggu,jadi kalo jdawal make face scrub apakah face wash gausah dipale</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#layer-yang-bertugas-melakukan-error-detection-error-correction-dan-frame-sequencing-adalah">7.
+                                            Layer yang bertugas melakukan error detection, error correction, dan frame sequencing adalah ....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#radar-adalah-singkatan-dari-frase-radio-detection-and-ranging-dalam-pengindraan-jauh-dikenal-dengan">8.
+                                            Radar adalah singkatan dari frase Radio Detection And Ranging dalam Pengindraan jauh dikenal dengan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-face-to-face-selling">9.
+                                            apa itu face to face selling ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#application-of-fish-in-food-pathogen-detection">10.
+                                            Application of fish in food pathogen detection</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-yang-dimaksud-kelompok-kecil-face-to-face-grouping">11.
+                                            apakah yang dimaksud kelompok kecil (face to face grouping)?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#face-face-dalam-senam-irama-yaitu%e2%80%8b">12.
+                                            face-face dalam senam irama yaitu?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-arti-dari-i-am-thelast-and-highest-court-of-appeal-in-detection">13.
+                                            apa arti dari "i am thelast and highest court of appeal in detection"</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-ar-berbasis-nonmarker-dengan-ar-fast-corner-detection">14.
+                                            Perbedaan AR berbasis nonmarker dengan AR fast corner detection</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-face-face-gerakan-dalam-jalan-cepat%e2%80%8b">15.
+                                            tuliskan face face gerakan dalam jalan cepat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#single-photon-detection-di-kenal-dengan-istilah">16.
+                                            single photon  detection di kenal dengan istilah....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#22-pelindung-wajah-yang-bening-kita-kenaldengan-istilah-a-face-shieldb-face-washc-face-maskd-face-soap%e2%80%8b">17.
+                                            22. Pelindung wajah yang bening kita kenaldengan istilah ....A face shieldB. face washC. face maskD. face soap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-brainly-1-apa-yg-dimasud-dengan-gelar-spam-detection2-bagaimana-cara-mendapatkan-gelar-spam-detection-jelaskanjawab-ya">18.
+                                            Soal brainly :
+1.) apa yg dimasud dengan gelar "spam detection"?
+2.) bagaimana cara mendapatkan gelar "spam detection"? Jelaskan!
+Jawab ya.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-kelompok-primer-dapat-di-sebut-sebagai-kelompok-face-to-face">19.
+                                            mengapa kelompok primer dapat di sebut sebagai kelompok face to face?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-primery-group-dikenal-sebagai-face-to-face-group">20.
+                                            mengapa primery group dikenal sebagai face to face group</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-kelompok-primer-dapat-disebut-sebagai-kelompok-face-to-face">21.
+                                            Mengapa kelompok primer dapat disebut sebagai kelompok face to face</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-kelompok-primer-dapat-dikelompokkan-sebagai-kelompok-face-to-face">22.
+                                            mengapa kelompok primer dapat dikelompokkan sebagai kelompok face to face</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kelompok-sosial-lecil-atau-face-to-face">23.
+                                            Contoh kelompok sosial lecil atau face to face</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-primary-grup-dikenal-sebagai-face-to-face-groups">24.
+                                            mengapa primary grup dikenal sebagai face to face groups? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-singkat-melakukan-corner-detection">25.
+                                            jelaskan cara singkat melakukan corner detection?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#konsep-face-to-face-tu-kaya-gimana">26.
+                                            Konsep face to face tu kaya gimana?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-di-maksud-dengan-komunikasi-jarak-dekat-face-to-face-communication">27.
+                                            Apa yang di maksud dengan komunikasi jarak dekat (face to face communication) ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#layer-yang-bertugas-melakukan-error-detection-error-connection-dan-frame-sequencing-adalah">28.
+                                            Layer yang bertugas melakukan error detection, error connection, dan frame sequencing adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bhs-inggrismenentukanname-of-drug-description-contentamountuses-detection-to-use-and-dosage-detection-to-storedn-trkhir-expiration-datewarning-dilarang-mnjwb-asal-asalan-jika-tdk-bsa-m">29.
+                                            Bhs Inggris,,,Menentukan,,,Name of drug, description, content/amount,Use(s), detection to use and dosage, detection to store,dn trkhir Expiration date#Warning.dilarang mnjwb asal asalan jika tdk bsa mnjwb Jngn djwb!!!!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-kelompok-primer-dapat-disebut-sebagai-kelompok-face-to-face%e2%80%8b">30.
+                                            mengapa kelompok primer dapat disebut sebagai kelompok face to face​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-face-to-face-communication-yang-memegang-perannan-sangat-penting-adalah">31.
+                                            dalam face to face communication yang memegang perannan sangat penting adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-ciri-ciri-keluarga-face-to-face%e2%80%8b">32.
+                                            sebutkan ciri-ciri keluarga face to face​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kenapa-kelompok-primer-disebut-sebagai-kelompok-face-to-face">33.
+                                            kenapa kelompok primer disebut sebagai kelompok face to face?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-macam-macam-metode-error-detection-yang-anda-ketahui-serta-sebutkan-kelebihan-dan-kekurangan-dari-masing-masing-metode-tsb">34.
+                                             
+Jelaskan macam-macam metode error detection yang anda ketahui serta sebutkan kelebihan dan kekurangan dari masing-masing metode tsb!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kenapa-kelompok-primer-disebut-sebagai-kelompok-face-to-face">35.
+                                            kenapa kelompok primer disebut sebagai kelompok face to face?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#collision-detection-merupakan-metode-yang-digunakan-untuk">36.
+                                            collision detection merupakan metode yang digunakan untuk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-face-face-bulan-pada-nomer-12345678%e2%80%8b">37.
+                                            sebutkan face face bulan pada nomer 1,2,3,4,5,6,7,8,​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-di-maksud-face-to-face">38.
+                                            apa yg di maksud face to face</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-termasuk-face-to-face-grouping">39.
+                                            Yang termasuk face to face grouping</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-kemampuan-idpsintrusion-detection-prevention-system%c2%a0">40.
+                                            apa saja kemampuan IDPS(Intrusion detection Prevention System )</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-keuntungan-collision-detection">
+                            1. Apa keuntungan collision detection</h2><br />
+                        <p><strong>Collision Detection</strong> adalah proses mendeteksi jika dua objek dalam suatu simulasi atau permainan saling bertabrakan atau bersentuhan. Berikut adalah beberapa keuntungan dari collision detection:</p><p></p><p><strong>1. Interaksi Realistis</strong>: Dengan collision detection, objek dalam simulasi atau permainan dapat berinteraksi secara realistis, seperti menyentuh, bertabrakan, atau saling mempengaruhi. Ini dapat menciptakan pengalaman yang lebih imersif untuk pengguna.</p><p></p><p><strong>2. Perlindungan dari Kesalahan</strong>: Collision detection dapat membantu mencegah atau menghindari kesalahan dalam simulasi atau permainan. Misalnya, dalam permainan platform, collision detection dapat menghindarkan karakter pemain dari jatuh ke dalam celah atau menabrak objek yang seharusnya dihindari.</p><p></p><p><strong>3. Penghitungan Skor atau Poin</strong>: Dalam permainan, collision detection dapat digunakan untuk menghitung skor atau poin ketika objek-objek tertentu saling bertabrakan atau bersentuhan. Hal ini memungkinkan pemain untuk mendapatkan poin berdasarkan aksi-aksi yang berhasil dilakukan.</p><p></p><p><strong>4. Perilaku Objek yang Terkait</strong>: Collision detection memungkinkan objek dalam simulasi atau permainan untuk merespons peristiwa tabrakan atau sentuhan dengan cara yang sesuai. Misalnya, dalam permainan balapan, mobil dapat mengalami kerusakan ketika bertabrakan dengan objek lain, atau bola dalam permainan sepak bola dapat berubah arah ketika bersentuhan dengan pemain lain.</p><p></p><p><strong>5. Penghalang atau Batasan</strong>: Collision detection juga digunakan untuk menentukan batas-batas atau penghalang dalam permainan atau simulasi. Misalnya, dalam permainan tembak-menembak, pemain mungkin tidak dapat melewati tembok atau benda lain yang dianggap sebagai batasan menggunakan collision detection.</p><p></p><p>Kesemuanya itu memungkinkan dunia virtual menjadi lebih realistis, menawarkan pengalaman yang lebih menarik dan dapat meningkatkan kualitas dan kepuasan pengguna dalam berbagai jenis aplikasi digital.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-flow-detection-simbol%e2%80%8b">
+                            2. apa yang dimaksud dengan flow detection simbol​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>detection simbol</p><p>Hasil Telusur</p><p>Cuplikan pilihan dari web</p><p>Terminal Point Symbol / Simbol Titik Terminal menunjukkan permulaan (start) atau akhir (stop) dari suatu proses. Flow Direction Symbol / Simbol Arus adalah simbol yang digunakan untuk menghubungkan antara simbol yang satu dengan simbol yang lain (connecting line).</p><p><strong>Penjelasan:</strong></p><p>baca sampai habis</p><p><strong>Jawaban:</strong></p><p></p><p>adalah simbol yang digunakan untuk menghubungkan antara simbol yang satu dengan simbol yang lain.</p><p><strong>[</strong><strong>S</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>m</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>t</strong><strong>u</strong><strong>]</strong></p><br />
+                                            <h2 class="ez-toc-section" id="pendeteksian-dengan-melihat-cara-bagaimana-virus-bekerja-merupakan-pendekatan-yang-baru-yang-dipinjam-dari-teknologi-yang-diterapkan-dalam-a-intrucsion-detection-systemb-degrade">
+                            3. pendeteksian dengan melihat cara bagaimana virus  bekerja merupakan pendekatan yang baru yang dipinjam dari teknologi yang diterapkan dalam a. intrucsion detection systemb.  ------------- degrade ---------c. intruder detection systemd.  include detection system </h2><br />
+                        a. intrucsion detection system<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-face-dari-vitamin-6b-yang-larut-didalam-lemak-dan-didalam-air%e2%80%8b">
+                            4. sebutkan fungsi face Dari vitamin 6B yang larut didalam lemak Dan didalam air?​</h2><br />
+                        <strong>Jawaban:</strong><p></p>. Fungsi dari vitamin B6, yang juga dikenal sebagai piridoksin, tidak berbeda tergantung pada apakah vitamin B6 tersebut larut dalam lemak atau air. Vitamin B6 memiliki fungsi-fungsi yang sama, terlepas dari kelarutan dalam lemak atau air<strong>Penjelasan:</strong><p> </p>selamat mengerjakan (:<p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-boleh-menggunakan-face-wash-dan-face-scrub-yang-berbeda-merk%e2%80%8b">
+                            5. apakah boleh menggunakan face wash dan face scrub yang berbeda merk?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Boleh, asal cocok sama jenis kulitnya</p><p><strong>Jawaban:</strong></p><p><strong>Ya, boleh. </strong></p><p><strong>Penjelasan:</strong></p><p>Ya, Anda boleh menggunakan face wash dan face scrub dari merek yang berbeda. Tidak ada aturan yang melarang penggunaan produk perawatan kulit yang berasal dari merek yang berbeda. Setiap produk memiliki formulasi dan manfaat yang unik, jadi jika Anda merasa bahwa kombinasi dua merek yang berbeda memberikan hasil yang baik bagi kulit Anda, maka tidak ada masalah dalam menggunakannya.</p><p></p><p>Namun, penting untuk memperhatikan kebutuhan kulit Anda dan memilih produk yang sesuai. Pastikan bahwa keduanya cocok dengan jenis kulit Anda dan tidak menyebabkan iritasi atau masalah lainnya. <strong>Baca petunjuk</strong> penggunaan dan komposisi produk dengan teliti, serta perhatikan apakah ada rekomendasi penggunaan yang harus diikuti.</p><p></p><p>Jika Anda memiliki kekhawatiran atau pertanyaan spesifik tentang kombinasi produk perawatan kulit yang berbeda, disarankan untuk berkonsultasi dengan dokter kulit atau ahli kecantikan untuk saran yang lebih terarah sesuai dengan kondisi kulit Anda.</p><br />
+                                            <h2 class="ez-toc-section" id="kan-kalo-make-face-wash-dan-face-scrub-itu-kan-scrub-nya-kan-2kali-seminggujadi-kalo-jdawal-make-face-scrub-apakah-face-wash-gausah-dipale">
+                            6. Kan Kalo make face wash dan face scrub  itu kan scrub nya kan 2kali seminggu,jadi kalo jdawal make face scrub apakah face wash gausah dipale</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Penggunaan facial scrub baiknya kurang lebih dua sampai tiga kali dalam seminggu dan jangan secara berurutan. Sementara itu, facial foam adalah sabun pembersih wajah yang memiliki bentuk busa atau foam. Karena lebih lembut, foam lebih efektif dalam mengangkat kotoran atau minyak-minyak yang ada di permukaan wajah saja.</p><p>Jika wajah dirasa kotor (misalnya setelah beraktivitas seharian dan terdapat kosmetik yang digunakan di wajah) maka cucilah wajah terlebih dahulu dengan facial wash (sabun pencuci muka) dan jika memang hari untuk scrub maka barulah lakukan scrubing.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu.</p><br />
+                                            <h2 class="ez-toc-section" id="layer-yang-bertugas-melakukan-error-detection-error-correction-dan-frame-sequencing-adalah">
+                            7. Layer yang bertugas melakukan error detection, error correction, dan frame sequencing adalah ....</h2><br />
+                        <p>a.       H323</p><p></p><p>H323 adalah salah satu protokol yang direkomendasi ITU-T [International Telecommunications Union – Telecommunications]. H323 merupakan standar yang menentukan komponen, protokol, dan prosedur yang menyediakan layanan komunikasi multimedia. Layanan tersebut adalah komunikasi audio, video , dan data real-time, melalui jaringan berbasis paket [packet-based network]. [ Tharom, 2001;64]</p><p></p><p>H323 berjalan pada jaringan intranet dan jaringan packet-switched tanpa mengatur media jaringan yang digunakan sebagai sarana transportasi maupun protokol networ layer.</p><p></p><p>H323 merupakan suite yang mengkoordinasikan berbagai protokol baik yang didefinisikan ITU-T maupun oleh IETF</p><p></p><p>Sinyal audio dikodekan dalam salah satu dari paket G.7XX [misalnya G.711], dan sinyal video dikodekan dalam H.26X [misalnya H.261]. Sebagai data paket real-time, keduanya dibawa dalam paket RTP di atas UDP di atas IP. RTCP mengendalikan alur paket RTP. Pengendalian panggilan, dalam bentuk pembukaan sebuah percakapan baru, penutupan percakapan, dan sebagainya, didefinisikan dalam Q.931 dan H.245 yang dalam jaringan IP disalurkan terpisah dengan transport TCP dan GK masih berperan untuk panggilan yang masuk atau keluar sebuah LAN.</p><p></p><p>Standar H323 mengatur hal-hal sebagai berikut :</p><p></p><p>1] Video Codec [H.261 dan H.263]. Video Codec bertugas mengkodekan data dari sumber video untuk dikirimkan dan mendekodekan sinyal kode yang diterima untukdi tampilkan di layar penerima.</p><p></p><p>2] Audio Codec [G.711, G.722, G723, G728 dan G.729]. Audio Codec betugas mengkodekan data dari sumber suara untuk dikirimkan dan mendekodekan sinyal kode yang diterima untuk didengarkan oleh penerima.</p><p></p><p>3] Data channel mendukung aplikasi-aplikasi seperti electronic whiteboard, dan kolaborasi aplikasi. Sttandar untuk aplikasi-aplikasi seperti ini adalah standar T.120. Aplikasi dan protokol yang berbeda tetap dapat dijalankan dengan negosiasi menggunakan standar H.245.</p><p></p><p>4]  Sistem control unit [H.245 dan H.225.0] menyediakan signalling yang berkaitan dengan komunikasi antar terminal H323.</p><p></p><p>5] H.225.0 layer memformat data video, suara, data , dan informasi kontrol lain sehingga dapat dikirimkan melalui LAN Interface sekaligus menerima data yang telah diformat melalui LAN Interface. Sebagai tambahan, layer ini juga bertugas melakukan error detection, error correction , dan frame sequencing agar data dapat mencapai tujuan sesuai denagn kondisi saat data dikirimkan. LAN interface harus menyediakan koneksi yang handal. Untuk flow control dan unreliable data channel connection [misal: UDP] dapat digunakan untuk pengiriman audio dan video channel.</p><p></p><p>b.       SIP [Session Initiation Protocol]</p><p></p><p>Session Initiation Protocol [SIP] merupakan standar protokol multimedia yang dikeluarkan oleh group yang tergabung dalam Multiparty Multimedia Session Control [MMUSIC] yang berada dalam organisasi Internet Engeneering Tsk Force [IETF] yang didokumentasikan ke dalam dokumen Request For Command [RFC] 2543 pada bulan maret 1999.</p><p></p><p>SIP tidak menyediakan layanan secara langsung, tetapi menyediakan pondasi yang dapat digunakan oleh protokol aplikasi lainnya untuk memberikan layanan yang lebih lengkap bagi pengguna, misalnya dengan RTP dan RTCP [Real Time Transport Protocol] untuk transfer data secara real-time, mentransmisikan media dan mengetahui kualitas layanan, dengan SDP [Session Description Protocol] untuk</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="radar-adalah-singkatan-dari-frase-radio-detection-and-ranging-dalam-pengindraan-jauh-dikenal-dengan">
+                            8. Radar adalah singkatan dari frase Radio Detection And Ranging dalam Pengindraan jauh dikenal dengan</h2><br />
+                        Sensor radar<br /><br />Semoga membantu!!!<br />
+                                            <h2 class="ez-toc-section" id="apa-itu-face-to-face-selling">
+                            9. apa itu face to face selling ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> face to face selling artinya penjual yg berinteraksi secara langsung dengan kostumer untuk menjual produknya</p><p></p><p><strong>Jawaban:</strong></p><p>penjualan langsung</p><p><strong>Penjelasan:</strong></p><p>penjelasannya mudah,, pernyataannya kek langsung jualan di pasar atau di tempat dimana bisa langsung interaksi sama pembeli ,,, kek yang kita tau ada juga online selling yaitu penjualan online ,, gampangannya face to face itu berhadapan langsung atau langsung berhadapan, sedangkan selling itu jualan</p><p>semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="application-of-fish-in-food-pathogen-detection">
+                            10. Application of fish in food pathogen detection</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>..............................</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-yang-dimaksud-kelompok-kecil-face-to-face-grouping">
+                            11. apakah yang dimaksud kelompok kecil (face to face grouping)?</h2><br />
+                        kelompok yang jumlah anggotanya relatif sedikit dan saling mengenal<br /><br />
+                                            <h2 class="ez-toc-section" id="face-face-dalam-senam-irama-yaitu%e2%80%8b">
+                            12. face-face dalam senam irama yaitu?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pemanasannn, olahraga</p><p><strong>Jawaban:</strong></p><p>bersenam maaf kalau salah yah :)</p><br />
+                                            <h2 class="ez-toc-section" id="apa-arti-dari-i-am-thelast-and-highest-court-of-appeal-in-detection">
+                            13. apa arti dari "i am thelast and highest court of appeal in detection"</h2><br />
+                        apa arti dari "i am thelast and highest court of appeal in detection"<br /><br />jawabannya= saya adalah pengadilan terakhir dan terdalam.<br /><br />#hopeishelp<br />ARIGATOUartinya : "saya adalah pengadilan banding terakhir dan tertinggi dalam pendeteksian"<br /><br />maaf ya kalo salah jawabannya<br />
+                                            <h2 class="ez-toc-section" id="perbedaan-ar-berbasis-nonmarker-dengan-ar-fast-corner-detection">
+                            14. Perbedaan AR berbasis nonmarker dengan AR fast corner detection</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbedaan antara AR berbasis nonmarker dan AR fast corner detection adalah metode yang digunakan untuk mendeteksi sudut (corner) dalam Augmented Reality (AR).</p><p></p><p>1. AR berbasis nonmarker: Ini adalah metode di mana sudut (corner) pada objek fisik yang diamati ditandai atau diidentifikasi dengan menggunakan marka nonmarker atau fitur nonmarker pada objek tersebut. Metode ini mencari fitur atau pola unik pada objek untuk mengenali dan melacak posisinya dalam ruang 3D. Misalnya, pola tekstur, garis tepi, atau fitur geometris yang unik pada objek fisik digunakan untuk identifikasi dan pelacakan.</p><p></p><p>2. AR fast corner detection: Ini adalah metode yang menggunakan algoritma deteksi sudut cepat (fast corner detection) untuk mengidentifikasi sudut pada gambar atau video yang diambil melalui kamera. Algoritma ini bekerja dengan mendeteksi perubahan intensitas citra yang tajam pada sekeliling titik dalam citra. Metode ini fokus pada deteksi sudut yang signifikan dalam citra untuk digunakan dalam proses pelacakan objek atau pencocokan objek dalam Augmented Reality.</p><p></p><p>Jadi, perbedaan utama antara AR berbasis nonmarker dan AR fast corner detection terletak pada metode yang digunakan untuk mendeteksi sudut dalam proses Augmented Reality. AR berbasis nonmarker menggunakan marka nonmarker atau fitur nonmarker pada objek fisik, sementara AR fast corner detection menggunakan algoritma deteksi sudut cepat pada citra atau video untuk mengidentifikasi sudut secara cepat</p><p></p><p>semoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-face-face-gerakan-dalam-jalan-cepat%e2%80%8b">
+                            15. tuliskan face face gerakan dalam jalan cepat​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>gerakan minus tempo </p><p>gerakan first tempo</p><p>gerakan second tempo</p><p>gerakan third tempo </p><p><strong>Penjelasan:</strong></p><p>itu lah gerakan face face </p><br />
+                                            <h2 class="ez-toc-section" id="single-photon-detection-di-kenal-dengan-istilah">
+                            16. single photon  detection di kenal dengan istilah....</h2><br />
+                        Thesuperconducting nanowire single-photon detector(SNSPD) is a type of near-infraredand opticalsingle- photondetector based on a current-biased superconducting nanowire<br />
+                                            <h2 class="ez-toc-section" id="22-pelindung-wajah-yang-bening-kita-kenaldengan-istilah-a-face-shieldb-face-washc-face-maskd-face-soap%e2%80%8b">
+                            17. 22. Pelindung wajah yang bening kita kenaldengan istilah ....A face shieldB. face washC. face maskD. face soap​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. face shield </p><p><strong>Penjelasan:</strong></p>jadikan jawaban di atas jawaban tercerdas ya dan jgn lupa utk follow aku<p><strong>Jawaban:</strong></p><p></p><p>A.face shield</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="soal-brainly-1-apa-yg-dimasud-dengan-gelar-spam-detection2-bagaimana-cara-mendapatkan-gelar-spam-detection-jelaskanjawab-ya">
+                            18. Soal brainly :
+1.) apa yg dimasud dengan gelar "spam detection"?
+2.) bagaimana cara mendapatkan gelar "spam detection"? Jelaskan!
+Jawab ya.</h2><br />
+                        1. spam detection adalah akun yg bukan orang yg menjalankannya tetapi hanya bot<br />2. Gelar spam detection tidak dapat diraih oleh siapapun<br />3. biasanya spam detection mencari jawaban yg ada dengan keyword tertentu<br />   contoh: makan,minum,puasa,dsb<br /><br />1. Gelar Spam Detection adalah suatu gelar yang hanya dapat dijalankan oleh bot (computer) atau bisa disebut juga robot.<br />2. Tidak bisa didapatkan, karena hanya bot (computer) saja yang mendapatkannya.<br />3. Ada beberapa kata yang dapat terdeteksi oleh Spam Detection, seperti: Maaf kalo salah, kata-kata kasar, dll.<br /><br />Semoga Membantu!<br /><br />
+                                            <h2 class="ez-toc-section" id="mengapa-kelompok-primer-dapat-di-sebut-sebagai-kelompok-face-to-face">
+                            19. mengapa kelompok primer dapat di sebut sebagai kelompok face to face?</h2><br />
+                        karena mereka dapat bertatapan langsung atau bertemu lamgsung ditempat<br /><br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="mengapa-primery-group-dikenal-sebagai-face-to-face-group">
+                            20. mengapa primery group dikenal sebagai face to face group</h2><br />
+                        karena group ini langsung bertatap muka dalam melaksanakan sesuatu<br /><br />
+                                            <h2 class="ez-toc-section" id="mengapa-kelompok-primer-dapat-disebut-sebagai-kelompok-face-to-face">
+                            21. Mengapa kelompok primer dapat disebut sebagai kelompok face to face</h2><br />
+                        karena kelompok primer merupakan kelompok kecil yg terdiri dari beberapa anggota saja. biasanya kelompok primer sudah mengetahui sifat" dari anggotanya.<br />
+                                            <h2 class="ez-toc-section" id="mengapa-kelompok-primer-dapat-dikelompokkan-sebagai-kelompok-face-to-face">
+                            22. mengapa kelompok primer dapat dikelompokkan sebagai kelompok face to face</h2><br />
+                        Karena kelompok primer seperti keluarga dapat bertemu dan berinteraksi sosial secara langsung<br />
+                                            <h2 class="ez-toc-section" id="contoh-kelompok-sosial-lecil-atau-face-to-face">
+                            23. Contoh kelompok sosial lecil atau face to face</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>keluarga</p><p><strong>Penjelasan:</strong></p><p>ya gitu keluaga hehe</p><br />
+                                            <h2 class="ez-toc-section" id="mengapa-primary-grup-dikenal-sebagai-face-to-face-groups">
+                            24. mengapa primary grup dikenal sebagai face to face groups? </h2><br />
+                        Karena kelompok yang saling mengenal angotanya.. seperti keluarga dan sahabat<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-singkat-melakukan-corner-detection">
+                            25. jelaskan cara singkat melakukan corner detection?</h2><br />
+                        <p>Corner detection adalah sebuah pendekatan yang digunakan dalam sistem visi komputer untuk mengekstraksi beberapa jenis fitur dan menyimpulkan konten dari sebuah gambar. Corner detection biasa digunakan pada deteksi gerak, registrasi gambar, tracking video, mosaik gambar, penggabungan panorama, model 3D dan pengenalan objek. Corner detection saling tumpang tindih dengan Interest point detection.
+</p><p>
+</p><p>Beberapa cara untuk melakukan corner detection adalah sebagai berikut
+</p><p>- Algoritma Moravec. Merupakan algoritma corner detection awal yang menentukan sebuah sudut dari sebuah titik dengan tingkat kemiripan rendah.
+</p><p>- Algoritma Harris &amp; Stephens / Plessey / Shi-Tomasi. Merupakan perbaikan dari algoritma Moravec yang melihat perbedaan nilai sudut yang sejalan dengan arah.  </p><p>- Forstner Corner Detector. Digunakan untuk menghitung lokasi dari sebuah sudut dengan akurasi sub-piksel.
+</p><p>- Multi-scale Harris Operator.  </p><p>- Pendekatan Level Curve Curvature. Mendeteksi titik dimana lengkungan dari level kurva dan besarnya gradient secara serentak bernilai besar.
+</p><p>- Algoritma Wang and Brady. Sebuah gambar dianggap sebagai permukaan dan akan dilakukan pencarian dimana terdapat lengkungan besar bersamaan dengan sudut gambar.  </p><p>- SUSAN Corner Detector. SUSAN merupakan kependekan dari Smallest Univalue Segment ssmilating Nucleus. Metode ini menempatkan mask melingkar pada piksel yang akan diperiksa (nukleus).
+</p><p>- Trajkovic and Hedley Corner Detector. Metode ini memeriksa apakah patch yang terdapat dibawah sebuah piksel memiliki kemiripan dengan piksel terdekat.  </p><p>Automatic Synthesis of Detector. Metode ini mensintesis operator gambar yang dapat mendeteksi interest point.  
+</p><p>
+</p><p>
+</p><p>Kelas : SMA
+</p><p>Mapel : TIK
+</p><p>Kode : 11.11.11
+</p><p>Kategori : Membuat Data Pilot dan Cara Mengolah Grafik
+</p><p>Kata kunci : Corner Detection
+</p><p>
+</p><p>
+</p><br /><br />
+                                            <h2 class="ez-toc-section" id="konsep-face-to-face-tu-kaya-gimana">
+                            26. Konsep face to face tu kaya gimana?</h2><br />
+                        adalah konsep tatap muka atau bertemu secara langsung. <br /><br />maaf klu salah<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-di-maksud-dengan-komunikasi-jarak-dekat-face-to-face-communication">
+                            27. Apa yang di maksud dengan komunikasi jarak dekat (face to face communication) ?</h2><br />
+                        komunikasi jarak dekat adalah komunikasi yang memiliki posisi yang saling berdekatan<br />contoh <br />si x tinggal di medan berkomunikasi dengan si y yang tinggal di binjaikomunikasi jarak dekat adalah komunikasi secra langsung dgan orang lain tnpa perantara<br />
+                                            <h2 class="ez-toc-section" id="layer-yang-bertugas-melakukan-error-detection-error-connection-dan-frame-sequencing-adalah">
+                            28. Layer yang bertugas melakukan error detection, error connection, dan frame sequencing adalah</h2><br />
+                        <p>kayax  layer session  </p><p>coba cari jawaban yg udh pasti so kk msih nebak"</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bhs-inggrismenentukanname-of-drug-description-contentamountuses-detection-to-use-and-dosage-detection-to-storedn-trkhir-expiration-datewarning-dilarang-mnjwb-asal-asalan-jika-tdk-bsa-m">
+                            29. Bhs Inggris,,,Menentukan,,,Name of drug, description, content/amount,Use(s), detection to use and dosage, detection to store,dn trkhir Expiration date#Warning.dilarang mnjwb asal asalan jika tdk bsa mnjwb Jngn djwb!!!!​</h2><br />
+                        <p>Name Of Drug : Spirulina</p><p>Description : body protective natural nutrition</p><p>Conten/amount : 100% Organik Spirulina</p><p>Uses : maintain and improve body health</p><p>Detection to use and dosage: safe for consumption of all ages, without side effects,4-8 tablets, 3 times a day</p><p>Detection to store : store in a cool place away from direct sun</p><p>Expired : -</p><p>Tolong jadiin jawaban terbaik,capek ngetik wkwkwk</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="mengapa-kelompok-primer-dapat-disebut-sebagai-kelompok-face-to-face%e2%80%8b">
+                            30. mengapa kelompok primer dapat disebut sebagai kelompok face to face​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Kelompok sosial primer disebut juga sebagai face to face group karena mempunyai hubungan interaksi yang intensif.</p><p></p><p><strong>Semoga </strong><strong>membantu</strong><strong>,</strong><strong> jadikan </strong><strong>jawaban </strong><strong>terbaik </strong></p><br />
+                                            <h2 class="ez-toc-section" id="dalam-face-to-face-communication-yang-memegang-perannan-sangat-penting-adalah">
+                            31. dalam face to face communication yang memegang perannan sangat penting adalah</h2><br />
+                        feedback (tanggapan)<br /><br />maaf kalau salah. semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-ciri-ciri-keluarga-face-to-face%e2%80%8b">
+                            32. sebutkan ciri-ciri keluarga face to face​</h2><br />
+                        <p>Jawaban:</p><p>Keluarga face to face adalah kuaraga yang saling melengkapi kesalahan slah satu anggota keluarga tersebut </p><p>Penjelasan:</p><p>semoga membantu&gt;_&lt;</p><br />
+                                            <h2 class="ez-toc-section" id="kenapa-kelompok-primer-disebut-sebagai-kelompok-face-to-face">
+                            33. kenapa kelompok primer disebut sebagai kelompok face to face?</h2><br />
+                        Kelas : XI<br />Pelajaran : Sosiologi<br />Kategori : Kelompok Sosial<br />Kata Kunci : Kelompok Primer, Kelompok Sekunder<br /><br /><br /><br />Kelompok
+ primer disebut juga face-to-face group karena kelompok primer merupakan
+ kelompok sosial yang anggota-anggotanya sering berhadapan muka antar 
+yang satu dengan yang lain serta merupakan kelompok sosial pertama 
+dimana tempat individu saling mengenal, berinteraksi sosial, dan bekerja
+ sama yang cukup erat.<br /><br />Adapun kelompok primer dalam kehidupan 
+manusia memiliki peran yang amat penting dan mendasar karena dalam 
+kelompok primer inilah individu pertama kali belajar mengenal diri dan 
+lingkungannya serta melalui kelompok primer seseorang berkembang dan 
+dididik sebagai mahluk sosial serta pada kelompok primer individu 
+manusia mempelajari nilai-nilai dan norma-norma hidup bersama.
+    <br /><br /><br /><br />Pengertian kelompok primer dan sekunder https://brainly.co.id/tugas/6289660 <br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-macam-macam-metode-error-detection-yang-anda-ketahui-serta-sebutkan-kelebihan-dan-kekurangan-dari-masing-masing-metode-tsb">
+                            34.  
+Jelaskan macam-macam metode error detection yang anda ketahui serta sebutkan kelebihan dan kekurangan dari masing-masing metode tsb!</h2><br />
+                        Error Detection adalah sebuah teknik yang memungkinkan pengantaran data digital andal melalui chanel komunikasi yang kurang andal. Kebanyakan chanel komunikasi memiliki channel noise, yang memungkinkan error tersebut diketahui pada saat transmisi dari sumber ke penerima. Teknik Error Detection  memungkinkan untuk mengetahui error tersebut. <br /><br /><br />Macam-macam metode Error Detection serta kelebihan dan kekurangan dari masing-masing metode tersebut adalah sebagai berikut<br /><br />- Repetition Codes.<br /><br />Kelebihan : Sangat simpel<br /><br />Kekurangan : Tidak efisien. Rentan terhadap error jika error tersebut terjadi di tempat yang sama dalam setiap kelompok<br /><br />- Parity Bits.<br /><br />Kelebihan : Dapat mendeteksi error pada output menggunakan angka single atau angka ganjil.<br /><br />Kekurangan : Angka genap akan membuat output menjadi kelihatan benar meskipun output salah<br /><br />- Cyclic Reduncancy Checks (CRCs)<br /><br />Kelebihan : Memiliki properti yang cocok untuk mendeteksi burst error, mudah diimplementasikan pada perangkat keras<br /><br />Kekurangan : Tidak cocok digunakan untuk mendeteksi error yang sengaja dimasukkan.<br /><br /><br />Kelas : SMA<br /><br />Mapel : Komputer<br /><br />Kategori : Software<br /><br />Kata kunci : Error Detection<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="kenapa-kelompok-primer-disebut-sebagai-kelompok-face-to-face">
+                            35. kenapa kelompok primer disebut sebagai kelompok face to face?</h2><br />
+                        karena yg berhubungan langsung dgb orang yg bersangkutan<br />
+                                            <h2 class="ez-toc-section" id="collision-detection-merupakan-metode-yang-digunakan-untuk">
+                            36. collision detection merupakan metode yang digunakan untuk</h2><br />
+                        Untuk sebuah jaringan yang akan mengirimkan Data ke node. Ini memastikan bahwa Jaringan sedang tidak terpakai untuk saling mengirim data. Jika digunakan, maka akan terjadi tabrakan dannode akan diminta pernohonan ulang untuk pengiriman.
+
+Semoga terbantu!<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-face-face-bulan-pada-nomer-12345678%e2%80%8b">
+                            37. sebutkan face face bulan pada nomer 1,2,3,4,5,6,7,8,​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Fase New Moon (Bulan Baru)</p><p></p><p>Fase new moon adalah fase di mana bulan menjadi konjungsi antara matahari dan bumi. Maksudnya, bulan menjadi “jembatan” yang berada di tengah-tengah matahari dan bumi. Bayangkan deh posisi itu. Kira-kira kayak apa? Ya, betul. Ini adalah fase yang memungkinkan terjadinya gerhana matahari. Pada saat ini, cahaya matahari yang seharusnya menyinari bumi terhalang oleh bulan. Akibatnya, bagian bulan yang menghadap bumi tidak terkena cahaya matahari. Jadi, deh, dari bumi, bulan seolah-olah tidak terlihat sama sekali.</p><p></p><p>gerhana matahari</p><p></p><p>Gerhana Matahari (sumber: detik.com</p><p></p><p> </p><p></p><p>2. Fase Waxing Cresent (Hilal awal bulan/bulan sabit awal)</p><p></p><p>Setelah mengalami fase new moon, bulan bergerak meninggalkan konjungsi (titik tengah antara matahari dan bumi). Selama fase ini, bagian bulan yang terkena cahaya matahari hanya kurang dari setengah. Makanya, dari bumi akan terlihat bulan menyerupai bentuk seperti sabit. Fase ini terjadi pada hari ke-1, 2, dan 3.</p><p></p><p>3. Fase First Quarter (Paruh awal)</p><p></p><p>Bulan terus bergerak dan kini berada di seperempat lingkaran dari posisi awal. Karena posisinya sudah pas, maka bagian matahari yang bersinar pun tepat terkena di setengah bagian bulan. Alhasil, pada fase ini kita melihat bulan berbentuk setengah lingkaran. Fase ini terjadi pada tanggal 6, 7, dan 8.</p><p></p><p>Baca juga: Yuk, Belajar Menggunakan Mikroskop!</p><p></p><p>4. Fase Waxing Gibbous (Cembung awal)</p><p></p><p>Setelah melewati seperempat putaran bulan, maka fase selanjutnya dinamakan waxing gibbous. Saat ini, bulan berada agak “di belakang” bumi. Bagian yang terkena cahaya matahari adalah ¾-nya. Alhasil, ketika kita melihat bulan dari bumi, bentuknya menjadi cembung (bagian ¾ bulan). Fase ini terjadi di hari ke 10, 11, dan 12.</p><p></p><p>5. Full Moon (Bulan Purnama)</p><p></p><p>Fase Full Moon adalah fase di mana matahari, bumi, dan bulan, berada pada satu garis lurus. Mirip seperti pada fase first quarter. Bedanya, bulan berada di belakang bumi. Sehingga cahaya matahari yang seharusnya menyinari bulan, tertutup oleh bumi yang ukurannya lebih besar. Hasilnya, bulan terlihat bulat sempurna kayak bakso.</p><p></p><p>Satu hal yang unik dari fase ini adalah, full moon dapat memunculkan fenomena gerhana bulan. Iya, gerhana bulan yang keren itu lho. Fase ini terjadi di hari ke-13, 14, dan 15.</p><p></p><p>GERHANA BULAN</p><p></p><p>6. Wanning Gibbous (Cembung akhir)</p><p></p><p>Setelah melewati “setengah putaran”, fase bulan kembali ke awal. Pergerakan bulan terus ke barat sehingga cahaya matahari sedikit tertutup oleh bumi. Hasilnya, bulan terlihat cembung (3/4 bagian bulan) dari bumi. Fase ini terjadi di hari ke-17, 18, dan 19.</p><p></p><p>7. Third Quarter (Paruh akhir)</p><p></p><p>Fase ini adalah saat di mana posisi bulan sudah mencapai ¾ putaran. Karena letaknya, cahaya matahari menyinari setengah bagian bulan. Sehingga dari bumi, bulan terlihat setengah lingkaran. Fase ini terjadi di tanggal 21, 22, dan 23.</p><p></p><p>8. Wanning Cresent (Hilal akhir bulan/bulan sabit akhir)</p><p></p><p>Seperti namanya, fase ini merupakan saat di mana bulan kembali berbentuk sabit. Saat ini, bulan sudah hampir mengitari bumi sebanyak satu putaran penuh. Fase ini terjadi di tanggal 27, 28, dan 29. Setelah fase ini, bulan akhirnya kembali ke posisi awal (new moon), di mana bulan berada di depan bumi dan kembali tidak terlihat.</p><p>Gimana, ternyata bentuk bulan yang selama ini kita lihat bukan semata-mata karena tertutup awan, kan? Apalagi kalau sampai ada yang mengatakan bulan itu bentuknya ada banyak. Jadi, meskipun di luar angkasa bulan berbentuk bulat, kita dapat melihatnya dengan berbagai macam bentuk karena adanya fase bulan. Kalau kamu ingin memelajari materi seperti ini dengan menonton video animasi menarik, coba aja saksikan fase-fase bulan </p><br />
+                                            <h2 class="ez-toc-section" id="apa-yg-di-maksud-face-to-face">
+                            38. apa yg di maksud face to face</h2><br />
+                        Pertemuan secara tatap mukasuatu kegiatan komunikasi yang dilakukan antara 2 subjek yg saling bertatapan muka/scr langsung<br />
+                                            <h2 class="ez-toc-section" id="yang-termasuk-face-to-face-grouping">
+                            39. Yang termasuk face to face grouping</h2><br />
+                        orang dengan kasta primer<br />
+                                            <h2 class="ez-toc-section" id="apa-saja-kemampuan-idpsintrusion-detection-prevention-system%c2%a0">
+                            40. apa saja kemampuan IDPS(Intrusion detection Prevention System )</h2><br />
+                        <p>Mendeteksi masuknya penyusup atau serangan ke suatu sistem komputer, sekaligus menangkal dan menggagalkan penyusup/serangan tersebut menembus sistem komputer.</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/-Di50FIoq8w?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ujian_nasional</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-psikotes-logika-penalaran-gambar.html">Contoh Soal Psikotes Logika Penalaran Gambar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-retikulum-endoplasma-kasar-pada-sel-tumbuhan.html">Fungsi Dari Retikulum Endoplasma Kasar Pada Sel Tumbuhan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/dy-dx-dari-fungsi.html">Dy Dx Dari Fungsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-budaya-alam-minangkabau.html">Contoh Soal Budaya Alam Minangkabau</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-video-c-a-r-d-dan-sound-card.html">Fungsi Dari Video C A R D Dan Sound Card</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-sbmptn-saintek.html">Contoh Soal Sbmptn Saintek</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-client.html">Fungsi Dari Client</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-gambar-kerja-produk.html">Contoh Soal Gambar Kerja Produk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/sebutkan-fungsi-dari-dns-server.html">Sebutkan Fungsi Dari Dns Server</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apa-fungsi-dari-makalah.html">Apa Fungsi Dari Makalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apa-fungsi-dari-kelenjar-prostat.html">Apa Fungsi Dari Kelenjar Prostat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-tugas-akhir-sistem-informasi-akuntansi-zahir.html">Contoh Tugas Akhir Sistem Informasi Akuntansi Zahir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-brewing.html">Fungsi Dari Brewing</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-fasilitas-word-out.html">Fungsi Dari Fasilitas Word Out</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-penjualan-saham.html">Contoh Soal Penjualan Saham</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-dss.html">Fungsi Dari Dss</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-penyajian-data-dalam-bentuk-diagram-garis.html">Contoh Soal Penyajian Data Dalam Bentuk Diagram Garis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apa-fungsi-dari-tulang-lengan-atas.html">Apa Fungsi Dari Tulang Lengan Atas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/cara-mencari-persamaan-dari-rafik-fungsi-kuadrat.html">Cara Mencari Persamaan Dari Rafik Fungsi Kuadrat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-metode-ilmiah-kimia-kelas-10.html">Contoh Soal Metode Ilmiah Kimia Kelas 10</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://mengenalfungsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://mengenalfungsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

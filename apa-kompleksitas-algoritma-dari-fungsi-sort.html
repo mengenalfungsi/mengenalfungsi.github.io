@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apa Kompleksitas Algoritma Dari Fungsi Sort - BELAJAR</title>
+    <meta name="description" content="Apa Kompleksitas Algoritma Dari Fungsi Sort, , , , , , , 0, , , , , , 0, apa-kompleksitas-algoritma-dari-fungsi-sort, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Apa Kompleksitas Algoritma Dari Fungsi Sort - BELAJAR" />
+    <meta property="og:description" content="Apa Kompleksitas Algoritma Dari Fungsi Sort, , , , , , , 0, , , , , , 0, apa-kompleksitas-algoritma-dari-fungsi-sort, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Apa Kompleksitas Algoritma Dari Fungsi Sort - BELAJAR" />
+    <meta name="twitter:description" content="Apa Kompleksitas Algoritma Dari Fungsi Sort, , , , , , , 0, , , , , , 0, apa-kompleksitas-algoritma-dari-fungsi-sort, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://mengenalfungsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://mengenalfungsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://mengenalfungsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://mengenalfungsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://mengenalfungsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://mengenalfungsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://mengenalfungsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://mengenalfungsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Apa Kompleksitas Algoritma Dari Fungsi Sort</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">KhunRan</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Apa+Kompleksitas+Algoritma+Dari+Fungsi+Sort" alt="Apa Kompleksitas Algoritma Dari Fungsi Sort">
+                    </div>
+                    <p></p>
+                    <p>Apakah itu algoritma bogo sort? Siapa penciptanya? Berapakah kompleksitasnya? (best case, average, dan worst case)</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-itu-algoritma-bogo-sort-siapa-penciptanya-berapakah-kompleksitasnya-best-case-average-dan-worst-case">1.
+                                            Apakah itu algoritma bogo sort? Siapa penciptanya? Berapakah kompleksitasnya? (best case, average, dan worst case)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#insertion-sort-dan-algoritmanya">2.
+                                            insertion sort? dan algoritmanya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-bubble-sort-disebut-juga-sebagai-sinking-sort-mengapa-demikian-jelaskan%e2%80%8b">3.
+                                            Algoritma Bubble Sort disebut juga sebagai Sinking Sort. Mengapa demikian? Jelaskan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-fungsi-sort">4.
+                                            apa yang dimaksud  dengan fungsi sort </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#urutkan-data-di-bawah-menggunakan-algoritma-bubble-sort-394762%e2%80%8b">5.
+                                            urutkan data di bawah menggunakan algoritma bubble sort = 394762​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-ikon-sort-ascending-dan-sort-descending">6.
+                                            Fungsi ikon sort ascending dan sort descending  </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-alur-kerja-algoritma-insertion-sort%e2%80%8b">7.
+                                            jelaskan alur kerja algoritma insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hal-yang-mempengaruhi-kecepatan-algoritma-sort-adalah">8.
+                                            Hal yang mempengaruhi kecepatan algoritma sort adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sort-pada-query">9.
+                                            fungsi sort pada query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sort-filter-dalam-ms-excell-dalam-sort-z-to-a-berfungsi-untuk">10.
+                                            Fungsi sort &amp; filter dalam Ms. Excell dalam sort Z to A berfungsi untuk .....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-ikon-sort">11.
+                                            Apa fungsi dari ikon sort?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#urutkan-list-bilangan-4253-dengan-algoritma-bubble-sort%e2%80%8b">12.
+                                            urutkan list bilangan 4,2,5,3 dengan algoritma bubble sort!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-adalah-beberapa-jenis-algoritma-sorting-kecuali-a-merge-sort-b-bubble-sort-c-insertion-sort-d-cookie-sort">13.
+                                            Berikut adalah beberapa jenis algoritma sorting, kecuali 
+ A. Merge sort 
+ B. Bubble sort 
+C. Insertion Sort 
+ D. Cookie sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengurutan-algoritma-sinking-sort-adalah-nama-lain-dari%e2%80%8b">14.
+                                            pengurutan algoritma sinking sort adalah nama lain dari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-berikan-contoh-implementasi-bubble-sort-dan-marge-srot2-urutkan-data-pada-gambar-diatas-menggunakan-algoritma-selection-sort%e2%80%8b">15.
+                                            1. berikan contoh implementasi bubble sort dan marge srot2.urutkan data pada gambar diatas menggunakan algoritma selection sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jabarkan-tentang-pola-conquer-pada-algoritma-quick-sort">16.
+                                            Jabarkan tentang pola conquer pada algoritma quick sort?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#urutkan-list-bilangan-4-2-5-3-dengan-algoritma-bubble-sort-%e2%80%8b">17.
+                                            Urutkan list bilangan 4 2 5 3 dengan algoritma bubble sort ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jabarkan-hubungan-mendasar-antara-teori-kompleksitas-komputasi-dengan-algoritma%e2%80%8b">18.
+                                            jabarkan hubungan mendasar antara teori kompleksitas komputasi dengan algoritma​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-sort-descending">19.
+                                            apa fungsi sort descending</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jabarkan-tentang-pola-divide-algoritma-quick-sort">20.
+                                            jabarkan tentang pola divide algoritma quick sort!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-algoritma-sort">21.
+                                            Pengertian algoritma sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-tentang-pengurutan-sorting-untuk-latihan-1-pengurutan-sederhana-urutkan-array-berikut-secara-ascending-dari-terkecil-ke-terbesar-2-pengurutan-descending-urutkan-array-berikut-secara-des">22.
+                                            soal tentang pengurutan (sorting) untuk latihan: 1. Pengurutan Sederhana: Urutkan array berikut secara ascending (dari terkecil ke terbesar): 2. Pengurutan Descending: Urutkan array berikut secara descending (dar terbesar ke terkecil): 3. Pengurutan Karakter: Urutkan string berikut secara alfabetikal: 4. Pengurutan Gabungan: Anda memiliki array bilangan bulat dan desimal Urutkan array tersebut secara ascending dengan mempertahankan tipe data masing-masing elemen. 5 Pengurutan Tanpa Algoritma Bawaan: Jelaskan algoritma pengurutan bubble sort atau insertion sort) 6. Pengurutan dalam Waktu Nyata: Bagaimana algoritma pengurutan berperan dalam pengurutan data dalam basis data relasional? Jelaskan langkah-langkahnya. 7. Kompleksitas Waktu Pengurutan: Apa itu kompleksitas waktu dalam pengurutan? Jelaskan perbedaan antara kompleksitas waktu O(n ^ 2) dan O(n log n) dalam konteks algoritma pengurutan. 8. Pengurutan Stabilitas: Apa yang dimaksud dengan pengurutan stabil? Mengapa pengurutan stabil sering diinginkan dalam beberapa kasus pengurutan data?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-di-antara-algoritma-pengurutan-berikut-yang-lebih-efisien-adalah-a-pencarian-bagi-duab-bubble-sortc-insertion-sortd-selection-sorte-sequential-beruntun6-algoritma-pengurutan-yang-melakuk">23.
+                                            5. di antara algoritma pengurutan berikut yang lebih efisien adalah ....a pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)6. algoritma pengurutan yang melakukan proses dengan menyisipkan elemen array pada posisi yang tepat adalahalgoritma ....a. pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)7. algoritma yang digunakan untuk menyembunyikan pesan adalah ....a. divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort8. algoritma dimana suatu fungsi atau prosedur memanggil dirinya sendiri disebut ....a divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terangkan-hubungan-antara-kemampuan-seorang-programmer-dengan-kompleksitas-suatu-algoritma%e2%80%8b">24.
+                                            terangkan hubungan antara kemampuan seorang programmer dengan kompleksitas suatu algoritma!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-tentang-quick-sort-dengan-delphi-7-jelaskan">25.
+                                            algoritma tentang quick sort dengan delphi 7 ?jelaskan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-merge-sort-dilakukan-dengan-prinsip-divide-and-computer-yang-memiliki-arti">26.
+                                            Algoritma merge sort dilakukan dengan prinsip divide and computer yang memiliki arti</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-kelompok-algoritma-berdasarkan-kompleksitas-waktu-asimptotik%e2%80%8b">27.
+                                            Sebutkan kelompok algoritma berdasarkan kompleksitas waktu asimptotik!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-berikut-ini-yang-termasuk-ke-dalam-algoritma-pencarian-adalah-a-bubble-sortb-insertion-sortc-selection-sortd-sequential-beruntune-shell2-berikut-ini-yang-termasuk-ke-dalam-algoritma-pen">28.
+                                            1. Berikut ini yang termasuk ke dalam algoritma pencarian adalah ....A. bubble sortB. insertion sortC. selection sortD. sequential (beruntun)E. shell2. Berikut ini yang termasuk ke dalam algoritma pencarian yang lebih efektif adalah ....A. pencarian bagi duaB. insertion sortC. selection sortD. sequential (beruntun)E. bubble sort3. Syarat data saat akan melakukan pencarian bagi dua adalah ....A. jumlah data harus genapB. jumlah data harus ganjilC. jumlah data harus banyakD. data harus sudah terurutE. tidak ada syarat yang harusdipenuhi4. Berikut ini yang termasuk ke dalam algoritma pengurutan adalah ....A. pencarian bagi duaB. insertion sortC. rekursifD. sequential (beruntun)E. shell​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-jenis-jenis-serangan-algoritma-kriptografi-beserta-kompleksitasnya">29.
+                                            Jelaskan jenis jenis serangan algoritma kriptografi beserta kompleksitasnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jabarkan-hubungan-antara-algoritma-quick-sort-dengan-pola-devide-and-conquer%e2%80%8b">30.
+                                            jabarkan hubungan antara algoritma quick sort dengan pola devide and conquer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#urutkan-array-3524-dengan-algoritma-insertion-sort">31.
+                                            Urutkan array (3,5,2,4) dengan algoritma insertion sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-gambar-berikut-3-9-4-7-6-2-urutkan-data-pada-gambar-di-atas-menggunakan-algoritmaa-bubble-sort-b-insertion-sort-c-quick-sort-dan-d-marge-sort-%e2%80%8b">32.
+                                            perhatikan gambar berikut 3 9 4 7 6 2 urutkan data pada gambar di atas menggunakan algoritmaa. bubble sort b. insertion sort c. quick sort dan d. marge sort ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-terdapat-5-algoritma-pengurutan-dari-selection-sort-insertion-sort-bubble-sort-merge-sort-dan-quick-sort-jika-anda-memiliki-data-array-sebagai-berikut-9-4-16-20-11-8-urutkan-data-array">33.
+                                            2. Terdapat 5 Algoritma pengurutan, dari selection sort, insertion sort, bubble sort, merge sort dan quick sort. Jika anda memiliki data array sebagai berikut {9, 4, 16, 20, 11, 8). Urutkan data array tersebut dari yg terkecil ke yg terbesar menggunakan selection sort !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-utama-antara-teori-kompleksitas-komputasi-dan-analisis-algoritma">34.
+                                            Jelaskan perbedaan utama antara teori kompleksitas komputasi dan analisis algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-data-berikut-yang-masih-tersusun-secara-acak-data-13-4-7-9-11-2-8-15-1-10-buatlah-tahap-tahap-pengurutan-data-tersebut-menggunakan-a-algoritma-bubble-sort-b-algoritma-selection-sort-c">35.
+                                            Perhatikan data berikut yang masih tersusun secara acak.Data: 13 4 7 9 11 2 8 15 1 10 Buatlah tahap-tahap pengurutan data tersebut menggunakan: a. algoritma bubble sort b. algoritma selection sort c. algoritma insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-menu-sort-asscending-dan-sort-descending">36.
+                                            jelaskan fungsi dari menu sort asscending dan sort descending</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-fungsi-dari-sort-sheet-dan-sort-range-di-google-spreadsheet%e2%80%8b">37.
+                                            apa perbedaan fungsi dari sort sheet dan sort range di google spreadsheet?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-gambar-pseudocode-di-bawah-iniberdasarkan-pseudocode-di-atas-menggunakan-algoritma-pengurutana-bubble-sortb-insertion-sortc-selection-sortd-quick-sorte-merger-sort">38.
+                                            Perhatikan gambar pseudocode di bawah ini!
+Berdasarkan pseudocode di atas menggunakan algoritma pengurutan
+a. Bubble Sort
+b. Insertion Sort
+c. Selection Sort
+d. Quick Sort
+e. Merger Sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-sort-descending%e2%80%8b">39.
+                                            Apa fungsi sort descending​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-7-10-3-2-1-8urutkan-langkah-data-tersebut-dengan-memakai-algoritmaa-bubble-sortb-selection-sort%e2%80%8b">40.
+                                            5 7 10 3 2 1 8Urutkan langkah data tersebut dengan memakai Algoritma:a) Bubble Sortb) Selection Sort​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apakah-itu-algoritma-bogo-sort-siapa-penciptanya-berapakah-kompleksitasnya-best-case-average-dan-worst-case">
+                            1. Apakah itu algoritma bogo sort? Siapa penciptanya? Berapakah kompleksitasnya? (best case, average, dan worst case)</h2><br />
+                        <p>biasanya yg aku tau itu buat pemrograman logika kak..</p><p>aku juga sering utak atik komputer,  belajar coding,  belajar java,  dll</p><p>contohnya kaya </p><p>while not isInOrder(deck):</p><p>shuffle(deck)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="insertion-sort-dan-algoritmanya">
+                            2. insertion sort? dan algoritmanya</h2><br />
+                        menyusun bilangan acak dari yang terkecil ke terbesar, semoga bermanfaat.Untuk penjelasan bisa agam lihat digambar<br /><br />Algoritmannya <br />1.Apabila di elemen pertama dan telah disortir return 1 <br />2.Ambil elemen berikutnya <br />3.Bandingkan <br />4.Ganti posisi dari kedua elemen yang dibandingkan <br />5.Ulangi apabila dilakukan pemindahan elemen pada pengulangan sekarang ini<br />
+                                            <h2 class="ez-toc-section" id="algoritma-bubble-sort-disebut-juga-sebagai-sinking-sort-mengapa-demikian-jelaskan%e2%80%8b">
+                            3. Algoritma Bubble Sort disebut juga sebagai Sinking Sort. Mengapa demikian? Jelaskan!​</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p><p>Untuk menjelaskan <strong>mengapa algoritma bubble sort disebut juga sebagai sinking sort</strong>, kita gunakan prinsip kesetimbangan, yaitu “yang kecil naik dan yang besar turun”.</p><p>Kita bayangkan bahwa data direpresentasikan dalam bentuk susunan elemen data (seperti stack), di mana jenis pengurutan adalah menaik dari atas hingga paling bawah.</p><p>Dengan bubble sort, pada iterasi tertentu, jika suatu elemen data bernilai lebih dari elemen lain yang berada di bawahnya, maka terjadi pertukaran. Elemen yang lebih kecil naik 1 tingkat, dan elemen yang lebih besar turun 1 tingkat. </p><p>Anggap saja elemen terkecil berada pada posisi paling bawah dari susunan data belum terurut, dan elemen terbesar berada pada posisi paling atas dari susunan data tersebut. Maka, elemen terkecil akan naik secara bertahap hingga mencapai puncak susunan data terurut. Hal ini bisa dianalogikan dengan gelembung udara dalam air (<strong>bubble</strong>), yang akan naik hingga ke permukaan.</p><p>Sebaliknya, elemen terbesar akan turun secara bertahap hingga mencapai dasar (posisi terbawah) dari susunan data terurut. Hal ini dapat dianalogikan dengan sebuah batu (bukan batu apung) yang dimasukkan ke air. Batu tersebut akan turun (tenggelam, atau <strong>sinking</strong>) hingga dasar.</p><p>Jadi, dengan jenis pengurutan seperti disebutkan di atas, <strong>algoritma ini disebut bubble sort dengan memandang elemen terkecil</strong>; disebut <strong>sinking sort dengan memandang elemen terbesar</strong>.</p><p><strong>Ilustrasi</strong></p><p>Data belum terurut:</p><p>[tex]\large\text{$\begin{aligned}\boxed{\begin{array}{c}5\\3\\4\\2\\1\end{array}}\end{aligned}$}[/tex]</p><p><strong>Tahapan bubble/sinking sort:</strong></p><strong>“Tenggelamnya“ 5</strong><br />[tex]\large\text{$\begin{aligned}&amp;\boxed{\begin{array}{c}\boxed{5}\\3\\4\\2\\1\end{array}}\to \boxed{\begin{array}{c}3\\\boxed{5}\\4\\2\\1\end{array}}\to\boxed{\begin{array}{c}3\\4\\\boxed{5}\\2\\1\end{array}}\to\boxed{\begin{array}{c}3\\4\\2\\\boxed{5}\\1\end{array}}\to\boxed{\begin{array}{c}3\\4\\2\\1\\\boxed{5}\end{array}}\end{aligned}$}[/tex]<strong>“Tenggelamnya“ 4</strong><br />[tex]\large\text{$\begin{aligned}\to\:&amp;\boxed{\begin{array}{c}\boxed{3}\\4\\2\\1\\5\end{array}}\to\boxed{\begin{array}{c}3\\\boxed{4}\\2\\1\\5\end{array}}\to\boxed{\begin{array}{c}3\\2\\\boxed{4}\\1\\5\end{array}}\to\boxed{\begin{array}{c}3\\2\\1\\\boxed{4}\\5\end{array}}\end{aligned}$}[/tex]<strong>”Tenggelamnya“ 3</strong><br />[tex]\large\text{$\begin{aligned}\to\:&amp;\boxed{\begin{array}{c}\boxed{3}\\2\\1\\4\\5\end{array}}\to\boxed{\begin{array}{c}2\\\boxed{3}\\1\\4\\5\end{array}}\to\boxed{\begin{array}{c}2\\1\\\boxed{3}\\4\\5\end{array}}\end{aligned}$}[/tex]<strong>”Tenggelamnya“ 2</strong><br />[tex]\large\text{$\begin{aligned}\to\:&amp;\boxed{\begin{array}{c}\boxed{2}\\1\\3\\4\\5\end{array}}\to\boxed{\begin{array}{c}1\\\boxed{2}\\3\\4\\5\end{array}}\end{aligned}$}[/tex]<strong>Data terurut.</strong><br />[tex]\large\text{$\begin{aligned}\to\:&amp;\boxed{\begin{array}{c}\bf1\\\bf2\\\bf3\\\bf4\\\bf5\end{array}}\end{aligned}$}[/tex]<p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-fungsi-sort">
+                            4. apa yang dimaksud  dengan fungsi sort </h2><br />
+                        Kalau fungsinya di sql untuk mngurutkan yang paling besar ke kecil atau sebaliknya tergantung command yang diberikan<br />
+                                            <h2 class="ez-toc-section" id="urutkan-data-di-bawah-menggunakan-algoritma-bubble-sort-394762%e2%80%8b">
+                            5. urutkan data di bawah menggunakan algoritma bubble sort = 394762​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Untuk mengurutkan data dengan algoritma Bubble Sort, kita perlu membandingkan dua elemen sekaligus dan menukar posisi mereka jika diperlukan hingga seluruh data sudah terurut. Berikut adalah langkah-langkahnya:</p><p></p><p>Data awal: 394762</p><p></p><p>Langkah 1: Membandingkan dan menukar jika diperlukan.</p><p>3 9 4 7 6 2</p><p>Langkah 2: Membandingkan dan menukar jika diperlukan.</p><p>3 4 9 7 6 2</p><p>Langkah 3: Membandingkan dan menukar jika diperlukan.</p><p>3 4 7 9 6 2</p><p>Langkah 4: Membandingkan dan menukar jika diperlukan.</p><p>3 4 7 6 9 2</p><p>Langkah 5: Membandingkan dan menukar jika diperlukan.</p><p>3 4 7 6 2 9</p><p></p><p>Setelah langkah-langkah di atas, data sudah terurut dengan benar menggunakan algoritma Bubble Sort:</p><p></p><p>2 3 4 6 7 9</p><p></p><p>Sekarang data sudah terurut dari yang terkecil ke yang terbesar.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-ikon-sort-ascending-dan-sort-descending">
+                            6. Fungsi ikon sort ascending dan sort descending  </h2><br />
+                        apa itu sort ? sort merupakan metode dimana data yang di simpan dalam array di urutkan bedasarkan kebutuhan tertentu<br /><br />apa ascending ? ascending merupakan behavior yang ada pada metode looping pada bahasa pemrograman tertentu (++)<br /><br />apa desceding ? sama seperti ascending, descending merupakan kebalikan dari ascending (--)<br /><br />jadi kesimpulannya sort ascending adalah mengurutkan data yang diurutkan kedepan, dan sort descending adalah mengurutkan data yang diurutkan kebelakang<br />ascending :<br />mengurutkan data dari<br />smallest to largest<br />descending: mengurutkan data dr<br />largest to smalle<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-alur-kerja-algoritma-insertion-sort%e2%80%8b">
+                            7. jelaskan alur kerja algoritma insertion sort​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Algoritma Insertion Sort adalah salah satu algoritma sorting sederhana yang bekerja dengan membagi array menjadi dua bagian: bagian yang sudah diurutkan dan bagian yang belum diurutkan. Algoritma ini bekerja dengan memasukkan setiap elemen dari bagian yang belum diurutkan ke posisi yang tepat di dalam bagian yang sudah diurutkan.</p><p></p><p>Berikut adalah langkah-langkah dalam alur kerja algoritma Insertion Sort:</p><p></p><p>1. Langkah pertama adalah memulai dengan array yang belum diurutkan.</p><p>2. Pilih elemen pertama dalam array dan anggap sebagai bagian yang sudah diurutkan.</p><p>3. Selanjutnya, pindahkan elemen berikutnya dari bagian yang belum diurutkan ke bagian yang sudah diurutkan.</p><p>4. Bandingkan elemen ini dengan elemen-elemen di bagian yang sudah diurutkan, dari kanan ke kiri.</p><p>5. Jika elemen yang dipilih lebih kecil dari elemen yang sedang dibandingkan, pindahkan elemen yang dibandingkan ke kanan.</p><p>6. Lanjutkan langkah 5 sampai elemen yang sedang dibandingkan lebih besar dari elemen yang dipilih.</p><p>7. Masukkan elemen yang dipilih ke posisi yang tepat dalam bagian yang sudah diurutkan.</p><p>8. Ulangi langkah 3 hingga 7 untuk setiap elemen yang belum diurutkan.</p><p>9. Setelah semua elemen telah dimasukkan ke posisi yang tepat, array akan terurut.</p><p></p><p><strong>Penjelasan:</strong></p><p>Algoritma Insertion Sort memiliki kompleksitas waktu O(n^2), di mana n adalah jumlah elemen dalam array. Ini berarti algoritma ini tidak efisien untuk array yang sangat besar. Namun, algoritma ini sederhana dan efektif untuk array yang kecil atau hampir terurut.</p><p></p><p></p><p><strong>JANGAN LUPA LIKE DAN BINTANG NYA JIKA JAWABAN NYA MEMUASKAN DAN JADIKAN JAWABAN TERBAIK, SEMOGA TERBANTU (≡^∇^≡)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="hal-yang-mempengaruhi-kecepatan-algoritma-sort-adalah">
+                            8. Hal yang mempengaruhi kecepatan algoritma sort adalah</h2><br />
+                        Hal yang mempengaruhi kecepatannya adalah Operasi perbandingan dan jumlah Operasi pemindahan data.<br /><br />Semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="fungsi-sort-pada-query">
+                            9. fungsi sort pada query</h2><br />
+                        memnambah karakter huruf atau angka <br /><br />maaf klo salah<br />
+                                            <h2 class="ez-toc-section" id="fungsi-sort-filter-dalam-ms-excell-dalam-sort-z-to-a-berfungsi-untuk">
+                            10. Fungsi sort &amp; filter dalam Ms. Excell dalam sort Z to A berfungsi untuk .....</h2><br />
+                        <p>mengurutkan kata/huruf/kalimat yang berawalan dri Z hingga A</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-ikon-sort">
+                            11. Apa fungsi dari ikon sort?</h2><br />
+                        untuk mengurutkan suatu datasy dikit bantu mungkin maksudnya sort ascending dan discending kali3 y.. kalo ascending buat ngurut data dari kecil ke besar yaitu angka 1.2.3.4.5.6.7<br />....10 misalnya kalo discending sebaliknya dari 10.9.8.7.6....1. thanks<br />
+                                            <h2 class="ez-toc-section" id="urutkan-list-bilangan-4253-dengan-algoritma-bubble-sort%e2%80%8b">
+                            12. urutkan list bilangan 4,2,5,3 dengan algoritma bubble sort!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Java:</p><p></p><p><strong>    public class BubbleSortExample {  </strong></p><p><strong>        static void bubbleSort(int[] arr) {  </strong></p><p><strong>            int n = arr.length;  </strong></p><p><strong>            int temp = 0;  </strong></p><p><strong>             for(int i=0; i &lt; n; i++){  </strong></p><p><strong>                     for(int j=1; j &lt; (n-i); j++){  </strong></p><p><strong>                              if(arr[j-1] &gt; arr[j]){  </strong></p><p><strong>                                     //swap elements  </strong></p><p><strong>                                     temp = arr[j-1];  </strong></p><p><strong>                                     arr[j-1] = arr[j];  </strong></p><p><strong>                                     arr[j] = temp;  </strong></p><p><strong>                             }  </strong></p><p><strong>                              </strong></p><p><strong>                     }  </strong></p><p><strong>             }  </strong></p><p><strong>      </strong></p><p><strong>        }  </strong></p><p><strong>        public static void main(String[] args) {  </strong></p><p><strong>                    int arr[] ={4,2,5,3};  </strong></p><p><strong>                     </strong></p><p><strong>                    System.out.println("Array Before Bubble Sort");  </strong></p><p><strong>                    for(int i=0; i &lt; arr.length; i++){  </strong></p><p><strong>                            System.out.print(arr[i] + " ");  </strong></p><p><strong>                    }  </strong></p><p><strong>                    System.out.println();  </strong></p><p><strong>                      </strong></p><p><strong>                    bubbleSort(arr);//sorting array elements using bubble sort  </strong></p><p><strong>                     </strong></p><p><strong>                    System.out.println("Array After Bubble Sort");  </strong></p><p><strong>                    for(int i=0; i &lt; arr.length; i++){  </strong></p><p><strong>                            System.out.print(arr[i] + " ");  </strong></p><p><strong>                    }  </strong></p><p><strong>       </strong></p><p><strong>            }  </strong></p><p><strong>    }  </strong></p><p></p><p><strong></strong></p><p>Bahasa Golang:</p><p></p><p><strong>package main</strong></p><p><strong>import "fmt"</strong></p><p><strong>func bubleSort(arr []int) {</strong></p><p><strong>  for {</strong></p><p><strong>    disortir := true</strong></p><p><strong>    for i := 0; i &lt; len(arr)-1; i++ {</strong></p><p><strong>      if arr[i] &gt; arr[i+1] {</strong></p><p><strong>        tmp := arr[i]</strong></p><p><strong>        arr[i] = arr[i+1]</strong></p><p><strong>        arr[i+1] = tmp</strong></p><p><strong>        disortir = false</strong></p><p><strong>      }</strong></p><p><strong>    }</strong></p><p><strong>    if disortir == true {</strong></p><p><strong>      break</strong></p><p><strong>    }</strong></p><p><strong>  }</strong></p><p><strong>}</strong></p><p><strong>func main() {</strong></p><p><strong>  arr := []int{4,2,5,3}</strong></p><p><strong>  bubleSort(arr)</strong></p><p><strong>  for i := 0; i &lt; len(arr); i++ {</strong></p><p><strong>    fmt.Print(arr[i], " ")</strong></p><p><strong>  }</strong></p><p><strong>  fmt.Print("\n")</strong></p><p><strong>}</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="berikut-adalah-beberapa-jenis-algoritma-sorting-kecuali-a-merge-sort-b-bubble-sort-c-insertion-sort-d-cookie-sort">
+                            13. Berikut adalah beberapa jenis algoritma sorting, kecuali 
+ A. Merge sort 
+ B. Bubble sort 
+C. Insertion Sort 
+ D. Cookie sort</h2><br />
+                        <p>Bukan termasuk bagian dari jenis <strong>algoritma sorting</strong> adalah Cookie sort. Sedangkan pilihan jawaban lainnya merupakan jenis algoritma sorting.</p>Pembahasan <p>Terdapat beberapa jenis dari <strong>algoritma sorting</strong> yaitu antara lain adalah: </p>Bubble Sort merupaan jenis dari algoritma sorting yang dilakukan dengan membandingkan masing-masing item dalam suatu list secara berpasangan dan mengulanginya sampai akhir list secara berurutan.Insertion Sort merupaan jenis dari algoritma sorting yang pada dasarnya memilih data yang akan diurutkan menjadi dua bagian, yang belum diurutkan dan yang sudah diurutkan. Selection Sort merupaan jenis dari algoritma sorting yang memilih buch schreiben lassen elemen dengan nilai terendah kemudian menukar elemen yang terpilih dengan elemen ke-i dimana i dimulai dari 1 ke n. Shell Sort merupaan jenis dari algoritma sorting yang  sama dengan insertion dimana setiap nilai i dalam n/i diurutkan. Merge Sort merupaan jenis dari algoritma sorting yang menggunakan cara divide and conquer dimana memecah kemudian menyelesaikan setiap bagian dan menggabungkan nya kembali.Heap Sort merupaan jenis dari algoritma sorting yang menggunakan struktur data heap tutoring-statistik.de , dengan nilai parent selalu lebih besar dari pada nilai childnya.Pelajari lebih lanjut Materi tentang algoritma https://brainly.co.id/tugas/17152743Materi tentang pengertian dari algoritma https://brainly.co.id/tugas/25750983Materi tentang bentuk algoritma https://brainly.co.id/tugas/2978208<p>====================</p>Detil jawaban<p>Kelas: SMP</p><p>Mata pelajaran: TI</p><p>Bab: -</p><p>Kode kategori: -</p><p></p><p>#AyoBelajar #SPJ2</p><br />
+                                            <h2 class="ez-toc-section" id="pengurutan-algoritma-sinking-sort-adalah-nama-lain-dari%e2%80%8b">
+                            14. pengurutan algoritma sinking sort adalah nama lain dari​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Nama lain untuk algoritma Sinking Sort adalah:</p><p>- Bubble Sort</p><p></p><p>Algoritma Sinking Sort dan Bubble Sort adalah istilah yang sering digunakan secara bergantian karena keduanya memiliki konsep yang sama. Algoritma ini bekerja dengan membandingkan dan menukar elemen secara berpasangan dalam urutan yang salah. Jika elemen pada posisi i lebih besar dari elemen pada posisi i+1, maka elemen tersebut ditukar. Proses ini berulang-ulang hingga seluruh daftar diurutkan secara benar.</p><p></p><p>Dalam beberapa literatur dan sumber, algoritma ini disebut Sinking Sort karena elemen yang lebih besar akan "terbenam" atau "mengendap" ke posisi yang lebih bawah saat proses pertukaran dilakukan berulang kali. Namun, secara umum, istilah Bubble Sort lebih umum digunakan.</p><br />
+                                            <h2 class="ez-toc-section" id="1-berikan-contoh-implementasi-bubble-sort-dan-marge-srot2-urutkan-data-pada-gambar-diatas-menggunakan-algoritma-selection-sort%e2%80%8b">
+                            15. 1. berikan contoh implementasi bubble sort dan marge srot2.urutkan data pada gambar diatas menggunakan algoritma selection sort​</h2><br />
+                        <p>Tentu, berikut adalah contoh implementasi Bubble Sort dan Merge Sort dalam bahasa pemrograman Python:</p><p><strong>Bubble Sort:</strong></p><p>def bubble_sort(arr):</p><p>    n = len(arr)</p><p>    for i in range(n - 1):</p><p>        for j in range(0, n - i - 1):</p><p>            if arr[j] &gt; arr[j + 1]:</p><p>                arr[j], arr[j + 1] = arr[j + 1], arr[j]</p><p><strong># Contoh penggunaan Bubble Sort</strong></p><p>arr = [64, 34, 25, 12, 22, 11, 90]</p><p>bubble_sort(arr)</p><p>print("Hasil Bubble Sort:", arr)</p><p>Merge Sort:</p><p></p><p></p><p>def merge_sort(arr):</p><p>    if len(arr) &gt; 1:</p><p>        mid = len(arr) // 2</p><p>        left_half = arr[:mid]</p><p>        right_half = arr[mid:]</p><p></p><p>        merge_sort(left_half)</p><p>        merge_sort(right_half)</p><p></p><p>        i = j = k = 0</p><p></p><p>        while i &lt; len(left_half) and j &lt; len(right_half):</p><p>            if left_half[i] &lt; right_half[j]:</p><p>                arr[k] = left_half[i]</p><p>                i += 1</p><p>            else:</p><p>                arr[k] = right_half[j]</p><p>                j += 1</p><p>            k += 1</p><p></p><p>        while i &lt; len(left_half):</p><p>            arr[k] = left_half[i]</p><p>            i += 1</p><p>            k += 1</p><p></p><p>        while j &lt; len(right_half):</p><p>            arr[k] = right_half[j]</p><p>            j += 1</p><p>            k += 1</p><p><strong># Contoh penggunaan Merge Sort</strong></p><p>arr = [38, 27, 43, 3, 9, 82, 10]</p><p>merge_sort(arr)</p><p>print("Hasil Merge Sort:", arr)</p><strong>Pembahasan</strong><p>Kedua algoritma ini digunakan untuk mengurutkan elemen-elemen dalam sebuah array. <strong>Bubble Sort</strong> adalah algoritma pengurutan sederhana yang secara berulang membandingkan dan menukar elemen-elemen berdekatan jika diperlukan, sedangkan<strong> Merge Sort</strong> adalah algoritma pengurutan yang membagi array menjadi dua bagian, mengurutkan masing-masing bagian secara terpisah, lalu menggabungkannya kembali dalam urutan yang benar. Merge Sort biasanya lebih efisien daripada Bubble Sort, terutama untuk daftar panjang.</p><strong>Pelajari Lebih Lanjut</strong><p>Pelajari lebih lanjut materi tentang Fungsi bahasa pemrograman adalah https://brainly.co.id/tugas/30933312</p><p><strong>#BelajarBersamaBrainly#SPJ1</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jabarkan-tentang-pola-conquer-pada-algoritma-quick-sort">
+                            16. Jabarkan tentang pola conquer pada algoritma quick sort?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Pola conquer pada algoritma Quick Sort adalah langkah di mana subarray yang lebih kecil dibagi menjadi sub-subarray yang lebih kecil atau elemen individual, dan kemudian diurutkan secara rekursif. Ini terjadi setelah proses pemisahan (divide) dalam algoritma Quick Sort. Dalam fase conquer, setiap subarray yang lebih kecil diurutkan secara terpisah menggunakan algoritma Quick Sort.</p><p></p><p>Berikut adalah langkah-langkah dan penjelasan pola conquer pada algoritma Quick Sort:</p><p></p><p>1. **Memecah Subarray:**</p><p>   Setelah pemisahan (divide) dilakukan, array awal terbagi menjadi dua bagian, yaitu subarray yang lebih kecil. Langkah conquer akan diterapkan pada setiap subarray ini.</p><p></p><p>2. **Urutkan Subarray Secara Rekursif:**</p><p>   Pada langkah conquer, setiap subarray yang lebih kecil akan diurutkan secara rekursif menggunakan algoritma Quick Sort. Proses ini melibatkan pemisahan (divide) kembali dan kemudian pengurutan subarray-subarray tersebut.</p><p></p><p>3. **Elemen Individual:**</p><p>   Pada titik tertentu dalam rekursi, subarray akan menjadi sangat kecil sehingga hanya terdiri dari satu atau dua elemen. Pada titik ini, subarray dianggap sudah terurut karena elemen individunya.</p><p></p><p>4. **Penggabungan:**</p><p>   Setelah semua subarray lebih kecil diurutkan, langkah conquer menggabungkan kembali subarray-subarray ini sehingga membentuk subarray yang lebih besar dan terurut. Namun, perhatikan bahwa penggabungan ini biasanya tidak memerlukan langkah tambahan dalam algoritma Quick Sort karena pengurutan telah terjadi secara in-place dalam array.</p><p></p><p>Pola conquer ini membantu menerapkan prinsip "divide and conquer" dalam algoritma Quick Sort. Dengan memecah masalah menjadi sub-masalah yang lebih kecil, algoritma ini secara efisien mengurutkan seluruh array dengan memanfaatkan rekursi untuk mengurutkan subarray-subarray yang lebih kecil. Setelah seluruh subarray terurut, array induk juga akan terurut karena sifat transitif pembandingan dalam algoritma Quick Sort.</p><br />
+                                            <h2 class="ez-toc-section" id="urutkan-list-bilangan-4-2-5-3-dengan-algoritma-bubble-sort-%e2%80%8b">
+                            17. Urutkan list bilangan 4 2 5 3 dengan algoritma bubble sort ​</h2><br />
+                        <p><strong>I</strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>s</strong><strong>i</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>t</strong><strong>a</strong><strong>m</strong><strong>a</strong><strong>:</strong></p><p>(4 2 5 3) menjadi (2 4 5 3)</p><p>(2 4 5 3) menjadi (2 4 5 3) </p><p>(2 4 5 3) menjadi (2 4 3 5)</p><p></p><p><strong>I</strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>s</strong><strong>i</strong><strong> </strong><strong>k</strong><strong>e</strong><strong>d</strong><strong>u</strong><strong>a</strong><strong>:</strong></p><p>(2 4 3 5) menjadi (2 4 3 5)</p><p>(2 4 3 5) menjadi (2 3 4 5)</p><p>(2 3 4 5) menjadi (2 3 4 5)</p><p></p><p>Jadi, hasil dari algoritma bubble sort untuk 4 2 5 3 adalah 2 3 4 5.</p><p></p>Pembahasan:<p></p><p><strong>Algortima bubble sort</strong> adalah teknik pengurutan sebuah data numerik yang tersusun secara salah, sehingga akan diurutkan dengan cara menukarkan angka pertama dan kedua, angka kedua dan ketiga, angka ketiga dan keempat, dan seterusnya.</p><p></p><p>Adapun proses pengurutan data dari bilangan 4 2 5 3 dengan algoritma bubble sort, yaitu:</p><p></p><p><strong>Iterasi pertama:</strong></p><p>(4 2 5 3) menjadi (2 4 5 3) </p>(4 &gt; 2, maka 4 ditukar dengan 2).<p>(2 4 5 3) menjadi (2 4 5 3) </p>(Tidak ada penukaran karena 4 &lt; 5).<p>(2 4 5 3) menjadi (2 4 3 5)</p>(5 &gt; 3, maka 5 ditukar dengan 3).<p></p><p><strong>Iterasi kedua:</strong></p><p>(2 4 3 5) menjadi (2 4 3 5)</p>(Tidak ada penukaran karena 2 &lt; 4).<p>(2 4 3 5) menjadi (2 3 4 5)</p>(4 &gt; 3, maka 4 ditukar dengan 3).<p>(2 3 4 5) menjadi (2 3 4 5)</p>(Tidak ada penukaran karena 4 &lt; 5).<p></p><p>Jadi, hasil dari algoritma bubble sort untuk 4 2 5 3 adalah 2 3 4 5.</p><p></p>Pelajari lebih lanjut:<p>Pelajari lebih lanjut tentang algoritma bubble sort di brainly.co.id/tugas/51763021</p><p></p><p><strong>#SolusiBrainlyCommunity</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jabarkan-hubungan-mendasar-antara-teori-kompleksitas-komputasi-dengan-algoritma%e2%80%8b">
+                            18. jabarkan hubungan mendasar antara teori kompleksitas komputasi dengan algoritma​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Kompleksitas komputasi identik dengan cabang dari teori komputasi dalam ilmu komputer yang berfokus pada mengklasifikasikan masalah komputasi sesuai dengan kesulitan inheren mereka. Oleh karena itu, menguasai konsep Big O (dibaca Big Oh) menjadi suatu kewajiban jika ingin menjadi programmer yang handal.</p><p><strong>Penjelasan:</strong></p><p>maaf klo  slh</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-sort-descending">
+                            19. apa fungsi sort descending</h2><br />
+                        Sort Descending adalah teknik mengurutkan data dari yang terbesar sampai dengan yang terkecil (jika dengan huruf, urutannya dari z-a)<br />jadi, <strong>fungsi </strong><strong>sort descending : mengurutkan data dari yg besar ke kecil<br /><br />Semoga Membantu :)</strong><br />
+                                            <h2 class="ez-toc-section" id="jabarkan-tentang-pola-divide-algoritma-quick-sort">
+                            20. jabarkan tentang pola divide algoritma quick sort!</h2><br />
+                        <p>Algoritma Quick Sort merupakan salah satu algoritma pengurutan yang bekerja dengan memanfaatkan pola divide and conquer. Di bawah ini adalah penjabaran mengenai pola divide dalam algoritma Quick Sort:</p><p></p><p>1. Tahap Awal:</p><p>   - Pilih elemen pivot dari array yang akan diurutkan. Pivot dapat dipilih secara acak atau dengan menggunakan strategi tertentu, seperti memilih elemen tengah atau median dari tiga elemen.</p><p>   - Bagi array menjadi dua bagian, yaitu array bagian kiri dan array bagian kanan, berdasarkan nilai pivot.</p><p>   - Perbandingan dilakukan untuk memindahkan elemen-elemen yang lebih kecil daripada pivot ke bagian kiri dan elemen-elemen yang lebih besar ke bagian kanan.</p><p></p><p>2. Tahap Rekursif:</p><p>   - Rekursif dilakukan pada kedua bagian array yang terbentuk (bagian kiri dan bagian kanan).</p><p>   - Pada setiap rekursi, langkah-langkah yang sama dilakukan seperti tahap awal, yaitu memilih pivot dari bagian array yang lebih kecil dan membagi array menjadi dua bagian berdasarkan pivot.</p><p></p><p>3. Tahap Penggabungan:</p><p>   - Setelah rekursi selesai, hasil pengurutan akan dikombinasikan kembali. Ini dilakukan dengan cara menggabungkan array bagian kiri, pivot, dan array bagian kanan dengan urutan yang tepat.</p><p>   - Pivot ditempatkan pada posisi yang benar, sehingga semua elemen di bagian kiri pivot lebih kecil daripada pivot dan semua elemen di bagian kanan pivot lebih besar daripada pivot.</p><p></p><p>4. Tahap Berulang:</p><p>   - Jika masih ada array yang perlu diurutkan atau dibagi lebih lanjut, tahap awal dan rekursif akan terus diulang pada setiap subarray yang terbentuk dengan pemilihan pivot baru di setiap langkahnya.</p><p>   - Proses ini berlanjut hingga semua subarray terurut dan digabungkan secara tepat.</p><p></p><p>Melalui pola divide ini, Quick Sort memecah masalah pengurutan menjadi submasalah yang lebih kecil dan lebih mudah diatasi. Dengan memanfaatkan strategi pemilihan pivot yang efisien dan pengaturan elemen-elemen dengan benar pada setiap iterasi, algoritma Quick Sort dapat melakukan pengurutan dengan cepat dan efisien.</p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-algoritma-sort">
+                            21. Pengertian algoritma sort</h2><br />
+                        <p>Secara garis besarnya, Sorting (Pengurutan) adalah <strong>suatu proses penyusunan kembali kumpulan objek menggunakan tata aturan tertentu. </strong><strong>Sorting</strong> disebut juga sebagai suatu <strong>algoritma untuk meletakkan kumpulan elemen data ke dalam urutan tertentu berdasarkan satu atau beberapa kunci dalam tiap-tiap elemen</strong>. Pengurutan atau sorting merupakan <strong>proses dasar yang ada dalam sebuah algoritma dan struktur data. </strong>Tujuan utama dari proses pengurutan atau sorting adalah <strong>untuk mengurutkan data berdasarkan keinginan baik itu dari yang terendah maupun yang tertinggi, sehingga data yang dihasilkan akan lebih terstruktur, teratur dan sesuai dengan kebutuhan.</strong></p><p></p><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong>•</strong><strong>=</strong><strong> </strong><strong> </strong><p></p><p><strong>MAAF </strong><strong>KALAU </strong><strong>JAWABANNYA </strong><strong>SALAH </strong><strong>ATAU </strong><strong>KURANG </strong><strong>TEPAT </strong><strong>.</strong><strong>.</strong><strong> </strong><strong>SEMOGA </strong><strong>MEMBANTU </strong><strong>DAN </strong><strong>SEKIAN </strong><strong>TERIMA </strong><strong>KASIH </strong><strong>✨</strong><strong>✨</strong></p><br />
+                                            <h2 class="ez-toc-section" id="soal-tentang-pengurutan-sorting-untuk-latihan-1-pengurutan-sederhana-urutkan-array-berikut-secara-ascending-dari-terkecil-ke-terbesar-2-pengurutan-descending-urutkan-array-berikut-secara-des">
+                            22. soal tentang pengurutan (sorting) untuk latihan: 1. Pengurutan Sederhana: Urutkan array berikut secara ascending (dari terkecil ke terbesar): 2. Pengurutan Descending: Urutkan array berikut secara descending (dar terbesar ke terkecil): 3. Pengurutan Karakter: Urutkan string berikut secara alfabetikal: 4. Pengurutan Gabungan: Anda memiliki array bilangan bulat dan desimal Urutkan array tersebut secara ascending dengan mempertahankan tipe data masing-masing elemen. 5 Pengurutan Tanpa Algoritma Bawaan: Jelaskan algoritma pengurutan bubble sort atau insertion sort) 6. Pengurutan dalam Waktu Nyata: Bagaimana algoritma pengurutan berperan dalam pengurutan data dalam basis data relasional? Jelaskan langkah-langkahnya. 7. Kompleksitas Waktu Pengurutan: Apa itu kompleksitas waktu dalam pengurutan? Jelaskan perbedaan antara kompleksitas waktu O(n ^ 2) dan O(n log n) dalam konteks algoritma pengurutan. 8. Pengurutan Stabilitas: Apa yang dimaksud dengan pengurutan stabil? Mengapa pengurutan stabil sering diinginkan dalam beberapa kasus pengurutan data?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Pengurutan Sederhana (Ascending):</p><p>   Array: [4, 2, 7, 1, 9]</p><p>   Hasil: [1, 2, 4, 7, 9]</p><p></p><p>2. Pengurutan Descending:</p><p>   Array: [4, 2, 7, 1, 9]</p><p>   Hasil: [9, 7, 4, 2, 1]</p><p></p><p>3. Pengurutan Karakter (Alfabetikal):</p><p>   String: "banana"</p><p>   Hasil: "aaabnn"</p><p></p><p>4. Pengurutan Gabungan (Ascending):</p><p>   Array: [3, 2.5, 1.2, 4.7, 3.1]</p><p>   Hasil: [1.2, 2.5, 3, 3.1, 4.7]</p><p></p><p>5. Pengurutan Tanpa Algoritma Bawaan:</p><p>   Algoritma Bubble Sort adalah metode pengurutan sederhana yang membandingkan elemen-elemen berurutan dan menukar mereka jika diperlukan. Proses ini diulangi hingga tidak ada lagi pertukaran yang perlu dilakukan.</p><p></p><p>6. Pengurutan dalam Waktu Nyata:</p><p>   Dalam basis data relasional, pengurutan data dilakukan melalui pernyataan SQL seperti "ORDER BY". Langkah-langkahnya adalah:</p><p>   - Pengguna mengirimkan perintah SQL dengan klausa "ORDER BY" yang menentukan kolom pengurutan.</p><p>   - Basis data mengambil data yang sesuai dengan kriteria pengurutan.</p><p>   - Basis data mengurutkan data menggunakan algoritma pengurutan yang sesuai (misalnya, merge sort atau quicksort).</p><p>   - Hasil data yang telah diurutkan dikirimkan kembali kepada pengguna.</p><p></p><p>7. Kompleksitas Waktu Pengurutan:</p><p>   Kompleksitas waktu adalah cara untuk mengukur seberapa efisien algoritma pengurutan dalam menangani jumlah data. O(n^2) seperti Bubble Sort dan Selection Sort tidak efisien untuk data besar, sementara O(n log n) seperti Merge Sort dan Quick Sort lebih cepat.</p><p></p><p>8. Pengurutan Stabilitas:</p><p>   Pengurutan stabil adalah sifat pengurutan di mana elemen-elemen dengan nilai yang sama tetap dalam urutan relatif seperti pada awalnya setelah pengurutan. Ini sering diinginkan dalam beberapa kasus, seperti pengurutan data berdasarkan beberapa kriteria sekaligus, di mana urutan awal juga penting. Sebagai contoh, jika Anda ingin mengurutkan daftar nama berdasarkan nama depan dan kemudian nama belakang, pengurutan yang stabil akan menjaga urutan asli nama depan saat pengurutan berdasarkan nama belakang dilakukan.</p><br />
+                                            <h2 class="ez-toc-section" id="5-di-antara-algoritma-pengurutan-berikut-yang-lebih-efisien-adalah-a-pencarian-bagi-duab-bubble-sortc-insertion-sortd-selection-sorte-sequential-beruntun6-algoritma-pengurutan-yang-melakuk">
+                            23. 5. di antara algoritma pengurutan berikut yang lebih efisien adalah ....a pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)6. algoritma pengurutan yang melakukan proses dengan menyisipkan elemen array pada posisi yang tepat adalahalgoritma ....a. pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)7. algoritma yang digunakan untuk menyembunyikan pesan adalah ....a. divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort8. algoritma dimana suatu fungsi atau prosedur memanggil dirinya sendiri disebut ....a divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort​</h2><br />
+                        <strong>Algoritma pengurutan</strong> yang lebih efisien adalah insetion sort (c)Algoritma pengurutan yang melakukan <strong>proses dengan menyisipkan elemen array</strong> pada posisi yang tepat adalah insertion sort (c)Untuk <strong>menyembunyikan pesan</strong> digunakan algoritma kriptografi (d)Algoritma yang <strong>memanggil fungsi</strong> atau prosedur <strong>dirinya sendiri</strong> disebut rekursif (b)Pembahasan<p>Pada pertanyaan nomor lima, digunakan <strong>algoritma insertion sort</strong> lebih efisien karena merupakan implementasi paling sederhana untuk data berukuran kecil.</p><p>Pada pertanyaan nomor enam, algoritma yang dipakai untuk <strong>mengurutkan elemen array pada posisi yang tepat</strong> yaitu <strong>insertion</strong> <strong>sort </strong>karena algoritma ini membandingkan dua elemen yaitu elemen pertama dengan elemen yang sudah diurutkan. Perbandingan akan terus dilakukan sehingga tidak ada elemen yang tersisa.</p><p>Pada pertanyaan nomor tujuh algoritma yang dipakai untuk m<strong>enyembunyikan pesan</strong> adalah <strong>algoritma kriptografi</strong> melalui perantara media. Kriptografi bisa juga disebut dengan "enkripsi".</p><p>Pada pertanyaan nomor delapan <strong>fungsi yang memanggil dirinya</strong> sendiri disebut <strong>rekursif</strong>. Fungsinya seperti pengulangan untuk mengembalikan atau menghasilkan satu nilai pada bagian program.</p>Pelajari Lebih LanjutMateri tentang keamanan kriptografi, pada https://brainly.co.id/tugas/14318881Materi tentang penjelasan algoritma, pada https://brainly.co.id/tugas/18086381<p><strong>#BelajarBersamaBrainly</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="terangkan-hubungan-antara-kemampuan-seorang-programmer-dengan-kompleksitas-suatu-algoritma%e2%80%8b">
+                            24. terangkan hubungan antara kemampuan seorang programmer dengan kompleksitas suatu algoritma!​</h2><br />
+                        <p>Hubungan antara kemampuan seorang programmer dengan kompleksitas alogaritma<strong> sangat berkaitan erat karena jika ingin menjadi programmer yang handal harus menguasai Notasi O Besar.</strong></p><strong>Pembahasan:</strong><p>Kompleksitas komputasi selalu identik dengan cabang dari teori komputasi dalam ilmu komputer yang berfokus pada mengklasifikasikan suatu masalah komputasi sesuai dengan kesulitan inheren yang ada program mereka. Oleh karena itu diperlukan kemampuan untuk menguasai konsep Big O (dibaca Big Oh) dan hal tersebut menjadi suatu kewajiban jika ingin menjadi programmer yang handal. <strong>Untuk menghitung efisiensi suatu kode dalam pemrograman komputer, maka dibutuhkan sebuah metodologi untuk menghitungnya</strong>. Salah satu alat bantu yang bisa kita gunakan untuk menerapkan metode tersebut adalah notasi O besar atau Big-O Notation.</p><p>Notasi O besar atau yang biasanya juga disebut dengan Big-O Notation adalah sebuah cara atau metode untuk melakukan analisa terhadap sebuah algoritma pemrograman terhadap waktu eksekusi dalam pemrograman komputer. Tentang seberapa efisien dan kompleksitas barisan kode dalam dimensi waktu. Di dalam sebuah program komputer pada umumnya, pasti umunya ada istilah masukan-proses-keluaran. Notasi O besar merupakan suatu skenario terburuk dari sebuah algoritma yang ada pada pemrograman komputer, dan biasanya terdapat notasi n yang merepresentasikan jumlah masukan tersebut. </p><p>Oleh karena itu <strong>kemampuan dalam menerapkan metode Notasi O sangat diperlukan agar bisa menjadi seorang programmer yang handal dan berkompeten</strong>.</p><p></p>Pelajari lebih lanjut:<p>Materi tentang uraikan tentang definisi Big O </p><p>https://brainly.co.id/tugas/39445495</p><p>Materi tentang Uraikan yang kalian ketahui tentang definisi big O​</p><p>https://brainly.co.id/tugas/38125084</p><p></p>Detail Jawaban<p>Kelas: SMA</p><p>Mapel: TIK </p><p>Bab: Bab 6 - Mengenal Pemrograman Komputer</p><p>Kode: 10.11.6</p><p></p><p><strong>#AyoBelajar</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-tentang-quick-sort-dengan-delphi-7-jelaskan">
+                            25. algoritma tentang quick sort dengan delphi 7 ?jelaskan?</h2><br />
+                        Untuk menyeragamkan penulisan tiap-tiap algoritma, dibuat sebuah common class, yaitu TQuickSort<br /><br />
+                                            <h2 class="ez-toc-section" id="algoritma-merge-sort-dilakukan-dengan-prinsip-divide-and-computer-yang-memiliki-arti">
+                            26. Algoritma merge sort dilakukan dengan prinsip divide and computer yang memiliki arti</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p><p>(koreksi: bukan divide and computer, melainkan divide and conquer)</p><p>Algoritma <strong>merge sort</strong> dilakukan dengan prinsip <strong>divide and conquer</strong> yang memiliki arti <strong>“bagi/pecah (menjadi beberapa bagian) dan taklukkan”</strong>, yang sesuai dengan <strong>prinsip dekomposisi,</strong> yaitu <strong>memecah masalah yang ada menjadi beberapa bagian kecil sehingga lebih mudah untuk diselesaikan. </strong></p><p>Pada algoritma merge sort, list/data dibagi menjadi dua bagian secara rekursif hingga bagian terkecil, yaitu dua bagian yang hanya berisi satu elemen saja. Kemudian dari bagian-bagian terkecil, dibandingkan dan terjadi pertukaran posisi sesuai jenis pengurutan. Setelah itu, secara bertahap, semua bagian yang sudah terurut digabung kembali, dengan menyeleksi mulai dari elemen terkecil atau terbesar (tergantung jenis pengurutan: ascending atau descending) dan memasukkannya ke list/data gabungan. Hal ini dilakukan sampai semua bagian tergabung kembali menjadi satu bagian utuh yang sudah terurut.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-kelompok-algoritma-berdasarkan-kompleksitas-waktu-asimptotik%e2%80%8b">
+                            27. Sebutkan kelompok algoritma berdasarkan kompleksitas waktu asimptotik!​</h2><br />
+                        <p>Jawaban:</p><p>Kelompok algoritma</p><p>1.O(n³)</p><p>2.O(n²)</p><p>3.O(n)</p><p>4.O(n!)</p><p>5.O(n log n)</p><p>6.O(log n)</p><p>7.O(2n)</p><p>8.O(1)</p><p></p><p>Nama</p><p>1.kubik</p><p>2.kuadratik</p><p>3.linear</p><p>4.faktorial</p><p>5.N log n</p><p>6.logaritmik</p><p>7.eksponensial</p><p>8.konstan</p><br />
+                                            <h2 class="ez-toc-section" id="1-berikut-ini-yang-termasuk-ke-dalam-algoritma-pencarian-adalah-a-bubble-sortb-insertion-sortc-selection-sortd-sequential-beruntune-shell2-berikut-ini-yang-termasuk-ke-dalam-algoritma-pen">
+                            28. 1. Berikut ini yang termasuk ke dalam algoritma pencarian adalah ....A. bubble sortB. insertion sortC. selection sortD. sequential (beruntun)E. shell2. Berikut ini yang termasuk ke dalam algoritma pencarian yang lebih efektif adalah ....A. pencarian bagi duaB. insertion sortC. selection sortD. sequential (beruntun)E. bubble sort3. Syarat data saat akan melakukan pencarian bagi dua adalah ....A. jumlah data harus genapB. jumlah data harus ganjilC. jumlah data harus banyakD. data harus sudah terurutE. tidak ada syarat yang harusdipenuhi4. Berikut ini yang termasuk ke dalam algoritma pengurutan adalah ....A. pencarian bagi duaB. insertion sortC. rekursifD. sequential (beruntun)E. shell​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>1</strong><strong>.</strong><strong>d</strong><strong>,</strong><strong> </strong><strong>s</strong><strong>q</strong><strong>u</strong><strong>e</strong><strong>n</strong><strong>t</strong><strong>i</strong><strong>a</strong><strong>l</strong></p><p><strong>2</strong><strong>.</strong><strong>a</strong><strong>,</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>n</strong><strong>c</strong><strong>a</strong><strong>r</strong><strong>i</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>b</strong><strong>a</strong><strong>g</strong><strong>i</strong><strong> </strong><strong>2</strong></p><p><strong>3</strong><strong>.</strong><strong>d</strong><strong>,</strong><strong> </strong><strong>d</strong><strong>a</strong><strong>t</strong><strong>a</strong><strong> </strong><strong>h</strong><strong>a</strong><strong>r</strong><strong>u</strong><strong>s</strong><strong> </strong><strong>s</strong><strong>u</strong><strong>d</strong><strong>a</strong><strong>h</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>u</strong><strong>r</strong><strong>u</strong><strong>t</strong></p><p><strong>4</strong><strong>.</strong><strong>e</strong><strong>,</strong><strong> </strong><strong>s</strong><strong>h</strong><strong>e</strong><strong>l</strong><strong>l</strong></p><p></p><p><strong>p</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong>:</strong></p><p><strong>m</strong><strong>a</strong><strong>a</strong><strong>f</strong><strong> </strong><strong>k</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>u</strong><strong> </strong><strong>s</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>h</strong></p><p><strong>j</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>j</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>b</strong><strong>a</strong><strong>i</strong><strong>k</strong><strong> </strong><strong>y</strong><strong>a</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-jenis-jenis-serangan-algoritma-kriptografi-beserta-kompleksitasnya">
+                            29. Jelaskan jenis jenis serangan algoritma kriptografi beserta kompleksitasnya</h2><br />
+                        serangan kriptografi atau serangan yang dilakukan dengan cara menyamarkan atau merahasiakn (encrypt) data dengan tujuan untuk melakukan hal2 negatif memiliki salah satu seperti:<br />- spoofing atau kalau diartikan secara harfiah adalah penipuan, yakni meyakinkan pihak lain bahwa pelaku penipuan menyamar sebagai korban, sehingga orang lain percaya.<br /><br />semoga membantu- <br />
+                                            <h2 class="ez-toc-section" id="jabarkan-hubungan-antara-algoritma-quick-sort-dengan-pola-devide-and-conquer%e2%80%8b">
+                            30. jabarkan hubungan antara algoritma quick sort dengan pola devide and conquer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>hubungannya, mereka mendivide dengan algoritma yang sama, kemudia conquer juga dengan algoritma yang sama: </p><p>tentukan pivot point, terus dibagi 2 antara lebih besar atau lebih kecil.</p><p>Setelah tidak ada yang bisa didivide lagi, tinggal dicombine semuanya. </p><p><strong>Penjelasan:</strong></p><p>divide and conquer itu ga melulu untuk quick sort. kebetulan quick sort pakai algoritma lebih dan kurang, ditambah divide and conquer.</p><br />
+                                            <h2 class="ez-toc-section" id="urutkan-array-3524-dengan-algoritma-insertion-sort">
+                            31. Urutkan array (3,5,2,4) dengan algoritma insertion sort</h2><br />
+                        <p>Pengurutan<strong> array</strong> (3,5,2,4) secara algoritma insertion sort adalah sebagai berikut langkahnya: </p>3  5  2  43  2  5  43  2  5  42  3  5  42  3  4  5<p><strong>Insertion sort</strong> membandingkan suku ke n dan n+1 jika n+1 lebih kecil dari n maka dipindah paling kiri. Begitupun terjadi secara berulang.</p><p><strong>Pembahasan</strong></p><p><strong>Algoritma</strong> adalah sekumpulan instruksi  terstruktur dan terbatas yang diimplementasikan dalam bentuk program komputer untuk memecahkan masalah komputasi tertentu. Dalam matematika dan ilmu komputer, algoritma adalah prosedur langkah demi langkah untuk perhitungan, instruksi yang diberikan kepada komputer untuk melakukan tugas tertentu. Instruksi secara khusus ditulis untuk menyelesaikan tugas  tanpa kesalahan. Dimulai dengan istilah yang digunakan dan diakhiri dengan prosedur: <strong>Algoritma</strong> pengurutan penyisipan pada dasarnya mengurutkan data yang akan diurutkan menjadi dua bagian: bagian yang tidak disortir dan bagian yang  diurutkan. Elemen pertama diambil dari bagian array yang tidak disortir dan ditempatkan di bagian lain dari array yang diurutkan sesuai dengan posisinya.</p><p></p>Pelajari lebih lanjut<p>Pelajari lebih lanjut materi tentang Algoritma Insertion Sort: https://brainly.co.id/tugas/14723268</p><p></p><p><strong>#BelajarBersamaBrainly #SPJ9</strong></p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-gambar-berikut-3-9-4-7-6-2-urutkan-data-pada-gambar-di-atas-menggunakan-algoritmaa-bubble-sort-b-insertion-sort-c-quick-sort-dan-d-marge-sort-%e2%80%8b">
+                            32. perhatikan gambar berikut 3 9 4 7 6 2 urutkan data pada gambar di atas menggunakan algoritmaa. bubble sort b. insertion sort c. quick sort dan d. marge sort ​</h2><br />
+                        <p><strong>Jawaban: menggunakan algoritma Bubble Sort</strong></p><p></p><p><strong>Penjelasan:</strong></p><p><strong>Data awal: 3, 9, 4, 7, 6, 2</strong></p><p><strong>Bubble Sort:</strong></p><p><strong></strong></p><p><strong>Langkah pertama adalah membandingkan dua elemen pertama (3 dan 9). Karena 3 lebih kecil dari 9, kita tidak perlu menukar posisi mereka.</strong></p><p><strong></strong></p><p><strong>Data: 3, 9, 4, 7, 6, 2</strong></p><p><strong>Kemudian kita membandingkan 9 dan 4. Karena 9 lebih besar dari 4, kita menukar posisi mereka.</strong></p><p><strong>Data: 3, 4, 9, 7, 6, 2</strong></p><p><strong>Sekarang kita membandingkan 9 dan 7. Kita menukar posisi lagi.</strong></p><p><strong>Data: 3, 4, 7, 9, 6, 2</strong></p><p><strong>Selanjutnya, kita membandingkan 9 dan 6. Kita menukar posisi lagi.</strong></p><p><strong>Data: 3, 4, 7, 6, 9, 2</strong></p><p><strong>Terakhir, kita membandingkan 9 dan 2. Kita menukar posisi sekali lagi.</strong></p><p><strong>Data: 3, 4, 7, 6, 2, 9</strong></p><p><strong></strong></p><p><strong>Jadi, hasil pengurutan data menggunakan Bubble Sort setelah satu langkah adalah: 3, 4, 7, 6, 2, 9. </strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="2-terdapat-5-algoritma-pengurutan-dari-selection-sort-insertion-sort-bubble-sort-merge-sort-dan-quick-sort-jika-anda-memiliki-data-array-sebagai-berikut-9-4-16-20-11-8-urutkan-data-array">
+                            33. 2. Terdapat 5 Algoritma pengurutan, dari selection sort, insertion sort, bubble sort, merge sort dan quick sort. Jika anda memiliki data array sebagai berikut {9, 4, 16, 20, 11, 8). Urutkan data array tersebut dari yg terkecil ke yg terbesar menggunakan selection sort !​</h2><br />
+                        <p><strong>Berikut langkah-langkahnya:</strong></p><p><strong>Inisialisasi array awal:</strong></p><p>{9, 4, 16, 20, 11, 8}</p><p>Di dalam algoritma selection sort, kita membagi array menjadi dua bagian: bagian yang sudah terurut dan bagian yang belum terurut. Di awal, bagian terurut hanya berisi elemen pertama, sedangkan bagian yang belum terurut berisi elemen sisanya.</p><p><strong>Iterasi pertama:</strong></p><p>Bandingkan elemen pertama (9) dengan semua elemen yang belum terurut (4, 16, 20, 11, 8).</p><p>Temukan elemen terkecil di antara mereka, yaitu 4.</p><p>Tukar elemen pertama (9) dengan elemen terkecil (4).</p><p>Sekarang, bagian terurut berisi {4}, dan bagian yang belum terurut berisi {9, 16, 20, 11, 8}.</p><p><strong>Iterasi kedua:</strong></p><p>Bandingkan elemen kedua (9, yang sekarang berada di bagian yang belum terurut) dengan elemen yang belum terurut (16, 20, 11, 8).</p><p>Temukan elemen terkecil di antara mereka, yaitu 8.</p><p>Tukar elemen kedua (9) dengan elemen terkecil (8).</p><p>Sekarang, bagian terurut berisi {4, 8}, dan bagian yang belum terurut berisi {9, 16, 20, 11}.</p><p><strong>Iterasi ketiga:</strong></p><p>Bandingkan elemen ketiga (9, yang sekarang berada di bagian yang belum terurut) dengan elemen yang belum terurut (16, 20, 11).</p><p>Temukan elemen terkecil di antara mereka, yaitu 11.</p><p>Tukar elemen ketiga (9) dengan elemen terkecil (11).</p><p>Sekarang, bagian terurut berisi {4, 8, 11}, dan bagian yang belum terurut berisi {9, 16, 20}.</p><p><strong>Iterasi keempat:</strong></p><p>Bandingkan elemen keempat (9, yang sekarang berada di bagian yang belum terurut) dengan elemen yang belum terurut (16, 20).</p><p>Temukan elemen terkecil di antara mereka, yaitu 16.</p><p>Tukar elemen keempat (9) dengan elemen terkecil (16).</p><p>Sekarang, bagian terurut berisi {4, 8, 11, 16}, dan bagian yang belum terurut berisi {9, 20}.</p><p><strong>Iterasi kelima:</strong></p><p>Bandingkan elemen kelima (9, yang sekarang berada di bagian yang belum terurut) dengan elemen yang belum terurut (20).</p><p>Temukan elemen terkecil di antara mereka, yaitu 9.</p><p>Tukar elemen kelima (9) dengan elemen terkecil (9).</p><p>Sekarang, bagian terurut berisi {4, 8, 11, 16, 9}, dan bagian yang belum terurut berisi {20}.</p><p>Tidak ada lagi elemen yang belum terurut, sehingga array sudah terurut sepenuhnya.</p><p>Hasil akhirnya adalah:</p><p>{4, 8, 11, 16, 9, 20}</p><p>Array telah diurutkan dari yang terkecil ke yang terbesar menggunakan algoritma selection sort.</p>Pembahasan<p>Tiga ciri penting algoritma agar bisa digunakan untuk menyelesaikan masalah:</p><p>a. Terdefinisi dengan jelas: Langkah-langkah dalam algoritma harus dijelaskan dengan jelas dan spesifik, sehingga tidak ada ambiguitas dalam pelaksanaannya.</p><p>b. Input dan Output: Algoritma harus memiliki input yang diperlukan untuk memproses informasi dan menghasilkan output yang relevan sesuai dengan masalah yang dipecahkan.</p><p>c. Terbatas dan Efisien: Algoritma harus efisien dalam penggunaan sumber daya seperti waktu dan memori. Ini harus memiliki batasan yang jelas dalam melakukan operasi untuk menyelesaikan masalah dalam waktu yang wajar.</p><p><strong>Pelajari lebih lanjut</strong></p><p>Materi penjelasan tentang alogaritma dasar adalah brainly.co.id/tugas/54230996</p><p><strong>#BelajarBersamaBrainly</strong></p><p><strong>#SPJ1</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-utama-antara-teori-kompleksitas-komputasi-dan-analisis-algoritma">
+                            34. Jelaskan perbedaan utama antara teori kompleksitas komputasi dan analisis algoritma</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pada teori ilmu komputer dan matematika, teori komputasi adalah cabang yang selalu berhubungan dengan berbagai masalah dapat dipecahkan pada sebuah model komputasi secara efisien menggunakan algoritma.</p><p>Bidang ini terbagi menjadi tiga yaitu :</p>bahasa dan teori otomatateori rekursiteori kompleksitas komputasi.<p></p><p>Teori Komputasi adalah sebagai model penciptaan dari seluruh cabang dalam bidang ilmu komputer (computer science).</p><p>Maka dari itu logika dan matematika digunakan dalam teori komputasi.</p><p>Pada abad ini, teori komputasi menjadi disiplin akademik mandiri dan telah terpisah dari matematika.</p><p>Beberapa pencetus dalam bidang teori komputasi adalah Alonzo Church, Kurt Godel, Alan Turing, Stephen Kleene, John von Neumann dan Claude Shannon.</p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-data-berikut-yang-masih-tersusun-secara-acak-data-13-4-7-9-11-2-8-15-1-10-buatlah-tahap-tahap-pengurutan-data-tersebut-menggunakan-a-algoritma-bubble-sort-b-algoritma-selection-sort-c">
+                            35. Perhatikan data berikut yang masih tersusun secara acak.Data: 13 4 7 9 11 2 8 15 1 10 Buatlah tahap-tahap pengurutan data tersebut menggunakan: a. algoritma bubble sort b. algoritma selection sort c. algoritma insertion sort​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Berikut adalah tahap-tahap pengurutan data menggunakan algoritma Bubble Sort, Selection Sort, dan Insertion Sort:</p><p></p><p>**Data Awal:** 13 4 7 9 11 2 8 15 1 10</p><p></p><p>a. **Bubble Sort:**</p><p>   - Langkah 1: Bandingkan pasangan pertama (13 dan 4), tukar jika diperlukan. Hasilnya: 4 13 7 9 11 2 8 15 1 10</p><p>   - Langkah 2: Bandingkan pasangan kedua (13 dan 7), tukar jika diperlukan. Hasilnya: 4 7 13 9 11 2 8 15 1 10</p><p>   - Lanjutkan langkah-langkah ini hingga data terurut sepenuhnya.</p><p></p><p>**Data Terurut menggunakan Bubble Sort:** 1 2 4 7 8 9 10 11 13 15</p><p></p><p>b. **Selection Sort:**</p><p>   - Langkah 1: Temukan nilai minimum dalam data (1). Tukar dengan nilai pertama (13). Hasilnya: 1 4 7 9 11 2 8 15 13 10</p><p>   - Langkah 2: Temukan nilai minimum dalam data yang tersisa (2). Tukar dengan nilai kedua (4). Hasilnya: 1 2 7 9 11 4 8 15 13 10</p><p>   - Lanjutkan langkah-langkah ini hingga data terurut sepenuhnya.</p><p></p><p>**Data Terurut menggunakan Selection Sort:** 1 2 4 7 8 9 10 11 13 15</p><p></p><p>c. **Insertion Sort:**</p><p>   - Langkah 1: Ambil nilai kedua (4) dan sisipkan ke dalam posisi yang benar di antara nilai pertama (13) dan pindahkan nilai yang lebih besar ke kanan. Hasilnya: 4 13 7 9 11 2 8 15 1 10</p><p>   - Langkah 2: Ambil nilai ketiga (7) dan sisipkan ke dalam posisi yang benar. Hasilnya: 4 7 13 9 11 2 8 15 1 10</p><p>   - Lanjutkan langkah-langkah ini hingga data terurut sepenuhnya.</p><p></p><p>**Data Terurut menggunakan Insertion Sort:** 1 2 4 7 8 9 10 11 13 15</p><p></p><p>Semua tiga algoritma ini menghasilkan data yang sama terurut. Setiap algoritma memiliki kecepatan dan kompleksitas waktu yang berbeda, dengan Bubble Sort menjadi yang paling lambat dalam kasus ini..</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-menu-sort-asscending-dan-sort-descending">
+                            36. jelaskan fungsi dari menu sort asscending dan sort descending</h2><br />
+                        Sort Ascending bertujuan untuk mengurutkan (sortir) data dengan urutan naik mulai dari nilai terkecil hingga terbesar.<br /><br />Sort Descending kebalikannya, bertujuan untuk mengurutkan (sortir) data dengan urutan turun mulai dari nilai terbesar hingga terkecil.<br /><br />Semoga jelas dan membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-fungsi-dari-sort-sheet-dan-sort-range-di-google-spreadsheet%e2%80%8b">
+                            37. apa perbedaan fungsi dari sort sheet dan sort range di google spreadsheet?​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Maaf klo salah karena manusia tidak luput dari kesalahan </p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-gambar-pseudocode-di-bawah-iniberdasarkan-pseudocode-di-atas-menggunakan-algoritma-pengurutana-bubble-sortb-insertion-sortc-selection-sortd-quick-sorte-merger-sort">
+                            38. Perhatikan gambar pseudocode di bawah ini!
+Berdasarkan pseudocode di atas menggunakan algoritma pengurutan
+a. Bubble Sort
+b. Insertion Sort
+c. Selection Sort
+d. Quick Sort
+e. Merger Sort</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Bubble Sort</p><p><strong>Penjelasan:</strong></p><p>bisa didefenisikan algoritma Bubble Sort adalah pengurutan dengan cara <strong>pertukaran data</strong> dengan data disebelahnya secara terus menerus sampai dalam satu iterasi tertentu tidak ada lagi perubahan. seperti yang ada pada gambar tersebut untuk melakukan perintah swap(pertukaran)</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-sort-descending%e2%80%8b">
+                            39. Apa fungsi sort descending​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sort descending adalah fasilitas yang digunakan untuk mengurutkan data dari angka terbesar ke terkecil atau dari abjad Z ke a</p><p><strong>Penjelasan:</strong></p><p>Maaf ya kalau salah:)</p><br />
+                                            <h2 class="ez-toc-section" id="5-7-10-3-2-1-8urutkan-langkah-data-tersebut-dengan-memakai-algoritmaa-bubble-sortb-selection-sort%e2%80%8b">
+                            40. 5 7 10 3 2 1 8Urutkan langkah data tersebut dengan memakai Algoritma:a) Bubble Sortb) Selection Sort​</h2><br />
+                        a) bubble sort<p></p><p>1. 5 &lt; 7, tidak terjadi apa apa</p><p>2. 5 &lt; 10, tidak terjadi apa apa</p><p>3. 5 &gt; 3, tukar nilai 5 dengan 3</p><p>4. 3 &gt; 2, tukar nilai 3 dengan 2</p><p>5. 2 &gt; 1, tukar nilai 2 dengan 1</p><p>6. 1 &lt; 8, tidak terjadi apa apa</p><p></p><p><strong>s</strong><strong>e</strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>t</strong><strong>a</strong><strong>r</strong><strong>a</strong><strong>,</strong><strong> </strong><strong>d</strong><strong>a</strong><strong>t</strong><strong>a</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>s</strong><strong>e</strong><strong>b</strong><strong>u</strong><strong>t</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong> </strong><strong>1</strong><strong> </strong><strong>7</strong><strong> </strong><strong>1</strong><strong>0</strong><strong> </strong><strong>5</strong><strong> </strong><strong>3</strong><strong> </strong><strong>2</strong><strong> </strong><strong>8</strong></p><p></p><p>7. 7 &lt; 10, tidak terjadi apa apa</p><p>8. 7 &gt; 5, tukar nilai 7 dengan 5</p><p>9. 5 &gt; 3, tukar nilai 5 dengan 3</p><p>10. 3&gt;2, tukar nilai 3 dengan 2</p><p>11. 2 &lt; 8, tidak terjadi apa apa</p><p></p><p><strong>semetara</strong><strong>,</strong><strong> </strong><strong>data</strong><strong> </strong><strong>tersebut</strong><strong> </strong><strong>menjadi</strong><strong> </strong><strong>1</strong><strong> </strong><strong>2</strong><strong> </strong><strong>7</strong><strong> </strong><strong>1</strong><strong>0</strong><strong> </strong><strong>5</strong><strong> </strong><strong>3</strong><strong> </strong><strong>8</strong></p><p></p><p>12. 7 &lt; 10, tidak terjadi apa apa</p><p>13. 7 &gt; 5, tukar nilai 7 dengan 5</p><p>14. 5 &gt; 3, tukar nilai 5 dengan 3</p><p>15. 3 &lt; 8, tidak terjadi apa apa</p><p></p><p><strong>sementara</strong><strong>,</strong><strong> </strong><strong>data</strong><strong> </strong><strong>tersebut</strong><strong> </strong><strong>menjadi</strong><strong> </strong><strong>1</strong><strong> </strong><strong>2</strong><strong> </strong><strong>3</strong><strong> </strong><strong>7</strong><strong> </strong><strong>1</strong><strong>0</strong><strong> </strong><strong>5</strong><strong> </strong><strong>8</strong></p><p></p><p>16. 7 &lt; 10, tidak terjadi apa apa</p><p>17. 7 &gt; 5, tukar nilai 7 dengan 5</p><p>18. 5 &lt; 8, tidak terjadi apa apa</p><p></p><p><strong>sementara</strong><strong>,</strong><strong> </strong><strong>data</strong><strong> </strong><strong>tersebut</strong><strong> </strong><strong>menjadi</strong><strong> </strong><strong>1</strong><strong> </strong><strong>2</strong><strong> </strong><strong>3</strong><strong> </strong><strong>5</strong><strong> </strong><strong>1</strong><strong>0</strong><strong> </strong><strong>7</strong><strong> </strong><strong>8</strong></p><p></p><p>19. 10 &gt; 7, tukar nilai 10 dengan 7</p><p>20. 7 &lt; 8, tidak terjadi apa apa</p><p></p><p><strong>sementara</strong><strong>,</strong><strong> </strong><strong>data</strong><strong> </strong><strong>tersebut</strong><strong> </strong><strong>menjadi</strong><strong> </strong><strong>1</strong><strong> </strong><strong>2</strong><strong> </strong><strong>3</strong><strong> </strong><strong>5</strong><strong> </strong><strong>7</strong><strong> </strong><strong>1</strong><strong>0</strong><strong> </strong><strong>8</strong></p><p></p><p>21. 10 &gt; 8, tukar nilai 10 dengan 8</p><p></p><p><strong>data</strong><strong> </strong><strong>akhir</strong><strong> </strong><strong>tersebut</strong><strong> </strong><strong>menjadi</strong><strong> </strong><strong>urut</strong><strong>,</strong><strong> </strong><strong>yaitu</strong><strong> </strong><strong>1</strong><strong> </strong><strong>2</strong><strong> </strong><strong>3</strong><strong> </strong><strong>5</strong><strong> </strong><strong>7</strong><strong> </strong><strong>8</strong><strong> </strong><strong>1</strong><strong>0</strong></p><p></p><p></p>b) selection sort<p></p><p>1. 5 7 10 3 2 1 8, data terkecil 1, tukar nilai 5 dan 1</p><p>2. 1 7 10 3 2 5 8, data terkecil 2, tukar nilai 7 dan 2</p><p>3. 1 2 10 3 7 5 8, data terkecil 3, tukar nilai 10 dan 3</p><p>4. 1 2 3 10 7 5 8, data terkecil 5, tukar nilai 10 dan 5</p><p>5. 1 2 3 5 7 10 8, data terkecil 7, tukar nilai 7 dan 7</p><p>6. 1 2 3 5 7 10 8, data terkecil 8, tukar nilai 10 dan 8</p><p>7. 1 2 3 5 7 8 10, data terkecil 10, tukar nilai 10 dan 10</p><p></p><p><strong>data</strong><strong> </strong><strong>tela</strong><strong>h</strong><strong> </strong><strong>urut</strong><strong> </strong><strong>menjadi</strong><strong> </strong><strong>1</strong><strong> </strong><strong>2</strong><strong> </strong><strong>3</strong><strong> </strong><strong>5</strong><strong> </strong><strong>7</strong><strong> </strong><strong>8</strong><strong> </strong><strong>1</strong><strong>0</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/-tmOFK44lbo?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-digital-copy-device-ds610cf.html">Fungsi Dari Digital Copy Device Ds610cf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/cara-determinan-matriks-dari-fungsi-linear.html">Cara Determinan Matriks Dari Fungsi Linear</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-zoom-in-out.html">Fungsi Dari Zoom In Out</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/jelaskan-fungsi-dari-unsur-pendukung-tari.html">Jelaskan Fungsi Dari Unsur Pendukung Tari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/tas-dari-kulit-pohon-merupakan-produk-kerajinan-dengan-fungsi.html">Tas Dari Kulit Pohon Merupakan Produk Kerajinan Dengan Fungsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-komunikasi-data.html">Fungsi Dari Komunikasi Data</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/tuliskan-fungsi-administrasi-keuangan.html">Tuliskan Fungsi Administrasi Keuangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dan-bagian-dari-alat-mesin-sprayer.html">Fungsi Dan Bagian Dari Alat Mesin Sprayer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apa-fungsi-dari-vitamin-d.html">Apa Fungsi Dari Vitamin D</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-kakao-bubuk-pd-good-day-capucino.html">Fungsi Dari Kakao Bubuk Pd Good Day Capucino</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-alphabet-bahasa-inggris-kelas-4.html">Contoh Soal Alphabet Bahasa Inggris Kelas 4</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-dss.html">Fungsi Dari Dss</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-menghitung-faktor-keamanan-lereng.html">Contoh Soal Menghitung Faktor Keamanan Lereng</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/download-contoh-soal-psikotes-lengkap.html">Download Contoh Soal Psikotes Lengkap</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-tugas-akhir-administrasi-bisnis.html">Contoh Tugas Akhir Administrasi Bisnis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/fungsi-dari-adanya-internet-gateaway.html">Fungsi Dari Adanya Internet Gateaway</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/apakah-fungsi-dari-garis-bayangan.html">Apakah Fungsi Dari Garis Bayangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-calistung-kelas-3-sd-2020.html">Contoh Soal Calistung Kelas 3 Sd 2020</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-ulangan-bahasa-inggris-kelas-10-semester-2.html">Contoh Soal Ulangan Bahasa Inggris Kelas 10 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://mengenalfungsi.github.io/contoh-soal-persen-dan-perbandingan.html">Contoh Soal Persen Dan Perbandingan</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://mengenalfungsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://mengenalfungsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://mengenalfungsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
